@@ -36,4 +36,4 @@ jobs:
             - name: Static Analysis (PHPStan)
               run: vendor/bin/phpstan --memory-limit=2G
             - name: Infection tets (PHP infection)
-              run: vendor/bin/infection --only-covered --min-covered-msi=100 -j$(nproc) --ignore-msi-with-no-mutations --coverage=tests/coverage --skip-initial-tests --test-framework-options="--configuration=phpunit.xml"
+              run: vendor/bin/infection --only-covered --min-covered-msi=100 -j$(nproc) --ignore-msi-with-no-mutations --coverage=/tmp/coverage --skip-initial-tests --test-framework-options="--configuration=phpunit.xml"
