@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ fullyQualifiedModel }};
+use App\Repositories\RepositoryInterface;
+
+/**
+ * @extends RepositoryInterface<{{ model }}>
+ */
+interface {{ model }}RepositoryInterface extends RepositoryInterface
+{
+}

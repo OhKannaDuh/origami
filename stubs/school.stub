@@ -1,0 +1,46 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Core\SourceBook;
+use App\Repositories\Character\FamilyRepositoryInterface;
+use App\Repositories\Core\RingRepositoryInterface;
+use Database\Seeders\Helpers\Curriculum;
+use Database\Seeders\Helpers\CurriculumRank;
+use Database\Seeders\Helpers\StartingOutfit;
+use Database\Seeders\Helpers\StartingSkills;
+use Database\Seeders\Helpers\StartingTechniques;
+use Database\Seeders\SourceBooks\SchoolSeeder;
+
+final class {{ className }} extends SchoolSeeder
+{
+
+
+    public function run(
+        SourceBook $sourceBook,
+        FamilyRepositoryInterface $families,
+        RingRepositoryInterface $rings,
+    ): void {
+        $this->sourceBook = $sourceBook;
+
+        $this->create(
+            '{{ schoolName }}',
+            $families->getByKey(''),
+            ['{{ schoolTypes }}'],
+            $rings->getByKey('{{ ringOne }}'),
+            $rings->getByKey('{{ ringTwo }}'),
+            {{ skillAmount }},
+            (new StartingSkills())
+                {{ skills }},
+            {{ honor }},
+            ['{{ techniquesAvailable }}'],
+            {{ startingTechniques }}
+            '{{ schoolAbility }}',
+            // {{ startingOutfit }}
+            (new StartingOutfit()),
+            {{ curriculum }}
+            '{{ masteryAbility }}',
+        );
+
+    }
+}

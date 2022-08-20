@@ -1,0 +1,16 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+
+    excludePaths:
+        - app/Console/Commands
+        - app/Generators
+
+    level: max
+
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    

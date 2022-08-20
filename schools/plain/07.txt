@@ -1,0 +1,80 @@
+Toritaka Phantom Hunter
+School [Shugenja]
+From the days of the Falcon Clan founder, Toritaka
+Yotogi, Toritaka Phantom Hunters have sought out gaki
+and other malign supernatural beings, a task that is
+often unfortunately easy, given the clan’s proximity to
+the haunted Shinomen Forest and the corrupted Shad-
+owlands. Phantom Hunters often act in concert with
+Crab Clan warriors, using their legendary abilities to
+detect supernatural threats that others, even the skilled
+bushi stationed on the Wall, cannot perceive.
+Rings: +1 Air, +1 Water
+Starting Skills (choose three): +1 Culture, +1 Govern-
+ment, +1 Martial Arts [Melee], +1 Sentiment, +1 Sur-
+vival, +1 Theology
+Honor: 40
+Techniques Available: Invocations (), Rituals (),
+Shūji ()
+Starting Techniques:
+$ Invocations: By the Light of Lord Moon
+$ Rituals: Cleansing Rite, Commune with the
+Spirits, = Tea Ceremony
+$ Shūji: Courtier’s Resolve
+Eyes of Yotogi (School Ability): Otherworldly beings
+treat your vigilance as being increased by your school
+rank. When you make a check to search for Other-
+worldly beings, or make an Initiative check in a conflict
+against them, if you succeed, add bonus successes
+equal to your school rank.
+Starting Outfit: Traveling clothes, sanctified
+robes, daishō (katana and wakizashi), scroll satchel,
+traveling pack.
+C H A P T E R 2 : H O N O R A G A I N S T DEMONSADVANCE TYPE
+RANK 1
+Scholar Skills Skl. Grp.
+Courtesy Skill
+Martial Arts [Melee] Skill
+Survival Skill
+Rank 1 Air Invocations  Tech. Grp.
+Bō of Water  Technique
+Threshold Barrier  Technique
+RANK 2
+Martial Skills Skl. Grp.
+Culture Skill
+Sentiment Skill
+Theology Skill
+Rank 1–2 Water Shuji  Tech. Grp.
+= Essence of Jade  Technique
+Striking as Air  Technique
+RANK 3
+Social Skills Skl. Grp.
+Government Skill
+Martial Arts [Melee] Skill
+Sentiment Skill
+Rank 1–3 Water Invocations  Tech. Grp.
+= Rise, Water  Technique
+= Crescent Moon Style  Technique
+RANK 4
+Trade Skills Skl. Grp.
+Martial Arts [Melee] Skill
+Performance Skill
+Theology Skill
+Rank 1–4 Air Invocations  Tech. Grp.
+= Rouse the Soul  Technique
+= Soul Sunder  Technique
+RANK 5
+Scholar Skills Skl. Grp.
+Command Skill
+Courtesy Skill
+Survival Skill
+Rank 1–5 Air Shūji  Tech. Grp.
+= Flowing Water Strike  Technique
+Wrath of Kaze-no-Kami  Technique
+RANK 6 Yotogi’s Piercing Gaze (Mastery Ability):
+You can perceive beings that are normally
+invisible to human sight, such as spirits
+and characters concealed by supernatural
+abilities. When you deal damage to an Oth-
+erwordly being, you ignore an amount of its
+resistance up to your ranks in Meditation.

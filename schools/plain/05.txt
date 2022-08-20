@@ -1,0 +1,79 @@
+Mirumoto Taoist Blade
+School [Bushi, Monk]
+As the name suggests, the monks of the Mirumoto Tao-
+ist Blade School make study of swordplay an integral
+part of their quest for Enlightenment. Such are their
+skills that their blades act as if part of their bodies, strik-
+ing as easily as fists would do for others. Their isolated
+monastery and dōjō is nestled deep within northern
+mountains within Dragon lands, and it is extraordinarily
+rare for them to host visitors. Most Rokugani who wit-
+ness their skills do so when one of these monks departs
+to walk the Emerald Empire in search of new insights
+and possibly even new lessons in the blade.
+Rings: +1 Void, +1 Water
+Starting Skills (choose four): +1 Labor, +1 Martial Arts
+[Melee], +1 Martial Arts [Unarmed], +1 Meditation,
++1 Survival, +1 Theology
+Honor: 48
+Techniques Available: Kata (), Kihō (), Rituals ()
+Starting Techniques:
+$ Kata (choose two): = Iaijutsu Cut: Rising Blade,
+Soaring Slice, Striking as Water
+$ Kihō: Water Fist
+Sharpened Ki (School Ability): Your kihō that affect
+your unarmed attack profiles also apply to weapons
+you wield in a one-handed grip. When you succeed
+on a check to activate a kihō that affects your unarmed
+attack profiles or a weapon you wield in a one-handed
+grip, add bonus successes equal to your school rank.
+Starting Outfit: Traveling clothes, daishō (any one
+sword of rarity 7 or lower and wakizashi), traveling pack.
+C H A P T E R 2 : H O N O R A G A I N S T DEMONSADVANCE TYPE
+RANK 1
+Martial Skills Skl. Grp.
+Labor Skill
+Survival Skill
+Theology Skill
+Rank 1 Kata  Tech. Grp.
+= Crescent Moon Style  Technique
+Ki Protection  Technique
+RANK 2
+Scholar Skills Skl. Grp.
+Fitness Skill
+Martial Arts [Melee] Skill
+Meditation Skill
+Rank 1–2 Water Kihō  Tech. Grp.
+= Flowing Water Strike  Technique
+Iaijutsu Cut: Crossing Blade  Technique
+RANK 3
+Martial Skills Skl. Grp.
+Medicine Skill
+Survival Skill
+Theology Skill
+Rank 1–3 Earth Kihō  Tech. Grp.
+Crimson Leaves Strike  Technique
+Still the Elements  Technique
+RANK 4
+Scholar Skills Skl. Grp.
+Composition Skill
+Martial Ats [Unarmed] Skill
+Meditation Skill
+Rank 1–4 Void Kihō  Tech. Grp.
+= Striking as Void  Technique
+Crashing Wave Style  Technique
+RANK 5
+Martial Skills Skl. Grp.
+Labor Skill
+Sentiment Skill
+Theology Skill
+Rank 1–5 Kata  Tech. Grp.
+Touch the Void Dragon  Technique
+Way of the Edgeless Sword  Technique
+RANK 6 The Effortless Path (Mastery Ability): When
+making a check to active a kihō, you may
+spend  as follows:
+: If you succeed on this check, after you
+activate the kihō, you may perform a Strike
+action with a weapon you have readied in a
+one-handed grip

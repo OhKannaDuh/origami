@@ -1,0 +1,79 @@
+Kakita Swordsmith School
+[Artisan, Courtier]
+Like all institutions of the Crane, the Kakita Swordsmith
+School emphasizes perfection and excellence. The
+blades they forge are renowned across Rokugan as the
+finest that can be made; some duelists wait long years
+for the opportunity to have one of these blades crafted
+for their use. Very rarely, a venerable swordsmith will
+take on a promising youth as an apprentice, though
+most apprentices spend decades before they are hon-
+ored as “proficient.”
+Rings: +1 Air, +1 Fire
+Starting Skills (choose five): +1 Aesthetics, +1 Martial
+Arts [Melee], +1 Courtesy, +1 Culture, +1 Sentiment,
++1 Smithing, +1 Theology
+Honor: 55
+Techniques Available: Kata (), Rituals (), Shūji ()
+Starting Techniques:
+$ Kata (choose one): Soaring Slice, Striking as
+Air, Striking as Fire
+$ Shūji: = Artisan’s Appraisal
+Patterns: Kakita Pattern. You can apply this item pat-
+tern (see page 109) to any bladed weapon you craft.
+Sacred Art of Steel (School Ability): Once per game
+session when you make a check to craft, improve, or
+maintain a weapon, you may add a number of kept 
+set to  results equal to your school rank.
+Starting Outfit: Traveling clothes, ceremonial clothes,
+daishō (a personally crafted katana with Kakita pattern
+[see page 109] and wakizashi), smithing hammer,
+traveling pack, an attendant (see page 64 of the core
+rulebook) or Rokugani pony (see page 326 of the
+core rulebook).
+CHAPTER 2: HONOR AGAINST DEMONS
+89ADVANCE TYPE
+RANK 1
+Artisan Skills Skl. Grp.
+Courtesy Skill
+Culture Skill
+Martial Arts [Melee] Skill
+Rank 1 Kata  Tech. Grp.
+= Blessing of Steel  Technique
+Well of Desire  Technique
+RANK 2
+Scholar Skills Skl. Grp.
+Aesthetics Skill
+Meditation Skill
+Smithing Skill
+Rank 1–2 Rituals  Tech. Grp.
+= Ebb and Flow  Technique
+Tributaries of Trade  Technique
+RANK 3
+Martial Skills Skl. Grp.
+Sentiment Skill
+Smithing Skill
+Theology Skill
+= Rank 1–4 Air Shūji  Tech. Grp.
+All Arts are One  Technique
+Dazzling Performance  Technique
+RANK 4
+Artisan Skills Skl. Grp.
+Courtesy Skill
+Martial Arts [Melee] Skill
+Performance Skill
+Rank 1–4 Kata  Tech. Grp.
+= Soul Sunder  Technique
+Bravado  Technique
+RANK 5
+Scholar Skills Skl. Grp.
+Aesthetics Skill
+Design Skill
+Smithing Skill
+Rank 1–5 Fire Shūji  Tech. Grp.
+Buoyant Arrival  Technique
+Striking as Void  Technique
+RANK 6 Ashidaka’s Method (Mastery Ability): When
+you create a new weapon, you may apply
+two different patterns that you know to it
+(instead of one)

@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Http\Requests\AuthRequest;
+
+final class {{ class }} extends AuthRequest
+{
+
+
+    public function rules(): array
+    {
+        return [
+            //
+        ];
+    }
+}

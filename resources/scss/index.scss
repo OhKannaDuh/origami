@@ -1,0 +1,36 @@
+@import'./quasar.scss';
+@import 'quasar/src/css/index.sass';
+@import './l5r.scss';
+
+.highlight {
+    border-bottom: $secondary 2px solid;
+}
+
+.fill-height {
+    height: 100%;
+}
+
+.fill-width {
+    width: 100%;
+}
+
+.list-separator {
+    span {
+        word-break: none;
+    }
+
+    &:not(:last-child):after {
+        content: ', ';
+    }
+}
+
+#nprogress {
+    position: absolute;
+    z-index: 2001;
+}
+
+.extra-dense {
+    min-height: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+}

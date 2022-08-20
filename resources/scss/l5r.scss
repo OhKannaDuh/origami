@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "l5r";
+    src: url("@/fonts/l5r-icons.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.l5r-icon {
+    font: normal normal normal 14px/1 l5r;
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &.icon-lg {
+        font-size: 1.33333333em;
+        line-height: 0.75em;
+        vertical-align: -15%;
+    }
+
+    &.icon-2x {
+        font-size: 2em;
+    }
+
+    &.icon-3x {
+        font-size: 3em;
+    }
+
+    &.icon-4x {
+        font-size: 4em;
+    }
+
+    &.icon-5x {
+        font-size: 5em;
+    }
+
+    &.icon-fw {
+        width: 1.28571429em;
+        text-align: center;
+    }
+
+    &.icon-ul {
+        padding-left: 0;
+        margin-left: 2.14285714em;
+        list-style-type: none;
+    }
+
+    &.ring-die:before {
+        content: "6";
+    }
+
+    &.skill-die:before {
+        content: "2";
+    }
+
+    &.success:before {
+        content: "S";
+    }
+
+    &.explosive-success:before {
+        content: "E";
+    }
+
+    &.opportunity:before {
+        content: "O";
+    }
+
+    &.strife:before {
+        content: "s";
+    }
+
+    &.dragon:before {
+        content: "F";
+    }
+
+    &.lion:before {
+        content: "G";
+    }
+
+    &.mantis:before {
+        content: "H";
+    }
+
+    &.phoenix:before {
+        content: "I";
+    }
+
+    &.scorpion:before {
+        content: "J";
+    }
+
+    &.tortoise:before {
+        content: "I";
+    }
+
+    &.unicorn:before {
+        content: "L";
+    }
+
+    &.crab:before {
+        content: "M";
+    }
+
+    &.crane:before {
+        content: "N";
+    }
+
+    &.imperial:before {
+        content: "P";
+    }
+
+    &.unknown-1:before {
+        content: "0";
+    }
+
+    &.fan:before {
+        content: "1";
+    }
+
+    &.unknown-2:before {
+        content: "Z";
+    }
+
+    &.rituals:before {
+        content: "h";
+    }
+
+    &.ninjutsu:before {
+        content: "i";
+    }
+
+    &.shuji:before {
+        content: "j";
+    }
+
+    &.kata:before {
+        content: "k";
+    }
+
+    &.invocations:before {
+        content: "l";
+    }
+
+    &.kiho:before {
+        content: "m";
+    }
+
+    &.maho:before {
+        content: "n";
+    }
+
+    &.unknown-3:before {
+        content: "p";
+    }
+
+    &.unknown-4:before {
+        content: "o";
+    }
+
+    &.unknown-5:before {
+        content: "q";
+    }
+
+    &.earth:before {
+        content: "e";
+    }
+
+    &.void:before {
+        content: "v";
+    }
+
+    &.water:before {
+        content: "w";
+    }
+
+    &.air:before {
+        content: "a";
+    }
+
+    &.fire:before {
+        content: "f";
+    }
+
+    &.air-2:before {
+        content: "à";
+    }
+
+    &.earth-2:before {
+        content: "á";
+    }
+
+    &.fire-2:before {
+        content: "â";
+    }
+
+    &.void-2:before {
+        content: "ã";
+    }
+
+    &.water-2:before {
+        content: "ä";
+    }
+}
+
+.color-earth {
+    color: #698e6d;
+}
+
+.color-air {
+    color: #866f89;
+}
+
+.color-water {
+    color: #5c838a;
+}
+
+.color-fire {
+    color: #8e6a46;
+}
+
+.color-void {
+    color: #463e3c;
+}
+
+.background-earth {
+    background: #698e6d;
+}
+
+.background-air {
+    background: #866f89;
+}
+
+.background-water {
+    background: #5c838a;
+}
+
+.background-fire {
+    background: #8e6a46;
+}
+
+.background-void {
+    background: #463e3c;
+}

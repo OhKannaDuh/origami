@@ -1,0 +1,32 @@
+<template>
+    <div class="row">
+        <div class="col-12 q-px-xs q-pb-xs">
+            <q-card class="no-border-radius">
+                <q-card-section>
+                    <q-input label="Your Ninjo" v-model="character.ninjo" @blur="update" autogrow />
+                </q-card-section>
+            </q-card>
+        </div>
+    </div>
+</template>
+
+<script lang="ts">
+import { Character as CharacterData } from '@/ts/Data/Character';
+import { defineComponent, PropType, ref } from 'vue';
+
+export default defineComponent({
+    props: {
+        character: {
+            type: Object as PropType<CharacterData>,
+            required: true,
+        },
+    },
+    methods: {
+        valid: () => true,
+        getTitle: () => '06. What does your character long for, and how might this impede their duty?',
+        update() {
+            this.$emit('update');
+        },
+    },
+});
+</script>

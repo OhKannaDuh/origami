@@ -1,0 +1,82 @@
+Kuni Warden School [Monk]
+A number of Kuni who lack the aptitude to become
+shugenja are trained in the tradition of the Kuni War-
+dens. These grim monks maintain the Barracks of the
+Damned, a massive hospital, laboratory, and prison
+that is also their temple. Experts at subduing Tainted
+humans and overcoming sorcery, even without weap-
+ons, many serve at or near the Wall, but some War-
+dens occasionally make their way into the wider world.
+The order sometimes sends its agents to “tend to the
+spiritual needs” of those who have been exposed to
+the corruption of Fu Leng. This can include offering the
+mercy of death, should their charge be fully consumed
+by the Taint.
+Rings: +1 Fire, +1 Void
+Starting Skills (choose four): +1 Command, +1 Mar-
+tial Arts [Melee], +1 Martial Arts [Unarmed], +1 Medi-
+tation, +1 Performance, +1 Theology
+Honor: 34
+Techniques Available: Kihō (), Rituals (), Shūji ()
+Starting Techniques:
+$ Kihō (choose one): Cleansing Spirit, Flame Fist
+$ Rituals (choose one): Cleansing Rite,
+Threshold Barrier
+$ Shūji: Truth Burns through Lies
+Suppressing Blows (School Ability): When you per-
+form an Attack action check using Martial Arts [Melee]
+or Martial Arts [Unarmed], you may spend  as follows:
++: One character per  spent this way who is in range
+of the weapon you used suffers the Silenced condition.
+You can spend a maximum number of  this way up to
+your school rank.
+Starting Outfit: Sanctified robes, concealed armor,
+daishō (kabutowari and wakizashi), calligraphy kit,
+traveling pack.
+CHAPTER 2: HONOR AGAINST DEMONSADVANCE TYPE
+RANK 1
+Scholar Skills Skl. Grp.
+Martial Arts [Melee] Skill
+Martial Arts [Unarmed] Skill
+Meditation Skill
+= Rank 1 Kata  Tech. Grp.
+Courtier’s Resolve  Technique
+The Body Is an Anvil  Technique
+RANK 2
+Martial Skills Skl. Grp.
+Performance Skill
+Sentiment Skill
+Theology Skill
+Rank 1–2 Fire Kihō  Tech. Grp.
+= Crimson Leaves Strike  Technique
+= Coiling Serpent Style  Technique
+RANK 3
+Social Skills Skl. Grp.
+Fitness Skill
+Martial Arts [Unarmed] Skill
+Theology Skill
+Rank 1–3 Earth Kihō  Tech. Grp.
+= Thunderclap Strike  Technique
+Rallying Cry  Technique
+RANK 4
+Martial Skills Skl. Grp.
+Command Skill
+Government Skill
+Skulduggery Skill
+Rank 1–4 Void Shūji  Tech. Grp.
+Bravado  Technique
+Death Touch  Technique
+RANK 5
+Scholar Skills Skl. Grp.
+Fitness Skill
+Martial Arts [Melee] Skill
+Meditation Skill
+Rank 1–5 Void Kihō  Tech. Grp.
+= Striking as Void  Technique
+Sear the Wound  Technique
+RANK 6 Sacred Fist (Mastery Ability): All of
+your kihō gain the following additional
+burst effect:
+If you have 3 or more bonus successes, your
+unarmed attack profiles gain the Sacred qual-
+ity until the end of your next turn.

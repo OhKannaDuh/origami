@@ -1,0 +1,24 @@
+{
+    "timeout": 600,
+    "source": {
+        "directories": [
+            "app"
+        ],
+        "excludes": [
+            "Commands",
+            "Generators"
+        ]
+    },
+    "logs": {
+        "text": "infection-log.txt"
+    },
+    "mutators": {
+        "@default": true,
+        "global-ignoreSourceCodeByRegex": ["assert(.*);"],
+        "@cast": false,
+        "RoundingFamily": false,
+        "CloneRemoval": false,
+        "NullSafeMethodCall": false,
+        "NullSafePropertyCall": false
+    }
+}
