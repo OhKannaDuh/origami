@@ -32,10 +32,8 @@ jobs:
               env:
                   DB_CONNECTION: sqlite
                   DB_DATABASE: database/database.sqlite
-              run: echo "test"
-              # run: php artisan test --parallel --processes=$(nproc) --configuration=phpunit.xml --coverage-xml=/tmp/coverage/coverage-xml --coverage-html=/tmp/coverage --log-junit=/tmp/coverage/junit.xml --stop-on-failure
+              run: php artisan test --parallel --processes=$(nproc) --configuration=phpunit.xml --coverage-xml=/tmp/coverage/coverage-xml --coverage-html=/tmp/coverage --log-junit=/tmp/coverage/junit.xml --stop-on-failure
             - name: Static Analysis (PHPStan)
-              run: echo "stan"
-              # run: vendor/bin/phpstan --memory-limit=2G
+              run: vendor/bin/phpstan --memory-limit=2G
             - name: Infection tets (PHP infection)
               run: vendor/bin/infection --only-covered --min-covered-msi=100 -j$(nproc) --ignore-msi-with-no-mutations --coverage=tests/coverage --skip-initial-tests --test-framework-options="--configuration=phpunit.xml"
