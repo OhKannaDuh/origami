@@ -28,11 +28,5 @@ jobs:
               run: |
                   mkdir -p database
                   touch database/database.sqlite
-            - name: Execute tests (Unit and Feature tests) via PHPUnit
-              env:
-                  DB_CONNECTION: sqlite
-                  DB_DATABASE: database/database.sqlite
-              run: echo "test"
-              # run: php artisan test --parallel --processes=$(nproc) --configuration=phpunit.xml --coverage-xml=/tmp/coverage/coverage-xml --coverage-html=/tmp/coverage --log-junit=/tmp/coverage/junit.xml --stop-on-failure
             - name: Static Analysis (PHPStan)
               run: vendor/bin/phpstan --memory-limit=2G
