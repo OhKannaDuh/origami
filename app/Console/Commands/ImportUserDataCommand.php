@@ -43,8 +43,7 @@ final class ImportUserDataCommand extends Command
 
         foreach ($data['characters'] as $datum) {
             $character = $characters->getByUuid($datum['uuid']);
-
-            $this->output->writeln("  Character: {$datum['uuid']}");
+            $this->output->writeln("  Character: {$datum['uuid']} - {$character->name}");
 
             $characterAdvantages = [];
             foreach ($datum['advantages'] as $advantage) {
@@ -61,14 +60,14 @@ final class ImportUserDataCommand extends Command
                 $characterTechniques[] = $techniques->getByKey($technique['key'])->getKey();
             }
 
-            $this->output->writeln('    Attaching Advantages');
+            $this->output->writeln('    Attaching ' . count($characterAdvantages) . ' Advantage(s)');
             $character->advantages()->attach($characterAdvantages);
 
-            $this->output->writeln('    Attaching Disadvantages');
-            $character->advantages()->attach($characterDisadvantages);
+            $this->output->writeln('    Attaching ' . count($characterAdvantages) . ' Disadvantage(s)');
+            $character->disadvantages()->attach($characterDisadvantages);
 
-            $this->output->writeln('    Attaching Techniques');
-            $character->advantages()->attach($characterTechniques);
+            $this->output->writeln('    Attaching ' . count($characterAdvantages) . ' Technique(s)');
+            $character->techniques()->attach($characterTechniques);
         }
 
         $this->output->writeln('Importing Campaigns');
