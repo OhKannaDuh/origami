@@ -17,8 +17,11 @@ jobs:
                   name: 'Generate application key'
                   command: php artisan key:generate
             - run:
-                  name: 'Running unit tests (paratest)'
-                  command: php artisan test --parallel --processes=$(nproc) --configuration=phpunit.xml --stop-on-failure
+                  name: 'Unit tests (paratest)'
+                  command: php artisan test --parallel --processes=$(nproc) --configuration=phpunit.xml --coverage-xml=/tmp/coverage/coverage-xml --coverage-html=/tmp/coverage --log-junit=/tmp/coverage/junit.xml
+            - run:
+                  name: 'Static Analysis (PHPStan)'
+                  command: vendor/bin/phpstan --memory-limit=2G
 
 workflows:
     version: 2
