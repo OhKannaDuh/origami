@@ -29,8 +29,8 @@ export default defineComponent({
             email: string;
             password: string;
         }>({
-            email: 'a@b.com',
-            password: 'password',
+            email: '',
+            password: '',
         });
 
         const errors = ref<{ [key: string]: string }>({});
