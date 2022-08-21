@@ -7,8 +7,18 @@ jobs:
 
         steps:
             - checkout
-            - run: composer install -n --prefer-dist
-            - run: php artisan test --parallel --processes=$(nproc) --configuration=phpunit.xml --stop-on-failure
+            -run:
+              name: 'Create .env'
+              command: php -r "file_exists('.env') || copy('.env.example', '.env');"
+            - run:
+              name: 'Install composer dependencies'
+              command: composer install -n --prefer-dist
+            - run:
+              name: "Generate application key"
+              command: php artisan key:generate
+            - run:
+              name: 'Running unit tests (paratest)'
+              command: php artisan test --parallel --processes=$(nproc) --configuration=phpunit.xml --stop-on-failure
 
 workflows:
     version: 2
