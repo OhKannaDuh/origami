@@ -30,7 +30,10 @@ final class CampaignRepository extends BaseRepository implements CampaignReposit
 
     public function getByUuid(string $uuid, array $columns = ['*']): Campaign
     {
-        $campaign = $this->execute(__FUNCTION__, fn(): Model => $this->getModel()->query()->where('uuid', $uuid)->firstOrFail($columns));
+        $campaign = $this->execute(__FUNCTION__, fn(): Model => $this->getModel()->query()->where('uuid', $uuid)->firstOrFail($columns), [
+            'uuid' => $uuid,
+        ]);
+
         assert($campaign instanceof Campaign);
 
         return $campaign;

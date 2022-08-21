@@ -30,7 +30,10 @@ final class CharacterRepository extends BaseRepository implements CharacterRepos
 
     public function getByUuid(string $uuid, array $columns = ['*']): Character
     {
-        $character = $this->execute(__FUNCTION__, fn(): Model => $this->getModel()->query()->where('uuid', $uuid)->firstOrFail($columns));
+        $character = $this->execute(__FUNCTION__, fn(): Model => $this->getModel()->query()->where('uuid', $uuid)->firstOrFail($columns), [
+            'uuid' => $uuid,
+        ]);
+
         assert($character instanceof Character);
 
         return $character;
