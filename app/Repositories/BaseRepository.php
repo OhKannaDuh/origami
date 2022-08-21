@@ -143,7 +143,9 @@ abstract class BaseRepository implements RepositoryInterface
 
     public function getById(string|int $id): Model
     {
-        $model = $this->execute(__FUNCTION__, fn(): Model|null => $this->getModel()->query()->find($id));
+        $model = $this->execute(__FUNCTION__, fn(): Model|null => $this->getModel()->query()->find($id), [
+            'id' => $id,
+        ]);
         assert($model instanceof Model);
 
         return $model;
