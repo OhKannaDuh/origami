@@ -7,14 +7,14 @@ jobs:
 
         steps:
             - checkout
-            -run:
+            - run:
               name: 'Create .env'
               command: php -r "file_exists('.env') || copy('.env.example', '.env');"
             - run:
               name: 'Install composer dependencies'
               command: composer install -n --prefer-dist
             - run:
-              name: "Generate application key"
+              name: 'Generate application key'
               command: php artisan key:generate
             - run:
               name: 'Running unit tests (paratest)'
