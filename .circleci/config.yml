@@ -6,6 +6,9 @@ jobs:
             # - image: cimg/mysql:8.0.20-ram
 
         steps:
+            - run:
+                  name: 'Installing extensions'
+                  command: pecl install xdebug
             - checkout
             - run:
                   name: 'Create .env'
