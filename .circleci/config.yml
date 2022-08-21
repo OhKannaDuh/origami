@@ -1,0 +1,17 @@
+version: 2
+jobs:
+    test:
+        docker:
+            - image: cimg/php:8.1-browsers
+            - image: circleci/mysql:8.0.20-ram
+
+        steps:
+            - checkout
+            - run: composer install -n --prefer-dist
+            - run php artisan test --parallel --processes=$(nproc) --configuration=phpunit.xml
+
+workflows:
+    version: 2
+    workflow:
+        jobs:
+            - test
