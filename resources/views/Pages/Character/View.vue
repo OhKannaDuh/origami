@@ -224,8 +224,7 @@ export default defineComponent({
             mobile: 'conflict',
             desktop: {
                 left: 'skills',
-                // right: 'advantages-and-disadvantages',
-                right: 'advancements',
+                right: 'advantages-and-disadvantages',
             },
         });
 
