@@ -8,7 +8,7 @@ jobs:
         steps:
             - run:
                   name: 'Installing extensions'
-                  command: pecl install xdebug
+                  command: pecl install pcov
             - checkout
             - run:
                   name: 'Create .env'
