@@ -16,7 +16,9 @@ final class ItemController extends Controller
     protected function all(ItemRepositoryInterface $items): JsonResponse
     {
         return new JsonResponse([
-            'items' => $items->all(),
+            'items' => $items->all()->load([
+                'itemSubtype.itemType',
+            ]),
         ]);
     }
 }

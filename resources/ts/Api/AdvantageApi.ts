@@ -1,9 +1,7 @@
-import axios from 'axios';
+import { Api } from './Api';
 
-export class AdvantageApi {
+export class AdvantageApi extends Api {
     static all(): Promise<App.Models.Character.Advantage[]> {
-        return new Promise<App.Models.Character.Advantage[]>((resolve) => {
-            axios.get('/api/advantages/all').then((response) => resolve(response.data.advantages));
-        });
+        return Api.getAll<App.Models.Character.Advantage>('advantages');
     }
 }

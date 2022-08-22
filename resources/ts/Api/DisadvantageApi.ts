@@ -1,9 +1,8 @@
 import axios from 'axios';
+import { Api } from './Api';
 
-export class DisadvantageApi {
+export class DisadvantageApi extends Api {
     static all(): Promise<App.Models.Character.Disadvantage[]> {
-        return new Promise<App.Models.Character.Disadvantage[]>((resolve) => {
-            axios.get('/api/disadvantages/all').then((response) => resolve(response.data.disadvantages));
-        });
+        return Api.getAll<App.Models.Character.Disadvantage>('disadvantages');
     }
 }

@@ -13,7 +13,9 @@ final class AdvantageController extends Controller
     protected function all(AdvantageRepositoryInterface $advantages): JsonResponse
     {
         return new JsonResponse([
-            'advantages' => $advantages->all(),
+            'advantages' => $advantages->all()->load([
+                'advantageType'
+            ]),
         ]);
     }
 }
