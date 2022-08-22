@@ -19,7 +19,7 @@ jobs:
                   name: 'Generate application key'
                   command: php artisan key:generate
             - run:
-                  name: 'Unit tests (paratest)'
+                  name: 'Unit tests (PHPUnit)'
                   command: vendor/bin/phpunit --configuration=phpunit.xml --coverage-xml=/tmp/coverage/coverage-xml --coverage-html=/tmp/coverage --log-junit=/tmp/coverage/junit.xml
             - run:
                   name: 'Static Analysis (PHPStan)'
