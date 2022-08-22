@@ -40,7 +40,10 @@ final class ConflictControllerTest extends TestCase
                 ->assertInertia(function (AssertableInertia $assert) {
                     $assert->component('Campaign/Conflict');
                     $assert->has('campaignData');
-                    self::assertIsArray($assert->toArray()['props']['campaignData']);
+
+                    $campaignData = $assert->toArray()['props']['campaignData'];
+                    self::assertIsArray($campaignData);
+                    self::assertArrayHasKey('characters', $campaignData);
                 });
     }
 

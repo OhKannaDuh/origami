@@ -30,12 +30,25 @@ final class CharacterRepositoryTest extends RepositoryTestCase
     }
 
 
-    public function testGetByUuidd(): void
+    public function testGetByUuidd1(): void
     {
         /** @var CharacterRepository $repository */
         $repository =  App::make(CharacterRepository::class);
         $model = $repository->import($this->getModelData());
 
         self::assertTrue($repository->getByUuid($model->uuid)->is($model));
+    }
+
+
+    public function testGetByUuidd2(): void
+    {
+        $one = Character::factory()->create();
+        $two = Character::factory()->create();
+
+        /** @var CharacterRepository $repository */
+        $repository =  App::make(CharacterRepository::class);
+
+        self::assertTrue($repository->getByUuid($one->uuid)->is($one));
+        self::assertTrue($repository->getByUuid($two->uuid)->is($two));
     }
 }
