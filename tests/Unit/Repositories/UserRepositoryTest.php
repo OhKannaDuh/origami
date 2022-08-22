@@ -46,4 +46,17 @@ final class UserRepositoryTest extends RepositoryTestCase
             'password',
         ];
     }
+
+
+    public function testCreatesApiToken(): void
+    {
+        $repository = $this->getRepository();
+        $modelData = $this->getModelData();
+        $data = $modelData + $this->getAdditionalCreateData();
+        $model = $repository->create($data);
+
+        assert($model instanceof User);
+
+        self::assertRelationshipCount(1, $model, 'tokens');
+    }
 }
