@@ -10,7 +10,6 @@ use App\Models\Character\Character;
 use App\Models\Character\Technique;
 use App\Models\Core\Campaign;
 use App\Models\User;
-use Doctrine\DBAL\Driver\Mysqli\Initializer\Charset;
 use Illuminate\Support\Arr;
 use Tests\Unit\Actions\ActionTestCase;
 

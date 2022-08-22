@@ -1,0 +1,35 @@
+version: 2
+jobs:
+    test:
+        docker:
+            - image: cimg/php:8.1-browsers
+
+        steps:
+            - run:
+                  name: 'Installing extensions'
+                  command: sudo pecl install pcov
+            - checkout
+            - run:
+                  name: 'Create .env'
+                  command: php -r "file_exists('.env') || copy('.env.example', '.env');"
+            - run:
+                  name: 'Install composer dependencies'
+                  command: composer install -n --prefer-dist
+            - run:
+                  name: 'Generate application key'
+                  command: php artisan key:generate
+            - run:
+                  name: 'Unit tests (PHPUnit)'
+                  command: vendor/bin/phpunit --configuration=phpunit.xml --coverage-xml=/tmp/coverage/coverage-xml --coverage-html=/tmp/coverage --log-junit=/tmp/coverage/junit.xml
+            - run:
+                  name: 'Static Analysis (PHPStan)'
+                  command: vendor/bin/phpstan --memory-limit=2G
+            - run:
+                  name: 'Infection tests (Infection PHP)'
+                  command: vendor/bin/infection --only-covered --min-covered-msi=100 -j$(nproc) --ignore-msi-with-no-mutations --test-framework-options="--configuration=phpunit.xml" --coverage=/tmp/coverage --skip-initial-tests --no-progress --git-diff-filter=AM
+
+workflows:
+    version: 2
+    workflow:
+        jobs:
+            - test

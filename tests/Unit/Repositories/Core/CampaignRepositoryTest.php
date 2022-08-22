@@ -30,12 +30,25 @@ final class CampaignRepositoryTest extends RepositoryTestCase
     }
 
 
-    public function testGetByUuidd(): void
+    public function testGetByUuidd1(): void
     {
         /** @var CampaignRepository $repository */
         $repository =  App::make(CampaignRepository::class);
         $model = $repository->import($this->getModelData());
 
         self::assertTrue($repository->getByUuid($model->uuid)->is($model));
+    }
+
+
+    public function testGetByUuidd2(): void
+    {
+        $one = Campaign::factory()->create();
+        $two = Campaign::factory()->create();
+
+        /** @var CampaignRepository $repository */
+        $repository =  App::make(CampaignRepository::class);
+
+        self::assertTrue($repository->getByUuid($one->uuid)->is($one));
+        self::assertTrue($repository->getByUuid($two->uuid)->is($two));
     }
 }

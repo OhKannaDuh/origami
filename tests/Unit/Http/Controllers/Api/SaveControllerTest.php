@@ -186,6 +186,8 @@ final class SaveControllerTest extends TestCase
                 ],
             ], $this->character->advancements);
 
+            self::assertSame(2, $this->character->school_rank);
+
             self::assertSame(5, $this->character->stats['rings']['air']);
             self::assertSame(5, $this->character->stats['rings']['earth']);
             self::assertSame(5, $this->character->stats['rings']['fire']);

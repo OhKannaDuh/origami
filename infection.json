@@ -1,5 +1,5 @@
 {
-    "timeout": 600,
+    "timeout": 140,
     "source": {
         "directories": [
             "app"
