@@ -14,7 +14,9 @@ final class DisadvantageController extends Controller
     protected function all(DisadvantageRepositoryInterface $disadvantages): JsonResponse
     {
         return new JsonResponse([
-            'disadvantages' => $disadvantages->all(),
+            'disadvantages' => $disadvantages->all()->load([
+                'disadvantageType'
+            ]),
         ]);
     }
 }

@@ -1,9 +1,7 @@
-import axios from 'axios';
+import { Api } from './Api';
 
-export class TechniqueApi {
+export class TechniqueApi extends Api {
     static all(): Promise<App.Models.Character.Technique[]> {
-        return new Promise<App.Models.Character.Technique[]>((resolve) => {
-            axios.get('/api/techniques/all').then((response) => resolve(response.data.techniques));
-        });
+        return Api.getAll<App.Models.Character.Technique>('techniques');
     }
 }
