@@ -15,6 +15,15 @@ final class DisadvantageControllerTest extends TestCase
         Disadvantage::factory(45)->create();
 
         $this->get(route('api.disadvantages.all'))
-            ->assertJson(fn(AssertableJson $json) => $json->has('disadvantages', 45));
+            ->assertJson(function (AssertableJson $json) {
+                $json->has('disadvantages', 45);
+                $disadvantages = $json->toArray()['disadvantages'];
+                self::assertIsArray($disadvantages);
+
+                foreach ($disadvantages as $disadvantage) {
+                    self::assertIsArray($disadvantage);
+                    self::assertArrayHasKey('disadvantage_type', $disadvantage);
+                }
+            });
     }
 }
