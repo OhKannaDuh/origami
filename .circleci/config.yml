@@ -16,6 +16,9 @@ jobs:
                   name: 'Install composer dependencies'
                   command: composer install -n --prefer-dist
             - run:
+                  name: 'Coding standard check (PHPCS)'
+                  command: vendor/bin/phpcs
+            - run:
                   name: 'Generate application key'
                   command: php artisan key:generate
             - run:

@@ -5,8 +5,40 @@
     <rule ref="PSR2"/>
     <rule ref="PSR12"/>
 
+    <exclude-pattern>*.blade.php</exclude-pattern>
+    <exclude-pattern>tests/coverage</exclude-pattern>
+
     <file>app</file>
     <file>config</file>
     <file>database</file>
     <file>tests</file>
+
+    <rule ref="Generic.Files.LineLength">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PSR12.Classes.OpeningBraceSpace">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Generic.Arrays.ArrayIndent" />
+
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
+
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="2" />
+            <property name="spacingBeforeFirst" value="2" />
+            <property name="spacingAfterLast" value="0" />
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Formatting.SpaceAfterCast" />
+
+    <rule ref="Squiz.WhiteSpace.MemberVarSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="spacingBeforeFirst" value="0" />
+        </properties>
+    </rule>
 </ruleset>

@@ -21,6 +21,8 @@ use Illuminate\Database\Seeder;
 
 abstract class SchoolSeeder extends Seeder
 {
+
+
     public function __construct(
         protected SourceBook|null $sourceBook = null
     ) {
@@ -54,20 +56,20 @@ abstract class SchoolSeeder extends Seeder
 
         $school = School::query()->create(
             [
-            'source_book_id' => $this->getSourceBookId(),
-            'key' => StringHelper::key($name),
-            'name' => $name,
-            'ring_one_id' => $ringOne->getKey(),
-            'ring_two_id' => $ringTwo->getKey(),
-            'starting_skill_amount' => $startingSkillAmount,
-            'starting_skills' => $startingSkills->toArray(),
-            'starting_techniques' => $startingTechniques->toArray(),
-            'starting_outfit' => $startingOutfit->toArray(),
-            'curriculum' => $curriculum->toArray(),
-            'school_ability_id' => $schoolAbility->getKey(),
-            'mastery_ability_id' => $masteryAbility->getKey(),
-            'family_id' => $family?->getKey(),
-            'honor' => $honor,
+                'source_book_id' => $this->getSourceBookId(),
+                'key' => StringHelper::key($name),
+                'name' => $name,
+                'ring_one_id' => $ringOne->getKey(),
+                'ring_two_id' => $ringTwo->getKey(),
+                'starting_skill_amount' => $startingSkillAmount,
+                'starting_skills' => $startingSkills->toArray(),
+                'starting_techniques' => $startingTechniques->toArray(),
+                'starting_outfit' => $startingOutfit->toArray(),
+                'curriculum' => $curriculum->toArray(),
+                'school_ability_id' => $schoolAbility->getKey(),
+                'mastery_ability_id' => $masteryAbility->getKey(),
+                'family_id' => $family?->getKey(),
+                'honor' => $honor,
             ]
         );
 
@@ -157,12 +159,12 @@ abstract class SchoolSeeder extends Seeder
     {
         return Technique::query()->create(
             [
-            'source_book_id' => $this->getSourceBookId(),
-            'technique_subtype_id' => $type->getKey(),
-            'key' => StringHelper::key($name),
-            'name' => $name,
-            'rank' => $rank,
-            'description' => '_',
+                'source_book_id' => $this->getSourceBookId(),
+                'technique_subtype_id' => $type->getKey(),
+                'key' => StringHelper::key($name),
+                'name' => $name,
+                'rank' => $rank,
+                'description' => '_',
             ]
         );
     }
