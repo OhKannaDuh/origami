@@ -28,6 +28,7 @@ trait HasRepository
         assert(is_string($prefix));
 
         if (StringHelper::startsWith($class, $prefix)) {
+
             $class = StringHelper::after($class, $prefix);
         }
 
