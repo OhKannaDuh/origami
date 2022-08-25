@@ -50,7 +50,6 @@ final class AddProprtyDocblockCommand extends Command
             $model = App::make($class);
 
             if (!$model instanceof Model) {
-
                 continue;
             }
 

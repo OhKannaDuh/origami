@@ -15,7 +15,6 @@ final class TechniquesAvailableParser
             $line = StringHelper::transliterate($line);
 
             if (preg_match('/Techniques Available: (.*)/', $line) === 1) {
-
                 $line = StringHelper::after($line, ': ');
                 $line = StringHelper::replace('(?)', '', $line);
                 $techniques = explode(', ', $line);
