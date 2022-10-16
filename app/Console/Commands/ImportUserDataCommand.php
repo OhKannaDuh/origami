@@ -10,6 +10,8 @@ use App\Repositories\Core\CampaignRepositoryInterface;
 use App\Repositories\UserRepositoryInterface;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Env;
+use Illuminate\Support\Facades\App;
 
 final class ImportUserDataCommand extends Command
 {
@@ -92,6 +94,14 @@ final class ImportUserDataCommand extends Command
 
             $this->output->writeln('    Attaching Users');
             $campaign->users()->attach($campaignUsers);
+        }
+
+        if (!App::environment(['production'])) {
+            foreach ($characters->all() as $character) {
+                $character->update([
+                    'user_id' => 1,
+                ]);
+            }
         }
 
 

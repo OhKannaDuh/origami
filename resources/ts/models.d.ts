@@ -13,6 +13,14 @@ declare namespace App.Models.Core {
         updated_at: string | null;
     }
 
+    export interface DisadvantageType {
+        id: number;
+        key: string;
+        name: string;
+        created_at: string | null;
+        updated_at: string | null;
+    }
+
     export interface SchoolType {
         id: number;
         key: string;
@@ -44,11 +52,6 @@ declare namespace App.Models.Core {
         users_count?: number | null;
     }
 
-    export interface CharacterAdvantage {
-        character_id: number;
-        advantage_id: number;
-    }
-
     export interface ItemType {
         id: number;
         key: string;
@@ -64,11 +67,6 @@ declare namespace App.Models.Core {
         description: string;
         created_at: string | null;
         updated_at: string | null;
-    }
-
-    export interface SchoolSchoolType {
-        school_id: number;
-        school_type_id: number;
     }
 
     export interface SourceBook {
@@ -95,19 +93,12 @@ declare namespace App.Models.Core {
         disadvantages_count?: number | null;
     }
 
-    export interface CharacterDisadvantage {
-        character_id: number;
-        disadvantage_id: number;
-    }
-
-    export interface CampaignCharacter {
-        campaign_id: number;
-        character_id: number;
-    }
-
-    export interface CampaignUser {
-        campaign_id: number;
-        user_id: number;
+    export interface AdvantageType {
+        id: number;
+        key: string;
+        name: string;
+        created_at: string | null;
+        updated_at: string | null;
     }
 
     export interface ItemSubtype {
@@ -118,11 +109,6 @@ declare namespace App.Models.Core {
         created_at: string | null;
         updated_at: string | null;
         item_type?: App.Models.Core.ItemType | null;
-    }
-
-    export interface SchoolTechniqueType {
-        school_id: number;
-        technique_type_id: number;
     }
 
     export interface Skill {
@@ -145,6 +131,7 @@ declare namespace App.Models.Core {
         updated_at: string | null;
         technique_type?: App.Models.Core.TechniqueType | null;
     }
+
 }
 
 declare namespace App.Models {
@@ -164,6 +151,7 @@ declare namespace App.Models {
         owned_campaigns_count?: number | null;
         campaigns_count?: number | null;
     }
+
 }
 
 declare namespace App.Models.Character {
@@ -184,6 +172,7 @@ declare namespace App.Models.Character {
         stats: CharacterStats;
         created_at: string | null;
         updated_at: string | null;
+        user?: App.Models.User | null;
         clan?: App.Models.Character.Clan | null;
         family?: App.Models.Character.Family | null;
         school?: App.Models.Character.School | null;
@@ -195,11 +184,6 @@ declare namespace App.Models.Character {
         disadvantages_count?: number | null;
         techniques_count?: number | null;
         campaigns_count?: number | null;
-    }
-
-    export interface CharacterTechnique {
-        character_id: number;
-        technique_id: number;
     }
 
     export interface Item {
@@ -224,18 +208,11 @@ declare namespace App.Models.Character {
         key: string;
         name: string;
         rank: number;
-        description: string;
+        description: TechniqueDescription;
         created_at: string | null;
         updated_at: string | null;
+        source_book?: App.Models.Core.SourceBook | null;
         technique_subtype?: App.Models.Core.TechniqueSubtype | null;
-    }
-
-    export interface DisadvantageType {
-        id: number;
-        key: string;
-        name: string;
-        created_at: string | null;
-        updated_at: string | null;
     }
 
     export interface Clan {
@@ -263,7 +240,8 @@ declare namespace App.Models.Character {
         name: string;
         created_at: string | null;
         updated_at: string | null;
-        advantage_type?: App.Models.Character.AdvantageType | null;
+        source_book?: App.Models.Core.SourceBook | null;
+        advantage_type?: App.Models.Core.AdvantageType | null;
         ring?: App.Models.Core.Ring | null;
     }
 
@@ -298,7 +276,7 @@ declare namespace App.Models.Character {
         ring_two_id: number;
         starting_skill_amount: number;
         starting_skills: string;
-        starting_techniques: { [key: string]: StartingTechniqueData };
+        starting_techniques: {[key: string]: StartingTechniqueData};
         starting_outfit: StartingOutfitData[];
         curriculum: SchoolCurriculum;
         school_ability_id: number;
@@ -318,14 +296,6 @@ declare namespace App.Models.Character {
         school_types_count?: number | null;
     }
 
-    export interface AdvantageType {
-        id: number;
-        key: string;
-        name: string;
-        created_at: string | null;
-        updated_at: string | null;
-    }
-
     export interface Disadvantage {
         id: number;
         source_book_id: number;
@@ -335,7 +305,9 @@ declare namespace App.Models.Character {
         name: string;
         created_at: string | null;
         updated_at: string | null;
-        disadvantage_type?: App.Models.Character.DisadvantageType | null;
+        source_book?: App.Models.Core.SourceBook | null;
+        disadvantage_type?: App.Models.Core.DisadvantageType | null;
         ring?: App.Models.Core.Ring | null;
     }
+
 }

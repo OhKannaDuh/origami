@@ -250,3 +250,16 @@ declare interface Combatant {
     composure: number;
     strife: number;
 }
+
+declare interface TechniqueOpportunity {
+    cost: string;
+    effect: string;
+}
+
+declare interface TechniqueDescription {
+    activation: string;
+    effect: string | null;
+    enhancement: string | null;
+    burst: string | null;
+    opportunities: TechniqueOpportunity;
+}

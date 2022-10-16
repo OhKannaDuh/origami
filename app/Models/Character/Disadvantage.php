@@ -5,6 +5,7 @@ namespace App\Models\Character;
 use App\Behaviours\HasRepository;
 use App\Models\Core\DisadvantageType;
 use App\Models\Core\Ring;
+use App\Models\Core\SourceBook;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -20,6 +21,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
+ * @property SourceBook $sourceBook
  * @property DisadvantageType $disadvantageType
  * @property Ring $ring
  */
@@ -35,6 +37,12 @@ final class Disadvantage extends Model
         'key',
         'name',
     ];
+
+
+    public function sourceBook(): BelongsTo
+    {
+        return $this->belongsTo(SourceBook::class);
+    }
 
 
     public function disadvantageType(): BelongsTo

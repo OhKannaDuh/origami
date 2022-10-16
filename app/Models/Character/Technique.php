@@ -3,6 +3,7 @@
 namespace App\Models\Character;
 
 use App\Behaviours\HasRepository;
+use App\Models\Core\SourceBook;
 use App\Models\Core\TechniqueSubtype;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -16,10 +17,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string $key
  * @property string $name
  * @property int $rank
- * @property string $description
+ * @property array $description
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
+ * @property SourceBook $sourceBook
  * @property TechniqueSubtype $techniqueSubtype
  */
 final class Technique extends Model
@@ -35,6 +37,16 @@ final class Technique extends Model
         'rank',
         'description',
     ];
+
+    protected $casts = [
+        'description' => 'json',
+    ];
+
+
+    public function sourceBook(): BelongsTo
+    {
+        return $this->belongsTo(SourceBook::class);
+    }
 
 
     public function techniqueSubtype(): BelongsTo

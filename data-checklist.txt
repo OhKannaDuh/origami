@@ -1,0 +1,8 @@
+Core                [X]
+Emerald Empire      [X]
+Shadowlands         [X]
+Courts of Stone     [X]
+Path of Waves       [ ]
+Celestial Realms    [ ]
+Fields of Victory   [ ]
+Writ of the Wilds   [ ]

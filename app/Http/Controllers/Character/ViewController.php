@@ -47,7 +47,8 @@ final class ViewController extends Controller
             'family',
             'school.availableTechniqueTypes',
             'school.availableTechniqueSubtypes',
-            'techniques',
+            'techniques.techniqueSubtype',
+            'techniques.techniqueSubtype.techniqueType',
         ]);
     }
 }

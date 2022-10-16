@@ -5,6 +5,7 @@ namespace App\Generators;
 use App\Models\Character\Character;
 use App\Models\Character\Item;
 use App\Models\Character\School;
+use App\Models\Character\Technique;
 use Based\TypeScript\Definitions\TypeScriptProperty;
 use Doctrine\DBAL\Schema\Column;
 
@@ -24,7 +25,10 @@ final class ModelGenerator extends \Based\TypeScript\Generators\ModelGenerator
         ],
         Item::class => [
             'data' => 'WeaponData | ArmorData',
-        ]
+        ],
+        Technique::class => [
+            'description' => 'TechniqueDescription',
+        ],
     ];
 
 
