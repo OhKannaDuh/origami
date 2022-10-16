@@ -2,8 +2,9 @@
 
 namespace Database\Seeders\SourceBooks\CourtsOfStone\Schools;
 
-use App\Models\Character\Family;
-use App\Models\Core\Ring;
+use App\Models\Core\SourceBook;
+use App\Repositories\Character\FamilyRepositoryInterface;
+use App\Repositories\Core\RingRepositoryInterface;
 use Database\Seeders\Helpers\Curriculum;
 use Database\Seeders\Helpers\CurriculumRank;
 use Database\Seeders\Helpers\StartingOutfit;
@@ -11,18 +12,23 @@ use Database\Seeders\Helpers\StartingSkills;
 use Database\Seeders\Helpers\StartingTechniques;
 use Database\Seeders\SourceBooks\SchoolSeeder;
 
-final class CraneSeeder extends SchoolSeeder
+final class DaidojiSpymasterSchoolSeeder extends SchoolSeeder
 {
 
 
-    public function run(): void
-    {
+    public function run(
+        SourceBook $sourceBook,
+        FamilyRepositoryInterface $families,
+        RingRepositoryInterface $rings,
+    ): void {
+        $this->sourceBook = $sourceBook;
+
         $this->create(
             'Daidoji Spymaster School',
-            Family::query()->where('key', 'daidoji')->first(['id']),
+            $families->getByKey('daidoji'),
             ['courtier', 'shinobi'],
-            Ring::query()->where('key', 'air')->first(['id']),
-            Ring::query()->where('key', 'earth')->first(['id']),
+            $rings->getByKey('air'),
+            $rings->getByKey('earth'),
             5,
             (new StartingSkills())
                 ->withKey('command')
@@ -47,21 +53,15 @@ final class CraneSeeder extends SchoolSeeder
                     'striking_as_earth',
                 ]),
             'Incisive Insight',
-            (new StartingOutfit())
-            ->withItem('traveling_clothes')
-            ->withItem('ceremonial_clothes')
-                ->withItem('wakizashi')
-                ->withItem('sokutoki')
-                ->withItem('disguise_kit')
-                ->withItem('opening_and_closing_tools')
-                ->withTravelingPack(),
+            // Traveling clothes, ceremonial clothes, wakizashi, sokutoki, disguise kit, opening and closing kit
+            (new StartingOutfit()),
             (new Curriculum())
                 ->withRank(1, (new CurriculumRank())
                     ->withSkillGroup('trade')
                     ->withSkill('command')
                     ->withSkill('culture')
                     ->withSkill('government')
-                    ->withTechniqueSubtype('air_shuji', 1)
+                    ->withTechniqueSubtype('air_shuji', 1, 1)
                     ->withTechnique('lady_dojis_decree', true)
                     ->withTechnique('weight_of_duty'))
                 ->withRank(2, (new CurriculumRank())
@@ -94,9 +94,9 @@ final class CraneSeeder extends SchoolSeeder
                     ->withSkill('martial_arts_melee')
                     ->withSkill('tactics')
                     ->withTechniqueSubtype('earth_shuji', 1, 5)
-                    ->withTechnique('noxious_cloud')
+                    ->withTechnique('noxious_cloud', true)
                     ->withTechnique('bend_with_the_storm')),
-            'Spy Network'
+            'Spy Network',
         );
     }
 }

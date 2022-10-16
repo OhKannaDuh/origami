@@ -13,9 +13,14 @@ final class TechniqueSeeder extends Seeder
 
     public function run(SourceBook $sourceBook): void
     {
-        $this->execute(Techniques\RitualSeeder::class, 'rituals', $sourceBook);
-
+        $this->execute(Techniques\CloseCombatKataSeeder::class, 'close_combat_kata', $sourceBook);
         $this->execute(Techniques\NinjutsuSeeder::class, 'ninjutsu', $sourceBook);
+        $this->execute(Techniques\RitualSeeder::class, 'rituals', $sourceBook);
+        $this->execute(Techniques\AirShujiSeeder::class, 'air_shuji', $sourceBook);
+        $this->execute(Techniques\EarthShujiSeeder::class, 'earth_shuji', $sourceBook);
+        $this->execute(Techniques\FireShujiSeeder::class, 'fire_shuji', $sourceBook);
+        $this->execute(Techniques\WaterShujiSeeder::class, 'water_shuji', $sourceBook);
+        $this->execute(Techniques\VoidShujiSeeder::class, 'void_shuji', $sourceBook);
     }
 
 

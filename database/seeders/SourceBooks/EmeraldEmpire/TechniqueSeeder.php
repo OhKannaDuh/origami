@@ -2,8 +2,6 @@
 
 namespace Database\Seeders\SourceBooks\EmeraldEmpire;
 
-use App\Models\Character\Clan;
-use App\Models\Character\Family;
 use App\Models\Character\Technique;
 use App\Models\Core\Ring;
 use App\Models\Core\Skill;

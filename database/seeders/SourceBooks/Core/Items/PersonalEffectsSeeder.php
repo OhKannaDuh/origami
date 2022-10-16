@@ -52,7 +52,6 @@ final class PersonalEffectsSeeder extends ItemSeeder
         $this->create('Flint and Tinder', 1, new Cost());
 
         // Schools
-        $this->create('Makeup Kit', 1, new Cost());
         $this->create('Scroll Satchel', 1, new Cost());
         $this->create('Quiver of Bolts', 1, new Cost());
         $this->create('Set of Glass Vials', 1, new Cost());

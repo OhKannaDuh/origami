@@ -32,13 +32,8 @@ final class ItemSubtypeSeeder extends Seeder
             ],
             [
                 'item_type_id' => $itemTypes->getByKey('item_pattern')->getKey(),
-                'key' => 'weapon_pattern',
-                'name' => 'Weapon Pattern',
-            ],
-            [
-                'item_type_id' => $itemTypes->getByKey('item_pattern')->getKey(),
-                'key' => 'armor_pattern',
-                'name' => 'Armor Pattern',
+                'key' => 'item_pattern',
+                'name' => 'Item Pattern',
             ],
         ]);
     }

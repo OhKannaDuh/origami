@@ -1,83 +1,78 @@
-Moto Avenger School [Shugenja]
-The Moto revere life, death, and the passage between
-the two. Life comes from the meeting of earth and
-sky as the rain falls to the plains; at death, the two are
-divided, for the body returns to the soil while the spirit
-returns to the sky. Moto spiritualists work to guide spir-
-its to their proper place, that they may return to the
-eternal cycle, keeping the cosmos in balance. Howev-
-er, some beings defy the cycle through heresies such as
-undeath—and Moto Avengers are specialists trained to
-rectify such perversions of the natural order. The many
-Moto who have became Tainted within the Shadow-
-lands have drawn Avengers from the distant corners of
-the Moto lands, that they might destroy these abom-
-inations and free the spirits of their fallen comrades.
-Rings: +1 Air, +1 Earth
-Starting Skills (choose three): +1 Courtesy, +1 Cul-
-ture, +1 Martial Arts [Melee], +1 Sentiment, +1 Surviv-
-al, +1 Theology
-Honor: 44
-Techniques Available: Air and Earth Invocations (),
-Rituals (), Shūji ()
+Shiba Artist School [Artisan]
+Renowned throughout Rokugan for their deeply spir-
+itual works of art, the Phoenix Clan’s Shiba Artists are
+highly sought after for festivals and special events,
+including the Winter Court. Artists expertly perform
+soulfully crafted song and verse to enthrall onlookers,
+create unique works of clay or stone for their hosts, or
+even forge armor before enraptured crowds. What-
+ever their art, Shiba Artists always make the act of cre-
+ation a part of the work itself, whether it takes fleeting
+moments or days of labor. Most Shiba Artists train in
+a wide range of artistic forms, and they use each new
+lesson they learn to inspire them in their next endeavor.
+Rings: +1 Fire, +1 Void
+Starting Skills (choose five): +1 Aesthetics, +1 Com-
+position, +1 Courtesy, +1 Culture, +1 Design, +1 Per-
+formance, +1 Smithing
+Honor: 50
+Techniques Available: Kata, Rituals, Shūji
 Starting Techniques:
-$ Invocations: Grasp of Earth, Tempest of Air
-$ Shūji: Ancestry Unearthed, Honest Assessment
-Hands of Earth and Sky (School Ability): When you
-perform an invocation that targets at least one other
-character, if you succeed, you may nourish or drain:
-If you nourish, you may receive fatigue up to your
-school rank. One target removes fatigue equal to the
-amount you received.
-If you drain, you may remove an amount of fatigue
-from yourself up to your school rank. One target
-receives fatigue equal to the amount you removed.
-Starting Outfit: Traveling clothes, ashigaru armor,
-wakizashi, scroll satchel, finger of jade, traveling pack.
-CHAPTER 2: HONOR AGAINST DEMONSADVANCE TYPE
+$ Ritual: = Tea Ceremony
+$ Shūji (choose two): Assess Strengths, Court-
+ier’s Resolve, Fun and Games
+Architect of Tranquility (School Ability): Once per
+scene after you succeed at an Artisan skill check, you may
+choose a number of characters in the scene equal to your
+school rank. Each chosen character removes 3 strife.
+Starting Outfit: Ceremonial clothes, common
+clothes, traveling clothes, wakizashi, traveling pack,
+calligraphy set.
+94ADVANCE TYPE
 RANK 1
-Scholar Skills Skl. Grp.
-Command Skill
-Martial Arts [Melee] Skill
-Survival Skill
-Rank 1 Rituals  Tech. Grp.
-= Bind the Shadow  Technique
-Caress of Earth  Technique
-RANK 2
-Martial Skills Skl. Grp.
-Culture Skill
-Medicine Skill
-Theology Skill
-Rank 1–2 Air Invocations  Tech. Grp.
-= Essence of Jade  Technique
-= Touchstone of Courage  Technique
-RANK 3
-Trade Skills Skl. Grp.
+Artisan Skills Skl. Grp.
 Courtesy Skill
-Martial Arts [Melee] Skill
-Tactics Skill
-Rank 1–3 Earth Shūji  Tech. Grp.
-= Earthquake  Technique
-Earth Becomes Sky  Technique
-RANK 4
-Social Skills Skl. Grp.
-Medicine Skill
-Sentiment Skill
-Theology Skill
-Rank 1–4 Earth Invocations  Tech. Grp.
-Rise, Air  Technique
-Wolf’s Proposal  Technique
-RANK 5
-Scholar Skills Skl. Grp.
-Martial Arts [Melee] Skill
+Culture Skill
 Performance Skill
-Survival Skill
-Rank 1–5 Air Invocations  Tech. Grp.
-Rouse the Soul  Technique
-Tomb of Jade  Technique
-RANK 6 Empathic Transfer (Mastery Ability): When
-you nourish, you may remove one condition
-the target is suffering by transferring it to
-yourself. When you drain, you may remove
-one condition you are suffering by transfer-
-ring it to one of your targets.
+Rank 1 Fire Shūji  Tech. Grp.
+= Offend the Sensibilities  Technique
+Fun and Games  Technique
+RANK 2
+Social Skills Skl. Grp.
+Aesthetics Skill
+Government Skill
+Meditation Skill
+Rank 1–2 Air Shūji  Tech. Grp.
+= The Wind Blows Both Ways  Technique
+Civility Foremost  Technique
+RANK 3
+Artisan Skills Skl. Grp.
+Command Skill
+Government Skill
+Meditation Skill
+Rank 1–3 Water Shūji Tech. Grp.
+= Formal Tea Ceremony  Technique
+All Arts Are One  Technique
+RANK 4
+Scholar Skills Skl. Grp.
+Performance Skill
+Composition Skill
+Smithing Skill
+Rank 1–4 Void Shūji Tech. Grp.
+= Rouse the Soul  Technique
+Hidden in Smoke  Technique
+RANK 5
+Artisan Skills Skl. Grp.
+Culture Skill
+Courtesy Skill
+Performance Skill
+Rank 1–5 Rituals  Tech. Grp.
+= Bend with the Storm  Technique
+Buoyant Arrival  Technique
+RANK 6 Sudden Clarity (Mastery Ability): When
+you use your school ability, you may remove
+one or more of the following conditions
+from each chosen character: Dazed, Dis-
+oriented, Enraged, Exhausted, Intoxicated.
+Additionally, each chosen character removes
+3 fatigue.

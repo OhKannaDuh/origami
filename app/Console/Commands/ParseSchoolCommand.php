@@ -13,10 +13,8 @@ use App\Console\Commands\Helpers\StartingOutfitParser;
 use App\Console\Commands\Helpers\StartingTechniquesParser;
 use App\Console\Commands\Helpers\TechniquesAvailableParser;
 use App\StringHelper;
-use Illuminate\Console\Command;
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Storage;
 
 final class ParseSchoolCommand extends GeneratorCommand
 {

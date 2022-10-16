@@ -113,8 +113,7 @@ final class CurriculumParser
                 }
 
                 $matches = [];
-                preg_match('/\d (kata|kiho|invocations|rituals|shuji)/', $line, $matches);
-
+                preg_match('/\d (general kata|ranged kata|kata|kiho|invocations|rituals|shuji)/', $line, $matches);
                 $data[$rank][] = [
                     'key' => StringHelper::key($matches[1]),
                     'type' => 'technique_type',

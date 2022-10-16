@@ -22,11 +22,11 @@ final class Seeder extends SourceBookSeeder
     public function getPhaseOneSeeders(): array
     {
         return [
-            // ItemTypeSeeder::class,
-            // ClanSeeder::class,
-            // FamilySeeder::class,
-            // TechniqueSeeder::class,
-            // ItemSeeder::class,
+            ItemTypeSeeder::class,
+            ClanSeeder::class,
+            FamilySeeder::class,
+            TechniqueSeeder::class,
+            ItemSeeder::class,
         ];
     }
 
@@ -34,7 +34,9 @@ final class Seeder extends SourceBookSeeder
     public function getPhaseTwoSeeders(): array
     {
         return [
-            // SchoolSeeder::class,
+            SchoolSeeder::class,
+            AdvantageSeeder::class,
+            DisadvantageSeeder::class,
         ];
     }
 }

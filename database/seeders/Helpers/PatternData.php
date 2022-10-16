@@ -14,6 +14,8 @@ final class PatternData extends BaseHelper
             'cost' => 0,
             'physical_resistance' => 0,
             'supernatural_resistance' => 0,
+            'weapon' => false,
+            'armor' => false,
         ];
     }
 
@@ -54,6 +56,22 @@ final class PatternData extends BaseHelper
     {
         $clone = clone $this;
         $clone->data['supernatural_resistance'] = $resistance;
+        return $clone;
+    }
+
+
+    public function withForWeapon(): self
+    {
+        $clone = clone $this;
+        $clone->data['weapon'] = true;
+        return $clone;
+    }
+
+
+    public function withForArmor(): self
+    {
+        $clone = clone $this;
+        $clone->data['armor'] = true;
         return $clone;
     }
 }

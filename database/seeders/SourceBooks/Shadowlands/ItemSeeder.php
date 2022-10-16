@@ -22,6 +22,7 @@ final class ItemSeeder extends Seeder
         $this->execute(Items\ArmorSeeder::class, 'armor', $sourceBook);
 
         $this->execute(Items\PersonalEffectsSeeder::class, 'personal_effect', $sourceBook);
+        $this->execute(Items\PatternSeeder::class, 'item_pattern', $sourceBook);
     }
 
 

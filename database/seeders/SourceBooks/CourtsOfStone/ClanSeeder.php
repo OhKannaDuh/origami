@@ -14,14 +14,15 @@ final class ClanSeeder extends Seeder
 
     public function run(SourceBook $sourceBook): void
     {
-        // Clan::query()->create([
-        //     'source_book_id' => $sourceBook->getKey(),
-        //     'ring_id' => Ring::query()->where('key', 'earth')->first(['id'])->getKey(),
-        //     'skill_id' => Skill::query()->where('key', 'fitness')->first(['id'])->getKey(),
-        //     'key' => 'deer',
-        //     'name' => 'Deer',
-        //     'status' => 30,
-        //     'description' => '_',
-        // ]);
+        Clan::query()->create([
+            'source_book_id' => $sourceBook->getKey(),
+            'ring_id' => Ring::query()->where('key', 'air')->first(['id'])->getKey(),
+            'skill_id' => Skill::query()->where('key', 'sentiment')->first(['id'])->getKey(),
+            'key' => 'deer',
+            'name' => 'Deer',
+            'status' => 30,
+            'description' => '_',
+            'is_major' => false,
+        ]);
     }
 }

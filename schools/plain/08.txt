@@ -1,74 +1,83 @@
-Yogo Preserver School [Shugenja]
-Like all Scorpion, Yogo Preservers view their duty to the
-Emperor as being beyond the considerations of honor.
-Theirs is a special task, bound to the cursed destiny of
-the original Yogo—protecting shrines that contain arti-
-facts best lost to history, such as the Black Scrolls. Using
-their paper servants called shikigami, these somber indi-
-viduals poison, murder, and thieve—in the name of stav-
-ing off the darkness that threatens all Rokugan.
-Rings: +1 Fire, +1 Void
-Starting Skills (choose three): +1 Aesthetics, +1 Cour-
-tesy, +1 Martial Arts [Melee], +1 Sentiment, +1 Skul-
-duggery, +1 Theology
-Honor: 38
-Techniques Available: Invocations (), Rituals (),
-Shūji ()
+Shika Speardancer School
+[Bushi, Shinobi]
+Shika Speardancers are yōjimbō and shinobi, but to
+the outside world, they are simply seen as messen-
+gers, known well for their swiftness and neutrality. They
+deliver urgent or romantic missives to both dignitaries
+and lovers throughout Rokugan. The Deer Clan directs
+its Speardancers to monitor targets deemed crucial
+to maintaining or restoring balance in Rokugan. Their
+cover as couriers frees them to work as bodyguards
+or assassins without drawing attention. Speardancers
+exude fierce independence and tenacity. These wild
+warriors focus on becoming an extension of their yari,
+practicing a unique set of kata that combine dizzying
+spins, lightning-speed twirls, and deadly accuracy.
+Rings: +1 Air, +1 Fire
+Starting Skills (choose five): +1 Martial Arts [Melee],
++1 Meditation, +1 Skulduggery, +1 Survival, +1 Fit-
+ness, +1 Sentiment, +1 Courtesy
+Honor: 35
+Techniques Available: Kata, Rituals, Shūji
 Starting Techniques:
-$ Invocations: By the Light of the Lord Moon,
-= Embrace of Kenro-Ji-Jin, Yari of Air
-$ Rituals: = Craft Shikigami, Threshold Barrier
-Warded Shikigami (School Ability): You can have a
-number of additional shikigami (see page 115) up to
-your school rank. Once per scene, after you perform an
-action, you may instruct one of your shikigami to perform
-an action, for which it benefits from your assistance.
-Starting Outfit: Traveling clothes, sanctified robes,
-concealed armor, wakizashi, bō (staff), traveling pack.
-CHAPTER 2: HONOR AGAINST DEMONSADVANCE TYPE
+$ Kata: Trip the Leg
+$ Kata (choose 1): Striking as Air, Striking as Fire
+Typhoon in the Bamboo Grove (School Ability):
+When making a Martial Arts [Melee] or Fitness check,
+you may spend   to cause a number of characters
+no greater than your school rank and within range of
+your readied weapon to suffer the Dazed condition.
+Starting Outfit: Traveling clothes, stealth cloth-
+ing or ashigaru armor, yari or kamayari, wakizashi,
+traveling pack.
+C H A P T E R 2 : WA R S O F W O R DS AND SHADOWSADVANCE TYPE
 RANK 1
-Artisan Skills Skl. Grp.
-Culture Skill
-Martial Arts [Melee] Skill
-Theology Skill
-Rank 1 Fire Invocations  Tech. Grp.
-Cloak of Night  Technique
-Reflections of P’an Ku  Technique
-RANK 2
-Scholar Skills Skl. Grp.
-Aesthetics Skill
-Courtesy Skill
+Martial Skills Skl. Grp.
+Games Skill
 Skulduggery Skill
-Rank 1–2 Air Invocations  Tech. Grp.
-= Hands of the Tides  Technique
-= Skulk  Technique
-RANK 3
+Survival Skill
+Air Shūji Rank 1  Tech. Grp.
+= Like a Ghost  Technique
+Soaring Slice  Technique
+RANK 2
 Trade Skills Skl. Grp.
-Government Skill
-Smithing Skill
-Theology Skill
-Rank 1–3 Fire Invocations  Tech. Grp.
-Vapor of Nightmares  Technique
-= Wings of the Phoenix  Technique
-RANK 4
-Social Skills Skl. Grp.
-Martial Arts [Melee] Skill
-Performance Skill
-Sentiment Skill
-Rank 1–4 Air Invocations  Tech. Grp.
-Silencing Stroke  Technique
-Suijin’s Embrace  Technique
-RANK 5
-Artisan Skills Skl. Grp.
+Courtesy Skill
 Culture Skill
+Martial Arts [Melee] Skill
+Close Combat Kata Rank 1–2  Tech. Grp.
+= To Float or Sink  Technique
+Crescent Moon Style Technique
+RANK 3
+Martial Skills Skl. Grp.
+Smithing Skill
+Games Skill
+Skulduggery Skill
+General Kata Rank 1–3  Tech. Grp.
+= Slicing Wind Kick  Technique
+Pole Vault  Technique
+RANK 4
+Scholar Skills Skl. Grp.
+Command Skill
+Martial Arts [Melee] Skill
+Survival Skill
+Fire Shūji Rank 1–4  Tech. Grp.
+= Rouse the Soul  Technique
+Disappearing World Style  Technique
+RANK 5
+Social Skills Skl. Grp.
 Government Skill
-Theology Skill
-Rank 1–5 Fire Invocations  Tech. Grp.
-Ever-Changing Waves  Technique
-Tomb of Jade  Technique
-RANK 6 Kingdom of Paper and Ink (Mastery Ability): When one of your shikigami performs an
-action, it may spend  as follows:
-+: Another one of your shikigami at range
-0–3 of you may perform an action. Increase
-the  cost of this ability by  for each of
-your shikigami that has acted this turn
+Sentiment Skill
+Tactics Skill
+General Kata Rank 1–5  Tech. Grp.
+= Silent Elimination  Technique
+The Ties that Bind  Technique
+RANK 6
+The Lowest Bow (Mastery Ability): When
+performing an Attack action using Martial
+Arts [Melee], you may spend  as follows:
++: Choose one character other than your
+target at range 2 with vigilance lower than
+or equal to  spent this way. That character
+suffers a critical strike with severity equal to
+your weapon's deadliness plus your ranks in
+Martial Arts [Melee].
