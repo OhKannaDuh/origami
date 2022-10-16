@@ -148,7 +148,7 @@ return new class extends Migration
             ],
         ]);
 
-        $this->techniques->getByKey('truo_the_leg')->update([
+        $this->techniques->getByKey('trip_the_leg')->update([
             'description' => [
                 'activation' => 'As an Attack action using one readied polearm, you may make a **TN 2 Martial Arts [Melee] check** targeting one character at range 1-2.',
                 'effect' => 'If you succeed, your target suffers the Prone condition.',
