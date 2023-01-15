@@ -107,6 +107,7 @@ import { SaveManager } from '@/ts/Character/View/SaveManager';
 import { SkillRepository } from '@/ts/Repositories/SkillRepository';
 import { defineComponent, PropType, ref } from 'vue';
 import { TechniqueRepository } from '@/ts/Repositories/TechniqueRepository';
+import { AdvancementRow, SchoolCurriculumRank } from '@/ts/data';
 
 enum AdvancementType {
     Ring = 'ring',

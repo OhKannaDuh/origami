@@ -3,10 +3,12 @@
         <q-expansion-item expand-separator label="Skill Increases">
             <q-card>
                 <q-card-section v-for="(skills, key) in skillGroups" :key="key">
-                    <p class="text-body q-ma-none" v-text="key" />
+                    <p class="text-body q-ma-none" :class="{ 'text-secondary': skillGroupInCurriculum(key) }" v-text="key" />
                     <q-list>
                         <q-item v-for="(skill, index) in skills" :key="index" :clickable="canRankUp(skill.rank)" @click="advance(skill.key)">
-                            <q-item-section class="text-left"> {{ skill.name }} ({{ skill.rank }} -> {{ skill.rank + 1 }}) </q-item-section>
+                            <q-item-section class="text-left" :class="{ 'text-secondary': skillInCurriculum(skill.key) }">
+                                {{ skill.name }} ({{ skill.rank }} -> {{ skill.rank + 1 }})
+                            </q-item-section>
                             <q-item-section avatar :class="{ 'text-negative': !canRankUp(skill.rank) }"> {{ getCostToRankUp(skill.rank) }} </q-item-section>
                         </q-item>
                     </q-list>
@@ -18,6 +20,7 @@
 
 <script lang="ts">
 import { Character } from '@/ts/Character/View/Character';
+import { SchoolCurriculum, SchoolCurriculumRank } from '@/ts/data';
 import { SkillRepository } from '@/ts/Repositories/SkillRepository';
 import { defineComponent, PropType } from 'vue';
 
@@ -67,6 +70,40 @@ export default defineComponent({
 
             this.$emit('advance');
         },
+        skillInCurriculum(key: string): boolean {
+            let skill: App.Models.Core.Skill = this.repository.fromKey(key);
+            let curriculum = this.getCurriculum();
+
+            for (const rank of curriculum) {
+                if (rank.type === 'skill-group' && skill.skill_group?.key === rank.skill_group_key) {
+                    return true;
+                }
+
+                if (rank.type === 'skill' && skill.key === rank.skill_key) {
+                    return true;
+                }
+            }
+
+            return false;
+        },
+        skillGroupInCurriculum(key: string): boolean {
+            let curriculum = this.getCurriculum();
+            key = key.toLowerCase();
+
+            for (const rank of curriculum) {
+                if (rank.type === 'skill-group' && rank.skill_group_key === key) {
+                    return true;
+                }
+            }
+            return false;
+        },
+        getCurriculum(): SchoolCurriculumRank[] {
+            if (!this.character.school) {
+                throw 'No Character School';
+            }
+
+            return this.character.school.curriculum[this.character.school_rank];
+        },
     },
 
     computed: {
@@ -99,3 +136,9 @@ export default defineComponent({
     },
 });
 </script>
+
+<style lang="scss" scoped>
+.test {
+    color: red !important;
+}
+</style>

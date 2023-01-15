@@ -21,10 +21,7 @@ export default defineComponent({
     components: { Layout },
 
     mounted() {
-        axios
-            .get(route('api.user'))
-            .then((response) => console.log(response))
-            .catch((error) => console.error(error));
+        axios.get(route('api.user')).catch((error) => console.error(error));
     },
 });
 </script>
