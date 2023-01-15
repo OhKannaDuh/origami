@@ -17,6 +17,11 @@
                         <skills :character="character" />
                     </Suspense>
                 </q-tab-panel>
+                <q-tab-panel name="actions">
+                    <Suspense>
+                        <actions />
+                    </Suspense>
+                </q-tab-panel>
                 <q-tab-panel name="conflict">
                     <Suspense>
                         <conflict :character="character" :saveManager="saveManager" />
@@ -77,6 +82,11 @@
                     <q-tab-panel name="skills">
                         <Suspense>
                             <skills :character="character" />
+                        </Suspense>
+                    </q-tab-panel>
+                    <q-tab-panel name="actions">
+                        <Suspense>
+                            <actions />
                         </Suspense>
                     </q-tab-panel>
                     <q-tab-panel name="conflict">
@@ -149,7 +159,8 @@
                     @click="tab.mobile = key"
                     :icon="item.icon"
                     :label="item.label"
-                    color="primary"
+                    color="secondary"
+                    label-class="bg-accent"
                     external-label
                     label-position="left"
                 />
@@ -182,6 +193,7 @@ import Personality from './View/Personality.vue';
 import Rings from './View/Rings.vue';
 import Skills from './View/Skills.vue';
 import Techniques from './View/Techniques.vue';
+import Actions from './View/Actions.vue';
 import { Campaign } from '@/ts/Campaign/Campaign';
 import { Character } from '@/ts/Character/View/Character';
 import { SaveManager } from '@/ts/Character/View/SaveManager';
@@ -202,6 +214,7 @@ export default defineComponent({
         Campaigns,
         Party,
         Conflict,
+        Actions,
     },
     props: {
         characterData: {
@@ -221,7 +234,7 @@ export default defineComponent({
                 right: string;
             };
         }>({
-            mobile: 'conflict',
+            mobile: 'skills',
             desktop: {
                 left: 'skills',
                 right: 'advantages-and-disadvantages',
@@ -234,6 +247,10 @@ export default defineComponent({
             skills: {
                 label: 'Skills',
                 icon: 'bar_chart',
+            },
+            actions: {
+                label: 'Actions',
+                icon: 'bolt',
             },
             conflict: {
                 label: 'Conflict Mode',
@@ -268,6 +285,9 @@ export default defineComponent({
         const desktopTabsLeft = ref({
             skills: {
                 label: 'Skills',
+            },
+            actions: {
+                label: 'Actions',
             },
             conflict: {
                 label: 'Conflict Mode',

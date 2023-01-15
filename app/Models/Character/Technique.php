@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string $name
  * @property int $rank
  * @property array $description
+ * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
@@ -36,6 +37,7 @@ final class Technique extends Model
         'name',
         'rank',
         'description',
+        'page_number',
     ];
 
     protected $casts = [

@@ -24,7 +24,7 @@ add('writable_dirs', []);
 set('allow_anonymous_stats', false);
 
 // Hosts
-host('deploy@origami.ohkannaduh.co.uk')
+host('deploy@origami.ohkannaduh.com')
     ->set('deploy_path', '/var/www/origami');
 
 // Tasks

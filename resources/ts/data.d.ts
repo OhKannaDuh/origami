@@ -1,3 +1,7 @@
+import { ActionEffectType } from './Data/ActionEffectType';
+import { ActionType } from './Data/ActionType';
+import { ConflictType } from './Data/ConflictType';
+
 declare type Step = {
     valid(): boolean;
     getTitle(): string;
@@ -261,5 +265,20 @@ declare interface TechniqueDescription {
     effect: string | null;
     enhancement: string | null;
     burst: string | null;
-    opportunities: TechniqueOpportunity;
+    opportunities: TechniqueOpportunity[];
+}
+
+declare interface ActionEffect {
+    type: ActionEffectType;
+    effect: string;
+    effects: string[];
+}
+
+declare interface Action {
+    name: string;
+    actionTypes: ActionType[];
+    conflictTypes: ConflictType[];
+    activation: string;
+    effect: ActionEffect[];
+    opportunities: TechniqueOpportunity[];
 }

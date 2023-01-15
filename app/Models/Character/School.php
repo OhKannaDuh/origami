@@ -29,6 +29,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property int $school_ability_id
  * @property int $mastery_ability_id
  * @property int $family_id
+ * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property int $honor
@@ -59,6 +60,8 @@ final class School extends Model
         'school_ability_id',
         'mastery_ability_id',
         'family_id',
+        'honor',
+        'page_number',
     ];
 
     protected $casts = [

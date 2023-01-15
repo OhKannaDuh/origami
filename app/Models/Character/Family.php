@@ -23,6 +23,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property int $glory
  * @property int $starting_wealth
  * @property string $description
+ * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
@@ -49,6 +50,7 @@ final class Family extends Model
         'glory',
         'starting_wealth',
         'description',
+        'page_number',
     ];
 
 

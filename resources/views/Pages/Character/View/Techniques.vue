@@ -45,9 +45,8 @@ export default defineComponent({
     setup() {
         let current = ref<App.Models.Character.Technique | null>(null);
         let drawer = ref<boolean>(false);
-        let formatter = ref<Formatter>(new Formatter());
 
-        return { current, drawer, formatter };
+        return { current, drawer };
     },
     props: {
         character: {

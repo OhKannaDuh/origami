@@ -81,6 +81,8 @@ export default defineComponent({
         availableTechniques(): TechniueGroups {
             let data: App.Models.Character.Technique[] = [];
 
+            console.log(this.schoolTypeTechniques);
+
             data = data.concat(this.schoolTypeTechniques);
             data = data.concat(this.schoolCurriculumTechniques);
 

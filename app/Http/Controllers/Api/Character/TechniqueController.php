@@ -13,7 +13,7 @@ final class TechniqueController extends Controller
     protected function all(): JsonResponse
     {
         return new JsonResponse([
-            'techniques' => Technique::all(),
+            'techniques' => Technique::all()->load('techniqueSubtype.techniqueType'),
         ]);
     }
 }

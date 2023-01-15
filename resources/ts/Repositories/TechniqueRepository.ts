@@ -29,6 +29,7 @@ export class TechniqueRepository {
         let data: App.Models.Character.Technique[] = [];
         for (const subject of this.data) {
             let subjectTypeKey = subject.technique_subtype?.technique_type?.key ?? '';
+            console.log({ ...subject });
             if (subjectTypeKey === type.key && subject.rank <= rank) {
                 data.push(subject);
             }

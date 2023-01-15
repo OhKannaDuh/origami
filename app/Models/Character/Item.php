@@ -19,6 +19,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property array $data
  * @property array $cost
  * @property int $rarity
+ * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
@@ -38,6 +39,7 @@ final class Item extends Model
         'data',
         'cost',
         'rarity',
+        'page_number',
     ];
 
     protected $casts = [
