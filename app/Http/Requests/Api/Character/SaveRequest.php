@@ -8,7 +8,6 @@ use App\Models\Character\Character;
 use App\Repositories\Character\CharacterRepositoryInterface;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Log;
 
 class SaveRequest extends Request
 {

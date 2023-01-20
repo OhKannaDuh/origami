@@ -18,4 +18,13 @@ interface CharacterRepositoryInterface extends RepositoryInterface
      * @return Character
      */
     public function getByUuid(string $uuid): Character;
+
+
+    /**
+     * @param Character $character
+     * @param array $stats
+     *
+     * @return bool
+     */
+    public function updateStats(Character $character, array $stats): bool;
 }

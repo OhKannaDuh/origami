@@ -19,6 +19,11 @@ return [
                 '$1.getByKey',
                 '$1.keyExists',
             ],
+            '/characters.updateStats/' => [
+                'characters.all',
+                'characters.getById',
+                'characters.getByUuid',
+            ],
         ],
 
         'actions' => [

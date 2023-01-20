@@ -30,6 +30,7 @@ export class Campaign {
         this.channel.addCharacterUpdateCallback((event: CampaignUpdateCharacterPayload) => {
             for (const character of this.characters) {
                 if (event.character.uuid === character.uuid) {
+                    console.log(event.character);
                     Object.assign(character, event.character);
                 }
             }

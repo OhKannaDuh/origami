@@ -13,6 +13,7 @@ use App\Http\Requests\Api\Character\SaveAdvantagesRequest;
 use App\Http\Requests\Api\Character\SaveDisadvantagesRequest;
 use App\Http\Requests\Api\Character\SaveInventoryRequest;
 use App\Http\Requests\Api\Character\SaveStatsRequest;
+use App\Repositories\Character\CharacterRepositoryInterface;
 
 final class SaveController extends Controller
 {
@@ -42,8 +43,11 @@ final class SaveController extends Controller
     }
 
 
-    protected function stats(SaveStatsRequest $request, SaveStatsInterface $action): void
+    protected function stats(SaveStatsRequest $request, CharacterRepositoryInterface $repository, SaveStatsInterface $action): void
     {
-        $action->execute(['request' => $request]);
+        $action->execute([
+            'request' => $request,
+            'repository' => $repository,
+        ]);
     }
 }

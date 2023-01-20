@@ -1,6 +1,6 @@
 <template>
     <div class="column justify-center">
-        <q-card class="no-border-radius fill-height q-mb-xs" v-for="character in campaign.characters" :key="character.uuid">
+        <q-card class="no-border-radius fill-height q-mb-xs" v-for="character in characters" :key="character.uuid">
             <q-card-section class="row q-pa-none fill-width">
                 <q-avatar>
                     <img :src="character.avatar" />
@@ -42,7 +42,7 @@
 <script lang="ts">
 import DataLabel from '../Create/Values/DataLabel.vue';
 import { Campaign } from '@/ts/Campaign/Campaign';
-import { defineComponent, PropType } from 'vue';
+import { defineComponent, PropType, ref, watch } from 'vue';
 
 export default defineComponent({
     components: { DataLabel },
@@ -52,6 +52,12 @@ export default defineComponent({
             required: true,
         },
     },
+
+    setup(props) {
+        const characters = ref(props.campaign.characters);
+        return { characters };
+    },
+
     methods: {
         endurance(character: App.Models.Character.Character) {
             return (character.stats.rings.earth + character.stats.rings.fire) * 2;

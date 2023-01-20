@@ -15,13 +15,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Layout from '@/views/layouts/default.vue';
-import axios from 'axios';
 
 export default defineComponent({
     components: { Layout },
-
-    mounted() {
-        axios.get(route('api.user')).catch((error) => console.error(error));
-    },
 });
 </script>

@@ -38,4 +38,12 @@ final class CharacterRepository extends BaseRepository implements CharacterRepos
 
         return $character;
     }
+
+
+    public function updateStats(Character $character, array $stats): bool
+    {
+        return $this->execute(__FUNCTION__, fn(): bool => $character->update([
+            'stats' => $stats,
+        ]));
+    }
 }

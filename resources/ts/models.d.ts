@@ -4,6 +4,8 @@
  * Changes to this file will be lost when the command is run again
  */
 
+import { CharacterStats } from './data';
+
 declare namespace App.Models.Core {
     export interface TechniqueType {
         id: number;
@@ -131,7 +133,6 @@ declare namespace App.Models.Core {
         updated_at: string | null;
         technique_type?: App.Models.Core.TechniqueType | null;
     }
-
 }
 
 declare namespace App.Models {
@@ -151,7 +152,6 @@ declare namespace App.Models {
         owned_campaigns_count?: number | null;
         campaigns_count?: number | null;
     }
-
 }
 
 declare namespace App.Models.Character {
@@ -276,7 +276,7 @@ declare namespace App.Models.Character {
         ring_two_id: number;
         starting_skill_amount: number;
         starting_skills: string;
-        starting_techniques: {[key: string]: StartingTechniqueData};
+        starting_techniques: { [key: string]: StartingTechniqueData };
         starting_outfit: StartingOutfitData[];
         curriculum: SchoolCurriculum;
         school_ability_id: number;
@@ -309,5 +309,4 @@ declare namespace App.Models.Character {
         disadvantage_type?: App.Models.Core.DisadvantageType | null;
         ring?: App.Models.Core.Ring | null;
     }
-
 }
