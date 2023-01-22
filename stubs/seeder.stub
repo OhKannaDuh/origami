@@ -2,7 +2,7 @@
 
 namespace {{ namespace }};
 
-use Illuminate\Database\Seeder;
+use Database\Seeders\Seeder;
 
 final class {{ class }} extends Seeder
 {

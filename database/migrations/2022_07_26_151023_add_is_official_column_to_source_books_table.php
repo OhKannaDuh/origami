@@ -21,8 +21,6 @@ return new class extends Migration
                 'is_official' => true,
             ]);
         }
-
-        Artisan::call('db:seed');
     }
 
 
