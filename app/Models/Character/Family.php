@@ -5,6 +5,7 @@ namespace App\Models\Character;
 use App\Behaviours\HasRepository;
 use App\Models\Core\Ring;
 use App\Models\Core\Skill;
+use App\Models\Core\SourceBook;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -27,6 +28,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
+ * @property SourceBook $sourceBook
  * @property Clan $clan
  * @property Ring $ringChoiceOne
  * @property Ring $ringChoiceTwo
@@ -52,6 +54,12 @@ final class Family extends Model
         'description',
         'page_number',
     ];
+
+
+    public function sourceBook(): BelongsTo
+    {
+        return $this->belongsTo(SourceBook::class);
+    }
 
 
     public function clan(): BelongsTo

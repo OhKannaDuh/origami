@@ -5,6 +5,7 @@ namespace App\Models\Character;
 use App\Behaviours\HasRepository;
 use App\Models\Core\Ring;
 use App\Models\Core\SchoolType;
+use App\Models\Core\SourceBook;
 use App\Models\Core\TechniqueSubtype;
 use App\Models\Core\TechniqueType;
 use Carbon\Carbon;
@@ -34,6 +35,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property Carbon $updated_at
  * @property int $honor
  *
+ * @property SourceBook $sourceBook
  * @property Ring $ringOne
  * @property Ring $ringTwo
  * @property Family $family
@@ -70,6 +72,12 @@ final class School extends Model
         'starting_outfit' => 'json',
         'curriculum' => 'json',
     ];
+
+
+    public function sourceBook(): BelongsTo
+    {
+        return $this->belongsTo(SourceBook::class);
+    }
 
 
     public function ringOne(): BelongsTo

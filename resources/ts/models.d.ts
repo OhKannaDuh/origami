@@ -4,7 +4,7 @@
  * Changes to this file will be lost when the command is run again
  */
 
-import { CharacterStats } from './data';
+import { CharacterStats, TechniqueDescription } from './data';
 
 declare namespace App.Models.Core {
     export interface TechniqueType {

@@ -4,6 +4,7 @@ namespace App\Models\Character;
 
 use App\Behaviours\HasRepository;
 use App\Models\Core\ItemSubtype;
+use App\Models\Core\SourceBook;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -23,6 +24,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
+ * @property SourceBook $sourceBook
  * @property ItemSubtype $itemSubtype
  */
 final class Item extends Model
@@ -46,6 +48,12 @@ final class Item extends Model
         'data' => 'json',
         'cost' => 'json',
     ];
+
+
+    public function sourceBook(): BelongsTo
+    {
+        return $this->belongsTo(SourceBook::class);
+    }
 
 
     public function itemSubtype(): BelongsTo

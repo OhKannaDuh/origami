@@ -12,6 +12,9 @@ interface RepositoryInterface
 {
 
 
+    public function bypassCache(): self;
+
+
     /**
      * @param string|int $id
      *

@@ -12,21 +12,27 @@
                     <q-item-section>Close</q-item-section>
                 </q-item>
                 <q-separator />
-                <q-card v-if="current" flat>
+                <q-card v-if="current" flat class="p-inline p-no-margin">
                     <q-card-section>
                         <h6 class="no-margin" v-text="current.name" />
                     </q-card-section>
                     <q-card-section v-if="current.description.activation">
-                        <span><b>Activation: </b><span v-html="format(current.description.activation)" /></span>
+                        <span v-format="`<b>Activation:</b> ${current.description.activation}`" />
                     </q-card-section>
                     <q-card-section v-if="current.description.effect">
-                        <span><b>Effects: </b><span v-html="format(current.description.effect)" /></span>
+                        <span v-format="`<b>Effects:</b> ${current.description.effect}`" />
                     </q-card-section>
-                    <q-card-section v-if="current.description.opportunities">
+                    <q-card-section v-if="current.description.enhancement">
+                        <span v-format="`<b>Enhancement Effect:</b> ${current.description.enhancement}`" />
+                    </q-card-section>
+                    <q-card-section v-if="current.description.burst">
+                        <span v-format="`<b>Burst Effect:</b> ${current.description.burst}`" />
+                    </q-card-section>
+                    <q-card-section v-if="current.description.opportunities && current.description.opportunities.length">
                         <h6 class="no-margin">New Opportunities:</h6>
                         <q-list>
                             <q-item v-for="(opportunity, index) in current.description.opportunities" :key="index">
-                                <span><b v-html="format(opportunity.cost)" /><b>: </b><span v-html="format(opportunity.effect)" /></span>
+                                <span v-format="`<b>${opportunity.cost}:</b> ${opportunity.effect}`" />
                             </q-item>
                         </q-list>
                     </q-card-section>
@@ -38,7 +44,7 @@
 
 <script lang="ts">
 import { Character } from '@/ts/Character/View/Character';
-import { Formatter } from '@/ts/Character/Formatter';
+import { App } from '@/ts/models';
 import { defineComponent, PropType, ref } from 'vue';
 
 export default defineComponent({
@@ -80,9 +86,16 @@ export default defineComponent({
         close() {
             this.drawer = false;
         },
-        format(target: string): string {
-            return this.formatter.format(target);
-        },
     },
 });
 </script>
+
+<style lang="scss">
+.p-inline p {
+    display: inline;
+}
+
+.p-no-margin p {
+    margin: 0;
+}
+</style>

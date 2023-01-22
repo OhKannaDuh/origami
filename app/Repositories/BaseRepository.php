@@ -24,8 +24,17 @@ abstract class BaseRepository implements RepositoryInterface
 
     private Validator|null $createValidator = null;
 
+    private bool $bypassCache = false;
+
 
     abstract protected function getCreateRules(array $context): array;
+
+
+    public function bypassCache(): self
+    {
+        $this->bypassCache = true;
+        return $this;
+    }
 
 
     protected function processCreateData(array $context): array
@@ -107,6 +116,9 @@ abstract class BaseRepository implements RepositoryInterface
 
     protected function execute(string $action, Closure $callback, array $context = []): mixed
     {
+        $bypassCache = $this->bypassCache;
+        $this->bypassCache = false;
+
         $key = $this->getKeyPrefix() . '.' . $action;
         $tag = $key;
 
@@ -119,7 +131,7 @@ abstract class BaseRepository implements RepositoryInterface
             $this->getCache($cache)->flush();
         }
 
-        if ($this->shouldCache($key)) {
+        if ($this->shouldCache($key) && $bypassCache === false) {
             $ttl = $this->getCacheTtl();
             return $this->getCache($tag)->remember($key, $ttl, $callback);
         }

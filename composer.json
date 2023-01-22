@@ -10,6 +10,7 @@
     "require": {
         "php": "^8.0.2",
         "based/laravel-typescript": "^0.0.3",
+        "filament/filament": "^2.0",
         "guzzlehttp/guzzle": "^7.2",
         "haydenpierce/class-finder": "^0.4.3",
         "inertiajs/inertia-laravel": "^0.6.3",
@@ -28,6 +29,7 @@
     "require-dev": {
         "brianium/paratest": "^6.6",
         "deployer/dist": "^6.8",
+        "doctrine/dbal": "^3.5",
         "fakerphp/faker": "^1.9.1",
         "infection/infection": "^0.26.13",
         "laravel/sail": "^1.0.1",

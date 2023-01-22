@@ -6,6 +6,7 @@ use App\Behaviours\HasRepository;
 use App\Models\Character\Character;
 use App\Models\Core\Campaign;
 use Carbon\Carbon;
+use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -20,6 +21,7 @@ use Laravel\Sanctum\HasApiTokens;
  * @property string $email
  * @property Carbon $email_verified_at
  * @property string $password
+ * @property bool $admin
  * @property string $remember_token
  * @property Carbon $created_at
  * @property Carbon $updated_at
@@ -28,7 +30,7 @@ use Laravel\Sanctum\HasApiTokens;
  * @property Collection<Campaign> $ownedCampaigns
  * @property Collection<Campaign> $campaigns
  */
-final class User extends Authenticatable
+final class User extends Authenticatable implements FilamentUser
 {
     use HasApiTokens;
     use HasFactory;
@@ -62,8 +64,15 @@ final class User extends Authenticatable
      * @var array<string, string>
      */
     protected $casts = [
+        'admin' => 'boolean',
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function canAccessFilament(): bool
+    {
+        return $this->admin;
+    }
 
 
     public function characters(): HasMany

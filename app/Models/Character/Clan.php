@@ -5,6 +5,7 @@ namespace App\Models\Character;
 use App\Behaviours\HasRepository;
 use App\Models\Core\Ring;
 use App\Models\Core\Skill;
+use App\Models\Core\SourceBook;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -24,6 +25,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
+ * @property SourceBook $sourceBook
  * @property Ring $ring
  * @property Skill $skill
  */
@@ -47,6 +49,12 @@ final class Clan extends Model
     protected $casts = [
         'is_major' => 'boolean',
     ];
+
+
+    public function sourceBook(): BelongsTo
+    {
+        return $this->belongsTo(SourceBook::class);
+    }
 
 
     public function ring(): BelongsTo

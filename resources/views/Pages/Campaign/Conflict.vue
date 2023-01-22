@@ -150,6 +150,7 @@ import Layout from '@/views/layouts/default.vue';
 import { Link } from '@inertiajs/inertia-vue3';
 import { defineComponent, PropType, ref } from 'vue';
 import { v4 as uuidv4 } from 'uuid';
+import { Combatant } from '@/ts/data';
 
 export default defineComponent({
     components: { Layout, Link },
@@ -306,6 +307,8 @@ export default defineComponent({
         },
         cloneNpc(combatant: Combatant) {
             let clone = { ...combatant };
+            clone.uuid = uuidv4();
+
             this.combatants.push(clone);
         },
     },
