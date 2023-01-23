@@ -23,7 +23,7 @@ final class PreviousRecordAction extends Action
     {
         static::$resource = $resource;
 
-        return static::make()->record($record)->keyBindings('ctrl+space');
+        return static::make()->record($record)->keyBindings('ctrl+p');
     }
 
 

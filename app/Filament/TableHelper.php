@@ -33,6 +33,7 @@ final class TableHelper
                 ->toolbarButtons([
                     'bold',
                     'italic',
+                    'bulletList',
                     'redo',
                     'undo',
                 ]);

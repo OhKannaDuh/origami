@@ -3,13 +3,16 @@
 namespace App\Models\Character;
 
 use App\Behaviours\HasRepository;
+use App\Models\Core\AdvantageCategory;
 use App\Models\Core\AdvantageType;
 use App\Models\Core\Ring;
 use App\Models\Core\SourceBook;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * @property int $id
@@ -25,6 +28,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property SourceBook $sourceBook
  * @property AdvantageType $advantageType
  * @property Ring $ring
+ * @property Collection<AdvantageCategory> $advantageCategories
  */
 final class Advantage extends Model
 {
@@ -57,5 +61,11 @@ final class Advantage extends Model
     public function ring(): BelongsTo
     {
         return $this->belongsTo(Ring::class);
+    }
+
+
+    public function advantageCategories(): BelongsToMany
+    {
+        return $this->belongsToMany(AdvantageCategory::class, 'advantage_advantage_category');
     }
 }

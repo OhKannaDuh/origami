@@ -31,8 +31,8 @@ return new class extends Migration
             $table->json('starting_techniques');
             $table->json('starting_outfit');
             $table->json('curriculum');
-            $table->foreignIdFor(Technique::class, 'school_ability_id');
-            $table->foreignIdFor(Technique::class, 'mastery_ability_id');
+            $table->foreignIdFor(Technique::class, 'school_ability_id')->nullable();
+            $table->foreignIdFor(Technique::class, 'mastery_ability_id')->nullable();
             $table->foreignIdFor(Family::class)->nullable();
             $table->timestamps();
         });

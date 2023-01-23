@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Repositories\RepositoryInterface;
+
 abstract class Seeder extends \Illuminate\Database\Seeder
 {
 
@@ -15,5 +17,15 @@ abstract class Seeder extends \Illuminate\Database\Seeder
         $contents = file_get_contents($path);
 
         return json_decode($contents, true);
+    }
+
+
+    protected function createFrom(string $model, RepositoryInterface $repository): void
+    {
+        $data = $this->getData($model);
+
+        foreach ($data as $datum) {
+            $repository->create($datum);
+        }
     }
 }

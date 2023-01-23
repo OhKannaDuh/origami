@@ -3,6 +3,7 @@ import { replace } from 'lodash';
 export class Formatter {
     public format(target: string): string {
         target = this.opportunity(target);
+        target = this.strife(target);
         target = this.ringDie(target);
         target = this.skillDie(target);
 
@@ -14,6 +15,10 @@ export class Formatter {
 
     private opportunity(target: string): string {
         return target.replace(/\\o/g, '{{opportunity}}');
+    }
+
+    private strife(target: string): string {
+        return target.replace(/\\s/g, '{{strife}}');
     }
 
     private ringDie(target: string): string {

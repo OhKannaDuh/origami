@@ -4,6 +4,7 @@ namespace App\Behaviours\Repositories;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use PhpParser\Node\Expr\AssignOp\Mod;
 
 trait HasKeyedModel
@@ -12,9 +13,13 @@ trait HasKeyedModel
 
     public function getByKey(string $key, array $columns = ['*']): Model
     {
-        $model =  $this->execute(__FUNCTION__, fn(): Model => $this->getModel()->query()->where('key', $key)->firstOrFail($columns), [
-            'key' => $key,
-        ]);
+        try {
+            $model =  $this->execute(__FUNCTION__, fn(): Model => $this->getModel()->query()->where('key', $key)->firstOrFail($columns), [
+                'key' => $key,
+            ]);
+        } catch (ModelNotFoundException $e) {
+            throw new ModelNotFoundException("Model for key '{$key} not found.");
+        }
 
         assert($model instanceof Model);
 

@@ -12,10 +12,6 @@ final class SourceBookSeeder extends Seeder
 
     public function run(SourceBookRepositoryInterface $repository): void
     {
-        $data = $this->getData(SourceBook::class);
-
-        foreach ($data as $datum) {
-            $repository->create($datum);
-        }
+        $this->createFrom(SourceBook::class, $repository);
     }
 }

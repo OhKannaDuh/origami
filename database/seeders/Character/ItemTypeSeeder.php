@@ -12,10 +12,6 @@ final class ItemTypeSeeder extends Seeder
 
     public function run(ItemTypeRepositoryInterface $repository): void
     {
-        $data = $this->getData(ItemType::class);
-
-        foreach ($data as $datum) {
-            $repository->create($datum);
-        }
+        $this->createFrom(ItemType::class, $repository);
     }
 }

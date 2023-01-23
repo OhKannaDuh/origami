@@ -12,10 +12,6 @@ final class RingSeeder extends Seeder
 
     public function run(RingRepositoryInterface $repository): void
     {
-        $data = $this->getData(Ring::class);
-
-        foreach ($data as $datum) {
-            $repository->create($datum);
-        }
+        $this->createFrom(Ring::class, $repository);
     }
 }
