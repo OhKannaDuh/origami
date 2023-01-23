@@ -23,6 +23,8 @@ final class DatabaseSeeder extends Seeder
             Character\TechniqueSeeder::class,
             Core\AdvantageTypeSeeder::class,
             Core\DisadvantageTypeSeeder::class,
+            Core\AdvantageCategorySeeder::class,
+            Core\DisadvantageCategorySeeder::class,
             Character\AdvantageSeeder::class,
             Character\DisadvantageSeeder::class,
             Character\ClanSeeder::class,

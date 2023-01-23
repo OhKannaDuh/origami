@@ -9,7 +9,9 @@ use App\Models\Character\Family;
 use App\Models\Character\Item;
 use App\Models\Character\School;
 use App\Models\Character\Technique;
+use App\Models\Core\AdvantageCategory;
 use App\Models\Core\AdvantageType;
+use App\Models\Core\DisadvantageCategory;
 use App\Models\Core\DisadvantageType;
 use App\Models\Core\ItemSubtype;
 use App\Models\Core\ItemType;
@@ -27,7 +29,9 @@ use App\Repositories\Character\FamilyRepositoryInterface;
 use App\Repositories\Character\ItemRepositoryInterface;
 use App\Repositories\Character\SchoolRepositoryInterface;
 use App\Repositories\Character\TechniqueRepositoryInterface;
+use App\Repositories\Core\AdvantageCategoryRepositoryInterface;
 use App\Repositories\Core\AdvantageTypeRepositoryInterface;
+use App\Repositories\Core\DisadvantageCategoryRepositoryInterface;
 use App\Repositories\Core\DisadvantageTypeRepositoryInterface;
 use App\Repositories\Core\ItemSubtypeRepositoryInterface;
 use App\Repositories\Core\ItemTypeRepositoryInterface;
@@ -68,8 +72,10 @@ final class ExportCoreDataCommand extends Command
         TechniqueSubtypeRepositoryInterface $techniqueSubtypes,
         TechniqueRepositoryInterface $techniques,
         AdvantageTypeRepositoryInterface $advantageTypes,
+        AdvantageCategoryRepositoryInterface $advantageCategories,
         AdvantageRepositoryInterface $advantages,
         DisadvantageTypeRepositoryInterface $disadvantageTypes,
+        DisadvantageCategoryRepositoryInterface $disadvantageCategories,
         DisadvantageRepositoryInterface $disadvantages,
         ClanRepositoryInterface $clans,
         FamilyRepositoryInterface $families,
@@ -125,6 +131,7 @@ final class ExportCoreDataCommand extends Command
         ]));
 
         $this->create(AdvantageType::class, $this->json($advantageTypes, ['key', 'name']));
+        $this->create(AdvantageCategory::class, $this->json($advantageCategories, ['key', 'name']));
         $this->create(Advantage::class, $this->process($advantages, load: ['sourceBook', 'advantageType', 'ring'], data: [
             'source_book_key' => 'source_book.key',
             'advantage_type_key' => 'advantage_type.key',
@@ -135,6 +142,7 @@ final class ExportCoreDataCommand extends Command
         ]));
 
         $this->create(DisadvantageType::class, $this->json($disadvantageTypes, ['key', 'name']));
+        $this->create(DisadvantageCategory::class, $this->json($disadvantageCategories, ['key', 'name']));
         $this->create(Disadvantage::class, $this->process($disadvantages, load: ['sourceBook', 'disadvantageType', 'ring'], data: [
             'source_book_key' => 'source_book.key',
             'disadvantage_type_key' => 'disadvantage_type.key',
@@ -160,7 +168,7 @@ final class ExportCoreDataCommand extends Command
             'sourceBook',
             'clan',
             'ringChoiceOne',
-            'ringChoiceOne',
+            'ringChoiceTwo',
             'skillOne',
             'skillTwo',
         ], data: [

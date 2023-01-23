@@ -18,6 +18,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property int $ring_id
  * @property string $key
  * @property string $name
+ * @property string $effects
  * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
@@ -37,6 +38,7 @@ final class Disadvantage extends Model
         'ring_id',
         'key',
         'name',
+        'effects',
         'page_number',
     ];
 

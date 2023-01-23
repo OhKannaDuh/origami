@@ -29,18 +29,24 @@ final class TableHelper
     {
         $schema = [];
         foreach ($keys as $key) {
-            $schema[] = RichEditor::make('description.' . $key)
-                ->toolbarButtons([
-                    'bold',
-                    'italic',
-                    'bulletList',
-                    'redo',
-                    'undo',
-                ]);
+            $schema[] = self::richEditor('description.' . $key);
         }
 
         return Fieldset::make('Description')
             ->columns(1)
             ->schema($schema);
+    }
+
+
+    public static function richEditor(string $key): RichEditor
+    {
+        return RichEditor::make($key)
+            ->toolbarButtons([
+                'bold',
+                'italic',
+                'bulletList',
+                'redo',
+                'undo',
+            ]);
     }
 }

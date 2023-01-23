@@ -21,6 +21,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property int $ring_id
  * @property string $key
  * @property string $name
+ * @property string $effects
  * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
@@ -41,7 +42,7 @@ final class Advantage extends Model
         'ring_id',
         'key',
         'name',
-        'page_number',
+        'effects',
         'page_number',
     ];
 

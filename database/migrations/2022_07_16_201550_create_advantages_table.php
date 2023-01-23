@@ -25,6 +25,7 @@ return new class extends Migration
             $table->foreignIdFor(Ring::class);
             $table->string('key')->unique();
             $table->string('name')->unique();
+            $table->text('effects')->default('');
             $table->timestamps();
         });
     }
