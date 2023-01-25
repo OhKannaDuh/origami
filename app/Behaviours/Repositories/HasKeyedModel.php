@@ -18,7 +18,7 @@ trait HasKeyedModel
                 'key' => $key,
             ]);
         } catch (ModelNotFoundException $e) {
-            throw new ModelNotFoundException("Model for key '{$key} not found.");
+            throw new ModelNotFoundException("Model for key '{$key}' not found.");
         }
 
         assert($model instanceof Model);

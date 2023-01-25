@@ -3,13 +3,16 @@
 namespace App\Models\Character;
 
 use App\Behaviours\HasRepository;
+use App\Models\Core\DisadvantageCategory;
 use App\Models\Core\DisadvantageType;
 use App\Models\Core\Ring;
 use App\Models\Core\SourceBook;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * @property int $id
@@ -26,6 +29,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property SourceBook $sourceBook
  * @property DisadvantageType $disadvantageType
  * @property Ring $ring
+ * @property Collection<DisadvantageCategory> $disadvantageCategories
  */
 final class Disadvantage extends Model
 {
@@ -58,5 +62,11 @@ final class Disadvantage extends Model
     public function ring(): BelongsTo
     {
         return $this->belongsTo(Ring::class);
+    }
+
+
+    public function disadvantageCategories(): BelongsToMany
+    {
+        return $this->belongsToMany(DisadvantageCategory::class, 'disadvantage_disadvantage_category');
     }
 }

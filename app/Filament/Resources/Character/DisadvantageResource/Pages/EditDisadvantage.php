@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Filament\Resources\Character\AdvantageResource\Pages;
+namespace App\Filament\Resources\Character\DisadvantageResource\Pages;
 
 use App\Filament\Actions\NextRecordAction;
 use App\Filament\Actions\PreviousRecordAction;
-use App\Filament\Resources\Character\AdvantageResource;
+use App\Filament\Resources\Character\DisadvantageResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditAdvantage extends EditRecord
+class EditDisadvantage extends EditRecord
 {
-    protected static string $resource = AdvantageResource::class;
+    protected static string $resource = DisadvantageResource::class;
 
 
     protected function getActions(): array

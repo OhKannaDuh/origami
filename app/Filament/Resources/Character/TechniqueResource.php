@@ -76,9 +76,8 @@ class TechniqueResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name'),
-                TextColumn::make('key'),
-                TextColumn::make('rank'),
                 TextColumn::make('techniqueSubtype.name'),
+                TextColumn::make('rank'),
                 TextColumn::make('sourceBook.name'),
                 TextColumn::make('page_number'),
             ])

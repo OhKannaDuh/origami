@@ -8,6 +8,13 @@
                     </q-item>
                 </Link>
                 <q-separator />
+                <Link v-for="item in options" :key="item.route" :href="route(item.route)" as="span">
+                    <q-item clickable>
+                        <q-item-section v-text="item.label" />
+                    </q-item>
+                </Link>
+
+                <q-separator />
 
                 <q-item v-if="$page.props.auth.user" clickable v-close-popup @click="logout">
                     <q-item-section>Log Out</q-item-section>
@@ -50,10 +57,6 @@ export default defineComponent({
                 label: 'Home',
             },
             {
-                route: 'source-book.index.show',
-                label: 'Source Books',
-            },
-            {
                 route: 'character.index.show',
                 label: 'Characters',
             },
@@ -63,7 +66,34 @@ export default defineComponent({
             },
         ]);
 
-        return { items };
+        const options = ref([
+            {
+                route: 'source-book.index.show',
+                label: 'Source Books',
+            },
+            {
+                route: 'clan.index.show',
+                label: 'Clans',
+            },
+            {
+                route: 'family.index.show',
+                label: 'Families',
+            },
+            {
+                route: 'school.index.show',
+                label: 'Schools',
+            },
+            {
+                route: 'advantage.index.show',
+                label: 'Advantages',
+            },
+            {
+                route: 'disadvantage.index.show',
+                label: 'Disadvantages',
+            },
+        ]);
+
+        return { items, options };
     },
     methods: {
         logout() {

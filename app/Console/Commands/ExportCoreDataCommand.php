@@ -132,24 +132,28 @@ final class ExportCoreDataCommand extends Command
 
         $this->create(AdvantageType::class, $this->json($advantageTypes, ['key', 'name']));
         $this->create(AdvantageCategory::class, $this->json($advantageCategories, ['key', 'name']));
-        $this->create(Advantage::class, $this->process($advantages, load: ['sourceBook', 'advantageType', 'ring'], data: [
+        $this->create(Advantage::class, $this->process($advantages, load: ['sourceBook', 'advantageType', 'ring', 'advantageCategories'], data: [
             'source_book_key' => 'source_book.key',
             'advantage_type_key' => 'advantage_type.key',
             'ring_key' => 'ring.key',
             'key' => 'key',
             'name' => 'name',
             'page_number' => 'page_number',
+            'effects' => 'effects',
+            'advantage_category_keys' => 'advantage_categories.*.key'
         ]));
 
         $this->create(DisadvantageType::class, $this->json($disadvantageTypes, ['key', 'name']));
         $this->create(DisadvantageCategory::class, $this->json($disadvantageCategories, ['key', 'name']));
-        $this->create(Disadvantage::class, $this->process($disadvantages, load: ['sourceBook', 'disadvantageType', 'ring'], data: [
+        $this->create(Disadvantage::class, $this->process($disadvantages, load: ['sourceBook', 'disadvantageType', 'ring', 'disadvantageCategories'], data: [
             'source_book_key' => 'source_book.key',
             'disadvantage_type_key' => 'disadvantage_type.key',
             'ring_key' => 'ring.key',
             'key' => 'key',
             'name' => 'name',
             'page_number' => 'page_number',
+            'effects' => 'effects',
+            'disadvantage_category_keys' => 'disadvantage_categories.*.key'
         ]));
 
         $this->create(Clan::class, $this->process($clans, load: ['sourceBook', 'ring', 'skill'], data: [

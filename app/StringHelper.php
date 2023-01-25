@@ -14,12 +14,13 @@ final class StringHelper extends Str
         ')',
         '[',
         ']',
+        '’',
     ];
 
 
     public static function key(string $subject): string
     {
-        return self::of($subject)->replace('-', '_')->remove(self::KEY_REMOVE)->lower()->snake();
+        return self::of($subject)->replace('-', '_')->remove(self::KEY_REMOVE)->lower()->snake()->ascii();
     }
 
 

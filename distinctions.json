@@ -1,0 +1,204 @@
+[
+    {
+        "ring_key": "earth",
+        "advantage_key": "ebisus_blessing",
+        "type_keys": [
+            "physical",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Ebisu\u2019s Blessing distinction:<\/p><ul><li>Laborers recognize you as a kindred spirit, and characters with status 30 or lower are innately trust- ing of you unless you give them reason not to be.<\/li><li>When performing a check for which the bless- ing of this Fortune is useful (such as a Com- merce [Earth] check to safely transport goods or a Labor [Earth] check to plow a field), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "air",
+        "advantage_key": "famously_honest",
+        "type_keys": [
+            "fame",
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Famously Honest distinction:<\/p><ul><li>Other people have heard of you for your hon- esty, and they believe you by default unless given evidence to the contrary.<\/li><li>When performing a check for which you can leverage your reputation for telling the truth (such as a Command [Air] check to convince someone of a statement\u2019s veracity, or a Com- merce [Air] check to sell an item at an inflated price), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "void",
+        "advantage_key": "famously_lucky",
+        "type_keys": [
+            "fame",
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Famously Lucky distinction:<\/p><ul><li>Other people have heard of you for your good fortune, and they believe it by default unless given evidence to the contrary.<\/li><li>When performing a check for which you need to leverage your reputation for having things turn out your way (such as a Command [Void] check to get your troops to put their faith in you utterly or a Games [Void] check to let fate decide the match), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "earth",
+        "advantage_key": "famously_reliable",
+        "type_keys": [
+            "fame",
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Famously Reliable distinction:<\/p><ul><li>Other people have heard of you for your remarkable adherence to your oaths and responsibilities, even over and above most samurai, and they believe it by default unless given evidence to the contrary.<\/li><li>When performing a check for which you need to leverage your reputation for keeping your oaths and bargains (such as a Command [Earth] check to calm a panicked soldier or a Performance [Earth] check to relate a tale that inspires patience), you may reroll up to two dice. 104 C H A P T E R 2 : C R E AT I N G A C H ARACTER<\/li><\/ul>"
+    },
+    {
+        "ring_key": "fire",
+        "advantage_key": "famously_successful",
+        "type_keys": [
+            "fame",
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Famously Successful distinction:<\/p><ul><li>Other people have heard of you for your ability to get results at any cost, and they believe it by default unless given evidence to the contrary.<\/li><li>When performing a check for which you need to leverage your reputation for efficiency (such as a Courtesy [Fire] check to convince your lord to give you a position or a Tactics [Fire] check to get enemy troops to withdraw in the face of a show of force), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "water",
+        "advantage_key": "famously_wealthy",
+        "type_keys": [
+            "fame",
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Famously Wealthy distinction:<\/p><ul><li>Other people have heard of you for your riches or ability to procure wealth, and they believe it by default unless given evidence to the contrary.<\/li><li>When performing a check for which you need to leverage your reputation for access to resources (such as a Commerce [Water] check to buy goods on credit or a Courtesy [Water] check to win over a group of people), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "water",
+        "advantage_key": "flexibility",
+        "type_keys": [
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Flexibility distinction:<\/p><ul><li>You can fit through spaces too tight for most people, allowing you access to places others cannot reach.<\/li><li>When performing a check for which your physi- cal flexibility is a benefit (such as a Performance [Water] check to perform a dance or a Martial Arts [Unarmed] [Water] check to grapple anoth- er person), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "fire",
+        "advantage_key": "fukurokujins_blessing",
+        "type_keys": [
+            "mental",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Fukurokujin\u2019s Blessing distinction:<\/p><ul><li>You always know the nearest location where you can undertake research on a given subject, and can complete research in half the time it would take another character.<\/li><li>When performing a check for which the blessing of this Fortune is a benefit (such as a Medicine [Fire] check to experiment with a cure for a strange new malady or a Survival [Fire] check to speculate on a creature\u2019s possible qualities based on its physiology), you may reroll up to two dice. 105 CHAPTER 2: CREATING A CHARACTER<\/li><\/ul>"
+    },
+    {
+        "ring_key": "earth",
+        "advantage_key": "indomitable_will",
+        "type_keys": [
+            "mental",
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Indomitable Will distinction:<\/p><ul><li>You can always choose to stand your ground, even when faced with untenable odds, super- natural terrors, or sorcerous powers that bend the minds of lesser souls.<\/li><li>When performing a check for which you need to keep your cool when dealing with danger (such as a Command [Earth] check to give orders under pressure or a Meditation [Earth] check to resist the effects of fear), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "void",
+        "advantage_key": "jurojins_blessing",
+        "type_keys": [
+            "physical",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Jurojin\u2019s Blessing distinction:<\/p><ul><li>You do not contract mundane diseases, and you recover from poisons and supernatu- ral maladies in half the time it would take someone else.<\/li><li>When performing a check for which you need to survive and remain vital (such as a Fitness [Void] check to resist spiritual contamination or a Survival [Void] check to get by on bare minimum supplies), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "earth",
+        "advantage_key": "keen_balance",
+        "type_keys": [
+            "mental",
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Keen Balance distinction:<\/p><ul><li>When moving across treacherous terrain (such as rooftops or the rigging of a ship), as long as nobody is hindering you, you do not fall.<\/li><li>When performing a check for which your balance is a benefit (such as a Fitness [Earth] check to resist being knocked down or moved or a Sea- faring [Earth] check to withstand getting seasick during a storm), you may reroll up to two dice. 106<\/li><\/ul>"
+    },
+    {
+        "ring_key": "air",
+        "advantage_key": "keen_hearing",
+        "type_keys": [
+            "physical",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Keen Hearing distinction:<\/p><ul><li>You can hear noises that others do not detect, and you can assess your environment by sound alone. Even in darkness, you can accurately pinpoint the location of people and other mov- ing objects in your immediate vicinity.<\/li><li>When performing a check for which you need to hear soft, distant, or subtle noises (such as a Courtesy [Air] check to eavesdrop at a distance where you are not noticed or a Survival [Air] check to listen to an animal\u2019s movement before springing a trap), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "water",
+        "advantage_key": "keen_sight",
+        "type_keys": [
+            "physical",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Keen Sight distinction:<\/p><ul><li>You can spot details of objects at a much great- er distance than others can, and you pick up on small visual details that others might overlook.<\/li><li>When performing a check for which you need to spot details or see things at a distance (such as an Aesthetics [Water] check to spot minor details in an art piece or a Martial Arts [Ranged] [Water] check to hit a faraway target), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "fire",
+        "advantage_key": "keen_smell",
+        "type_keys": [
+            "physical",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Keen Smell distinction:<\/p><ul><li>You always remember scents you have expe- rienced before, and you can identify by smell things that others would certainly overlook.<\/li><li>When performing a check for which you need to use your sense of smell (such as a Labor [Fire] check to experiment with a new recipe or a Survival [Fire] check to determine if a plant is poisonous based on its smell), you may reroll up to two dice. 107 CHAPTER 2: CREATING A CHARACTER<\/li><\/ul>"
+    },
+    {
+        "ring_key": "void",
+        "advantage_key": "karmic_tie",
+        "type_keys": [
+            "interpersonal",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Karmic Tie distinction:<\/p><ul><li>You have a supernatural tie with another char- acter of your choosing, and as if you had a sixth sense, you can tell when the character to whom you are karmically tied is in danger or has died. You always know the general direction they are located in, even if they are separated from you by thousands of li.<\/li><li>When performing a check to act on behalf of the one with whom you share a bond (such as a Composition [Void] check to express your tru- est feelings in a poem or a Martial Arts [Melee] [Void] check to fight on their behalf), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "water",
+        "advantage_key": "kisshotens_blessing",
+        "type_keys": [
+            "physical",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Kis- sh\u014dten\u2019s Blessing distinction:<\/p><ul><li>Children enjoy being around you and are much more receptive to your demands. Your own children (if you have any) are particularly bless- ed with health, beauty, happiness, and luck.<\/li><li>When performing a check for which you need to communicate with children (such as a Com- mand [Water] check to order them around or a Performance [Water] check to entertain them), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "earth",
+        "advantage_key": "large_stature",
+        "type_keys": [
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Large Stature distinction:<\/p><ul><li>You can easily reach objects on high shelves, are easy to spot in a crowd, can see over other people, and tend to hit your head on doorways.<\/li><li>When performing a check for which you can take advantage of your size (such as a Fitness [Earth] check to hold up a heavy object or a Labor [Earth] check to build the frame of a house), you may reroll up to two dice. PArAgon of A Bushid\u014d \u201cThe heroes of myth\u2014even the ones who were not of divine blood\u2014did not live as humans do. It is impossible to embody an ideal without surpassing some part of your own humanity.\u201d Types: Mental, Virtue Pick One: Compassion (Water), Courage (Fire), Cour- tesy (Air), Duty and Loyalty (Earth), Honor (Void), Righ- teousness (Void), Sincerity (Void). A character may have multiple instances of this advantage for different tenets. Each tenet (Paragon of Courage, Paragon of Courtesy, etc.) counts as a separate advantage, and a character may have more than one such advantage. Effects: The following apply to a character with the Paragon of a Bushid\u014d Tenet distinction:<\/li><li>You believe utterly in the chosen Bushid\u014d tenet, and others instinctively discern that your actions are genuine when you act in accordance with it.<\/li><li>When performing a check for which you need to convince others of, or leverage your faith in, the Bushid\u014d tenet (such as a Performance check to recount a tale that impresses its importance upon others or a Martial Arts [Melee] check to take up arms for this cause), you may reroll up to two dice. 108 C H A P T E R 2 : C R E AT I N G A C H ARACTER<\/li><\/ul>"
+    },
+    {
+        "ring_key": "earth",
+        "advantage_key": "precise_memory",
+        "type_keys": [
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Precise Memory distinction:<\/p><ul><li>You can recall anything you have read or heard within the current game session exactly, and you often dredge up older facts with much greater ease than others.<\/li><li>When performing a check for which you must recall details precisely (such as a Games [Earth] check to recall the opening moves of a classic defensive strategy in sh\u014dgi or a Government [Earth] check to remember the specifics of a historical event), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "fire",
+        "advantage_key": "quick_reflexes",
+        "type_keys": [
+            "physical",
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Quick Reflexes distinction:<\/p><ul><li>At the start of each scene, you can always grab an item within reach or reposition it a few pac- es within your environment. The GM is the final arbiter of how much you can prepare or how much distance you can achieve before the rest of the scene begins.<\/li><li>When performing a check for which you must act swiftly (such as a Meditation [Fire] check to generate initiative during a duel or a Survival [Fire] check to put together a makeshift weap- on), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "void",
+        "advantage_key": "seasoned",
+        "type_keys": [
+            "mental",
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Seasoned distinction:<\/p><ul><li>You are older and more worldly than most of your fellows and have learned a few things along the way. While you do not start with addi- tional experience, your experience expenditures might reflect \u201crevealing\u201d aspects of yourself you have held back to avoid overshadowing your younger companions. You have met members of many cultures and organizations, and you know how to properly behave in almost any city in Rokugan\u2014and perhaps even beyond. You also know many other older people, and the number and variety of your acquaintances often surprises your younger companions.<\/li><li>When performing a check for which your hard- earned wisdom is an advantage (such as a Courtesy [Void] check to impart wisdom to an impetuous comrade or a Theology [Void] check to intuit whether a spirit will appreciate your offering), you may reroll up to two dice. 109 CHAPTER 2: CREATING A CHARACTER<\/li><\/ul>"
+    },
+    {
+        "ring_key": "void",
+        "advantage_key": "sixth_sense",
+        "type_keys": [
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Sixth Sense distinction:<\/p><ul><li>You have an instinctive sense of supernatural beings, and you can feel the presence of spirits and similar entities even when they have not chosen to reveal themselves. This feeling is ominous in the presence of beings with evil intentions and neutral when the beings are simply going about their business as usual.<\/li><li>When performing a check for which you need to follow your hunches (such as a Meditation [Void] check to generate initiative during a duel or a Theology [Void] check to detect a snarl in the invisible threads of the universe), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "air",
+        "advantage_key": "small_stature",
+        "type_keys": [
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Small Stature distinction:<\/p><ul><li>You can fit into small spaces, can hide behind other people, are hard to spot in a crowd, and sometimes need assistance reaching objects on high shelves.<\/li><li>When performing a check for which being small is helpful (such as a Fitness [Air] check to resist a critical strike by evading or a Skulduggery [Air] check to pick someone\u2019s pocket), you may reroll up to two dice.<\/li><\/ul>"
+    },
+    {
+        "ring_key": "air",
+        "advantage_key": "subtle_observer",
+        "type_keys": [
+            "interpersonal",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Subtle Observer distinction:<\/p><ul><li>You can understand the cues that people give off while speaking, and you can read people\u2019s lips and facial expressions to understand what they are saying, even if you cannot hear them.<\/li><li>When performing a check for which you need to spot or use small details of other people nearby (such as a Courtesy [Air] check to reveal an unpleasant truth pleasantly or a Sentiment [Air] check to detect someone else\u2019s weakness- es), you may reroll up to two dice.<\/li><\/ul>"
+    }
+]

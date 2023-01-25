@@ -2,18 +2,18 @@
 
 namespace App\Filament\Resources\Character;
 
-use App\Filament\Resources\Character\AdvantageResource\Pages;
+use App\Filament\Resources\Character\DisadvantageResource\Pages;
 use App\Filament\TableHelper;
-use App\Models\Character\Advantage;
+use App\Models\Character\Disadvantage;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
 
-class AdvantageResource extends Resource
+class DisadvantageResource extends Resource
 {
-    protected static ?string $model = Advantage::class;
+    protected static ?string $model = Disadvantage::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
@@ -28,17 +28,17 @@ class AdvantageResource extends Resource
                 Forms\Components\TextInput::make('key')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\Select::make('advantage_type_id')
-                    ->relationship('advantageType', 'name')
+                Forms\Components\Select::make('disadvantage_type_id')
+                    ->relationship('disadvantageType', 'name')
                     ->required(),
                 Forms\Components\Select::make('ring_id')
                     ->relationship('ring', 'name')
                     ->required(),
-                Forms\Components\Select::make('advantageCategories')
+                Forms\Components\Select::make('disadvantageCategories')
                     ->searchable(false)
                     ->preload()
                     ->multiple()
-                    ->relationship('advantageCategories', 'name'),
+                    ->relationship('disadvantageCategories', 'name'),
                 TableHelper::richEditor('effects'),
                 TableHelper::sourceBook(),
             ]);
@@ -50,7 +50,7 @@ class AdvantageResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('advantageType.name'),
+                Tables\Columns\TextColumn::make('disadvantageType.name'),
                 Tables\Columns\TextColumn::make('ring.name'),
                 Tables\Columns\TextColumn::make('sourceBook.name'),
                 Tables\Columns\TextColumn::make('page_number'),
@@ -78,9 +78,9 @@ class AdvantageResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListAdvantages::route('/'),
-            'create' => Pages\CreateAdvantage::route('/create'),
-            'edit' => Pages\EditAdvantage::route('/{record}/edit'),
+            'index' => Pages\ListDisadvantages::route('/'),
+            'create' => Pages\CreateDisadvantage::route('/create'),
+            'edit' => Pages\EditDisadvantage::route('/{record}/edit'),
         ];
     }
 }
