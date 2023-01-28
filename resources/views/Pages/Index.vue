@@ -6,6 +6,11 @@
                     <route :route="route('character.index.show')" color="accent" label="Characters" fit />
                 </q-card-section>
             </q-card>
+            <q-card class="no-border-radius q-pa-xs q-ma-xs col-12 col-md-6 col-lg-4" v-if="$page.props.auth.user">
+                <q-card-section class="text-center">
+                    <route :route="route('campaign.index.show')" color="accent" label="Campaigns" fit />
+                </q-card-section>
+            </q-card>
             <q-card class="no-border-radius q-pa-xs q-ma-xs col-12 col-md-6 col-lg-4">
                 <q-card-section class="text-center">
                     <route :route="route('source-book.index.show')" color="accent" label="Source Books" fit />
@@ -34,6 +39,16 @@
             <q-card class="no-border-radius q-pa-xs q-ma-xs col-12 col-md-6 col-lg-4">
                 <q-card-section class="text-center">
                     <route :route="route('disadvantage.index.show')" color="accent" label="Disadvantages" fit />
+                </q-card-section>
+            </q-card>
+            <q-card class="no-border-radius q-pa-xs q-ma-xs col-12 col-md-6 col-lg-4">
+                <q-card-section class="text-center">
+                    <route :route="route('disadvantage.index.show')" color="accent" label="Techniques (nf)" fit />
+                </q-card-section>
+            </q-card>
+            <q-card class="no-border-radius q-pa-xs q-ma-xs col-12 col-md-6 col-lg-4">
+                <q-card-section class="text-center">
+                    <route :route="route('disadvantage.index.show')" color="accent" label="Items (nf)" fit />
                 </q-card-section>
             </q-card>
         </div>

@@ -5,16 +5,20 @@
     :ref="el => dialog = el"
     @update="update"
   />
+  <school-curriculum
+    :school='school'
+    :models='models'
+    :ref="el => curriculum = el"
+  />
   <q-card
     class="no-border-radius fill-height cursor-pointer"
     :class="{ highlight: hasChosenSchool(school) }"
-    @click="dialog.show"
   >
     <!-- <q-img class="col" src="https://cdn.quasar.dev/img/parallax2.jpg" /> -->
     <q-card-section>
       <div class="text-h5 q-mb-none" v-text="school.name" />
       <div class="text-caption q-mb-xs" v-text="schoolTypes" />
-      <p class="q-ma-none">
+      <p class="q-ma-none" v-if="school.ring_mode === 'normal' && school.ring_one && school.ring_two">
         <span class="text-weight-bold"> Rings</span>: +1
         {{ school.ring_one.name }}, +1
         {{ school.ring_two.name }}
@@ -79,23 +83,27 @@
         </span>
       </p>
     </q-card-section>
-    <q-card-actions class="q-pa-none row">
-        <q-btn class="col-12 no-border-radius" label="Select" color="secondary" flat />
+    <q-card-actions class="q-pa-none row fill-width">
+        <q-btn class="col-6 q-ma-none no-border-radius" label="View Curriculum" color="secondary" flat @click="curriculum.show"/>
+        <q-btn class="col-6 q-ma-none no-border-radius" label="Select" color="secondary" flat @click="dialog.show"/>
     </q-card-actions>
   </q-card>
 </template>
 
 <script lang="ts">
 import SchoolDialog from './SchoolDialog.vue';
+import SchoolCurriculum from './SchoolCurriculum.vue';
 import { Character as CharacterData } from '@/ts/Data/Character';
 import { CharacterCreationModels } from '@/ts/Data/CharacterCreationModels';
 import { QDialog } from 'quasar';
 import { StartingOutfit } from '@/ts/Data/StartingOutfit';
 import { StartingTechnique } from '@/ts/Data/StartingTechnique';
 import { defineComponent, PropType, ref } from 'vue';
+import { App } from '@/ts/models';
+import { ChosenStartingOutfit, StartingTechniqueData } from '@/ts/data';
 
 export default defineComponent({
-    components: { SchoolDialog },
+    components: { SchoolDialog, SchoolCurriculum },
     emits: ['update'],
     props: {
         school: {
@@ -114,7 +122,9 @@ export default defineComponent({
     setup() {
         const dialog = ref(QDialog);
 
-        return { dialog };
+        const curriculum =ref(QDialog);
+
+        return { dialog, curriculum };
     },
     methods: {
         update(
@@ -131,6 +141,9 @@ export default defineComponent({
         getStartingTechnique(data: StartingTechniqueData): StartingTechnique {
             return new StartingTechnique(data, this.models);
         },
+        test() {
+          console.log('Testing');
+        }
     },
     computed: {
         schoolTypes(): string {
@@ -160,3 +173,9 @@ export default defineComponent({
     },
 });
 </script>
+
+<style lang="scss" scoped>
+.q-ma-none {
+  margin: 0 !important;
+}
+</style>

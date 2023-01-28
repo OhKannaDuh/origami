@@ -4,11 +4,12 @@
             <q-card
                 @click="update(distinction)"
                 :class="{ highlight: this.character.distinction?.key === distinction.key }"
-                class="no-border-radius fill-height cursor-pointer"
+                class="no-border-radius fill-height cursor-pointer column"
             >
                 <q-card-section>
                     <div class="text-h5 text-center" v-text="`${distinction.name} (${distinction.ring.name})`" />
                 </q-card-section>
+                <q-space />
                 <q-card-actions class="q-pa-none row">
                     <q-btn class="col-12 no-border-radius" label="Select" color="secondary" flat />
                 </q-card-actions>

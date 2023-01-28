@@ -30,17 +30,23 @@ final class SchoolSeeder extends Seeder
 
         foreach ($data as $datum) {
             $sourceBook = $sourceBooks->getByKey($datum['source_book_key']);
-            $ringOne = $rings->getByKey($datum['ring_one_key']);
-            $ringTwo = $rings->getByKey($datum['ring_two_key']);
 
             $create = Arr::only($datum, ['name', 'key', 'honor', 'starting_skill_amount', 'starting_skills', 'starting_techniques', 'starting_outfit', 'curriculum', 'page_number']);
             $create['source_book_id'] = $sourceBook->getKey();
-            $create['ring_one_id'] = $ringOne->getKey();
-            $create['ring_two_id'] = $ringTwo->getKey();
 
-            if ($datum['family_key'] !== null) {
+            if ($datum['family_key'] != null) {
                 $family = $families->getByKey($datum['family_key']);
                 $create['family_id'] = $family->getKey();
+            }
+
+            if ($datum['ring_one_key'] != null) {
+                $ring = $rings->getByKey($datum['ring_one_key']);
+                $create['ring_one_id'] = $ring->getKey();
+            }
+
+            if ($datum['ring_two_key'] != null) {
+                $ring = $rings->getByKey($datum['ring_two_key']);
+                $create['ring_two_id'] = $ring->getKey();
             }
 
             $school = $repository->create($create);

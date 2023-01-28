@@ -36,7 +36,7 @@ final class AddProprtyDocblockCommand extends Command
     protected $name = 'docblock:generate';
 
     /** @var string */
-    protected $description = 'Add Model proprty docblocks to <odel classes.';
+    protected $description = 'Add Model proprty docblocks to model classes.';
 
 
     public function handle(): bool

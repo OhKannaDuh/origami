@@ -19,6 +19,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^3.4",
+        "league/csv": "^9.8",
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-laravel": "^1.2",
         "predis/predis": "^2.0",

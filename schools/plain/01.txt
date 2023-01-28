@@ -1,80 +1,23 @@
-Bayushi Deathdealer School
-[Bushi, Shinobi]
-The school of warriors Bayushi founded trains under
-the principle that it is always better to be underesti-
-mated. Its doors are open to any aspirant who can sur-
-vive its rigors, but its secrets are concealed to those
-who are not cunning and inventive enough to uncover
-them. Its curriculum includes the bow, the sword, and
-subtler weapons still. The school also teaches iaijutsu—
-but students are always reminded that it is merely a
-tool of power like any other. Every tool has its proper
-place and proper uses, and the Bayushi Deathdealer
-school gives its students the widest arsenal available.
-Rings: +1 Air, +1 Fire
-Starting Skills (choose five): +1 Command, +1 Cour-
-tesy, +1 Fitness, +1 Martial Arts (Melee), +1 Martial Arts
-(Ranged), +1 Tactics, +1 Sentiment, +1 Skulduggery
+Rings: +1 Air, +1 Water
+Starting Skills (choose five): +1 Command, +1 Courtesy,
++1 Culture, +1 Games, +1 Government, +1 Martial
+Arts [Melee], +1 Theology
 Honor: 40
-Techniques Available: Kata, Rituals, Shūji
+Techniques Available: Invocations (), Rituals (),
+Shūji ()
 Starting Techniques:
-$ Kata (choose one): Striking as Air, Striking as Fire
-$ Shūji: Assess Strengths
-Way of the Scorpion (School Ability): When you exploit
-a target’s disadvantage (see Turning Advantages and
-Disadvantages, page 100 of the core rulebook) as part
-of an Initiative check for a duel or an Attack action, you
-do not need to spend a Void point, and you may reroll
-additional dice up to your school rank.
-Starting Outfit: Traveling clothes, ashigaru armor,
-daishō, knife, shinobigatana or folding half bow,
-traveling pack.
-89
-CHAPTER 2: WARS OF WORDS AND SHADOWSADVANCE TYPE
-RANK 1
-Martial Skills Skl. Grp.
-Courtesy Skill
-Games Skill
-Skulduggery Skill
-General Kata Rank 1  Tech. Grp.
-= Deceitful Strike  Technique
-Spiteful Loss  Technique
-RANK 2
-Social Skills Skl. Grp.
-Martial Arts (Melee) Skill
-Meditation Skill
-Skulduggery Skill
-Air Shūji Rank 1–2  Tech. Grp.
-= Deadly Sting  Technique
-Iaijutsu Cut: Rising Blade  Technique
-RANK 3
-Martial Skills Skl. Grp.
-Courtesy Skill
-Smithing Skill
-Survival Skill
-Close Combat Kata Rank 1–3  Tech. Grp.
-= Cunning Distraction  Technique
-All Shall Fear Me  Technique
-RANK 4
-Scholar Skills Skl. Grp.
-Command Skill
-Games Skill
-Tactics Skill
-Ranged Kata Rank 1–4  Tech. Grp.
-= A Samurai's Fate  Technique
-Rallying Cry  Technique
-RANK 5
-Social Skills Skl. Grp.
-Martial Arts (Melee) Skills
-Martial Arts (Ranged) Skill
-Tactics Skill
-Kata Rank 1–5  Tech. Grp.
-= Stillness of Death  Technique
-Hidden in Smoke  Technique
-RANK 6 Strike First, Strike Last (Mastery Ability):
-When you inflict a critical strike during a
-duel or skirmish, treat the deadliness of
-your weapon as increased by the difference
-between your initiative and your target's
-initiative (subtracting the lower of the two
-initiative values from the higher).
+$ Invocations: Dominion of Suijin, Reflections
+of P'an Ku
+$ Rituals (choose three): Cleansing Rite, Com-
+mune with the Spirits, Divination, Thresh-
+old Barrier
+May the Spirits Show the Path (School Ability): Once
+per scene if you would fail a Social check, you may
+immediately make a TN 5 Theology check, with the TN
+being reduced by a number equal to your school rank
+(to a minimum of 1). If you succeed, you may change
+any kept  on that Social check to  results instead.
+Starting Outfit: Traveling clothes, sanctified robes,
+wakizashi (short sword), any one weapon of rarity 6
+or lower, scroll satchel, calligraphy set, list of observa-
+tions, traveling pack.

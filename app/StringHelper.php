@@ -15,6 +15,7 @@ final class StringHelper extends Str
         '[',
         ']',
         '’',
+        '!',
     ];
 
 

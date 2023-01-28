@@ -24,8 +24,9 @@ return new class extends Migration
             $table->foreignIdFor(SourceBook::class);
             $table->string('key', 64);
             $table->string('name', 64);
-            $table->foreignIdFor(Ring::class, 'ring_one_id');
-            $table->foreignIdFor(Ring::class, 'ring_two_id');
+            $table->string('ring_mode')->default(Ring::MODE_NORMAL);
+            $table->foreignIdFor(Ring::class, 'ring_one_id')->nullable();
+            $table->foreignIdFor(Ring::class, 'ring_two_id')->nullable();
             $table->integer('starting_skill_amount', false, true);
             $table->json('starting_skills');
             $table->json('starting_techniques');

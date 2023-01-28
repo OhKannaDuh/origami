@@ -20,8 +20,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property int $source_book_id
  * @property string $key
  * @property string $name
- * @property int $ring_one_id
- * @property int $ring_two_id
+ * @property string $ring_mode
+ * @property int|null $ring_one_id
+ * @property int|null $ring_two_id
  * @property int $starting_skill_amount
  * @property array $starting_skills
  * @property array $starting_techniques
@@ -36,8 +37,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property int $honor
  *
  * @property SourceBook $sourceBook
- * @property Ring $ringOne
- * @property Ring $ringTwo
+ * @property Ringnull $ringOne
+ * @property Ringnull $ringTwo
  * @property Family $family
  * @property Collection<TechniqueType> $availableTechniqueTypes
  * @property Collection<TechniqueSubtype> $availableTechniqueSubtypes
@@ -52,6 +53,7 @@ final class School extends Model
         'source_book_id',
         'key',
         'name',
+        'ring_mode',
         'ring_one_id',
         'ring_two_id',
         'starting_skill_amount',

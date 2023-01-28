@@ -2,13 +2,16 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
+use App\Repositories\UserRepositoryInterface;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Artisan;
 
 final class DatabaseSeeder extends Seeder
 {
 
 
-    public function run(): void
+    public function run(UserRepositoryInterface $users): void
     {
         $this->call([
             Core\SourceBookSeeder::class,
@@ -32,5 +35,13 @@ final class DatabaseSeeder extends Seeder
             Core\SchoolTypeSeeder::class,
             Character\SchoolSeeder::class,
         ]);
+
+        Artisan::call('user:import');
+
+        $user = $users->getById(1);
+        assert($user instanceof User);
+
+        $user->admin = 1;
+        $user->save();
     }
 }

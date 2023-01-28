@@ -4,8 +4,6 @@
  * Changes to this file will be lost when the command is run again
  */
 
-import { Advancements, CharacterStats, IInventory, SchoolCurriculum, StartingOutfitData, StartingTechniqueData } from './data';
-
 declare namespace App.Models {
     export interface User {
         id: number;
@@ -24,6 +22,7 @@ declare namespace App.Models {
         owned_campaigns_count?: number | null;
         campaigns_count?: number | null;
     }
+
 }
 
 declare namespace App.Models.Core {
@@ -169,6 +168,7 @@ declare namespace App.Models.Core {
         created_at: string | null;
         updated_at: string | null;
     }
+
 }
 
 declare namespace App.Models.Character {
@@ -300,11 +300,12 @@ declare namespace App.Models.Character {
         source_book_id: number;
         key: string;
         name: string;
-        ring_one_id: number;
-        ring_two_id: number;
+        ring_mode: string;
+        ring_one_id: number | null;
+        ring_two_id: number | null;
         starting_skill_amount: number;
         starting_skills: string;
-        starting_techniques: { [key: string]: StartingTechniqueData };
+        starting_techniques: {[key: string]: StartingTechniqueData};
         starting_outfit: StartingOutfitData[];
         curriculum: SchoolCurriculum;
         school_ability_id: number | null;
@@ -343,4 +344,5 @@ declare namespace App.Models.Character {
         disadvantage_categories?: Array<App.Models.Core.DisadvantageCategory> | null;
         disadvantage_categories_count?: number | null;
     }
+
 }
