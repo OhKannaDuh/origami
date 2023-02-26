@@ -64,7 +64,7 @@ return new class extends Migration
             ],
             [
                 "type" => "item",
-                "item_key" => "disguise_key",
+                "item_key" => "disguise_kit",
                 "quantity" => 1
             ],
             [

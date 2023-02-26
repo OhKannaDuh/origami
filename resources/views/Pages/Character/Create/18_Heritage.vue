@@ -46,6 +46,7 @@ import _ from 'lodash';
 import { Character as CharacterData } from '@/ts/Data/Character';
 import { CharacterCreationModels } from '@/ts/Data/CharacterCreationModels';
 import { CoreRulebookTable } from '@/ts/Data/HeritageTables/CoreRulebookTable';
+import { CelestialRealmsTable } from '@/ts/Data/HeritageTables/CelestialRealmsTable';
 import { FieldsOfVictoryTable } from '@/ts/Data/HeritageTables/FieldsOfVictoryTable';
 import { HeritageTable } from '@/ts/Data/HeritageTable';
 import { defineComponent, PropType, ref } from 'vue';
@@ -66,6 +67,7 @@ export default defineComponent({
         const tables = ref<HeritageTable[]>([]);
         tables.value.push(new CoreRulebookTable(props.models));
         tables.value.push(new FieldsOfVictoryTable(props.models));
+        tables.value.push(new CelestialRealmsTable(props.models));
 
         const table = ref<HeritageTable>(tables.value[0]);
 
