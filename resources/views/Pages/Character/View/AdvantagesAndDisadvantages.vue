@@ -6,6 +6,7 @@
             :columns="columns"
             :saveManager="saveManager"
             @open="closeOthers"
+            @show="show"
             :ref="(el) => (references.distinctions = el)"
         />
         <adversities
@@ -14,6 +15,7 @@
             :columns="columns"
             :saveManager="saveManager"
             @open="closeOthers"
+            @show="show"
             :ref="(el) => (references.adversities = el)"
         />
         <passions
@@ -22,6 +24,7 @@
             :columns="columns"
             :saveManager="saveManager"
             @open="closeOthers"
+            @show="show"
             :ref="(el) => (references.passions = el)"
         />
         <anxieties
@@ -30,9 +33,31 @@
             :columns="columns"
             :saveManager="saveManager"
             @open="closeOthers"
+            @show="show"
             :ref="(el) => (references.anxieties = el)"
         />
     </div>
+    <q-drawer v-model="drawer" elevated overlay side="right">
+        <q-scroll-area class="fit">
+            <q-list class="q-pa-sm">
+                <q-item clickable @click="close">
+                    <q-item-section avatar>
+                        <q-icon name="chevron_right" />
+                    </q-item-section>
+                    <q-item-section>Close</q-item-section>
+                </q-item>
+                <q-separator />
+                <q-card v-if="current" flat class="p-inline p-no-margin">
+                    <q-card-section>
+                        <h6 class="no-margin" v-text="current.name" />
+                    </q-card-section>
+                    <q-card-section v-if="current.effects">
+                        <span v-format="current.effects" />
+                    </q-card-section>
+                </q-card>
+            </q-list>
+        </q-scroll-area>
+    </q-drawer>
 </template>
 
 <script lang="ts">
@@ -95,11 +120,16 @@ export default defineComponent({
 
         const references = ref<Cloasables>({});
 
+        let current = ref<App.Models.Character.Advantage | App.Models.Character.Disadvantage | null>(null);
+        let drawer = ref<boolean>(false);
+
         return {
             advantages,
             disadvantages,
             columns,
             references,
+            drawer,
+            current,
         };
     },
     methods: {
@@ -111,6 +141,13 @@ export default defineComponent({
 
                 item.drawer = false;
             }
+        },
+        show(event: Event, object: App.Models.Character.Advantage | App.Models.Character.Disadvantage, index: number) {
+            this.current = object;
+            this.drawer = true;
+        },
+        close() {
+            this.drawer = false;
         },
     },
 });

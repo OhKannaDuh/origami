@@ -8,6 +8,7 @@
         hide-bottom
         :pagination="{ rowsPerPage: 10 }"
         :columns="columns"
+        @row-click="show"
     >
         <template #top-right>
             <q-btn :label="drawer ? 'Close' : 'Manage'" class="no-border-radius" flat dense no-caps padding="0px 8px" color="accent" @click="toggleDrawer" />
@@ -48,7 +49,7 @@ import { SaveManager } from '@/ts/Character/View/SaveManager';
 import { defineComponent, PropType, ref } from 'vue';
 
 export default defineComponent({
-    emits: ['open'],
+    emits: ['open', 'show'],
     props: {
         character: {
             type: Object as PropType<Character>,
@@ -98,6 +99,9 @@ export default defineComponent({
             }
 
             this.saveManager.saveAdvantages(this.character);
+        },
+        show(event: Event, object: App.Models.Character.Disadvantage, index: number) {
+            this.$emit('show', event, object, index);
         },
     },
     computed: {
