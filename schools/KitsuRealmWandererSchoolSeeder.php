@@ -25,7 +25,7 @@ final class KitsuRealmWandererSchoolSeeder extends SchoolSeeder
 
         $this->create(
             'Kitsu Realm Wanderer School',
-            $families->getByKey('kitsu'),
+            $families->getByKey(''),
             ['shugenja', 'bushi'],
             $rings->getByKey('void'),
             $rings->getByKey('water'),
