@@ -44,6 +44,49 @@
                             </div>
                         </div>
                     </q-card-section>
+
+                    <q-card-section class="q-p-none" v-if="character.advantages">
+                        <q-expansion-item label="Advantages">
+                            <q-expansion-item v-for="(advantage, index) in character.advantages" :key="index" :label="advantage.name">
+                                <span v-html="advantage.effects" />
+                            </q-expansion-item>
+                        </q-expansion-item>
+                    </q-card-section>
+
+                    <q-card-section class="q-p-none" v-if="character.disadvantages">
+                        <q-expansion-item label="Disadvantages">
+                            <q-expansion-item v-for="(disadvantage, index) in character.disadvantages" :key="index" :label="disadvantage.name">
+                                <span v-html="disadvantage.effects" />
+                            </q-expansion-item>
+                        </q-expansion-item>
+                    </q-card-section>
+
+                    <q-card-section class="q-p-none" v-if="character.techniques">
+                        <q-expansion-item label="Techniques">
+                            <q-expansion-item v-for="(technique, index) in character.techniques" :key="index" :label="technique.name">
+                                <q-card-section v-if="technique.description.activation">
+                                    <span v-format="`<b>Activation:</b> ${technique.description.activation}`" />
+                                </q-card-section>
+                                <q-card-section v-if="technique.description.effect">
+                                    <span v-format="`<b>Effects:</b> ${technique.description.effect}`" />
+                                </q-card-section>
+                                <q-card-section v-if="technique.description.enhancement">
+                                    <span v-format="`<b>Enhancement Effect:</b> ${technique.description.enhancement}`" />
+                                </q-card-section>
+                                <q-card-section v-if="technique.description.burst">
+                                    <span v-format="`<b>Burst Effect:</b> ${technique.description.burst}`" />
+                                </q-card-section>
+                                <q-card-section v-if="technique.description.opportunities && technique.description.opportunities.length">
+                                    <h6 class="no-margin">New Opportunities:</h6>
+                                    <q-list>
+                                        <q-item v-for="(opportunity, index) in technique.description.opportunities" :key="index">
+                                            <span v-format="`<b>${opportunity.cost}:</b> ${opportunity.effect}`" />
+                                        </q-item>
+                                    </q-list>
+                                </q-card-section>
+                            </q-expansion-item>
+                        </q-expansion-item>
+                    </q-card-section>
                 </q-card>
             </div>
         </div>
@@ -62,6 +105,10 @@ export default defineComponent({
             type: Object as PropType<App.Models.Core.Campaign>,
             required: true,
         },
+    },
+
+    setup(props) {
+        console.log(props.campaign);
     },
 
     methods: {
