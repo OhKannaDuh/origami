@@ -1,0 +1,1421 @@
+[
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "addiction",
+        "name": "Addiction",
+        "disadvantage_category_keys": [
+            "mental",
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Addiction anxiety:<\/p><ul><li>Choose an addictive substance or experience; deprivation from this substance or experience for more than three days causes shakes, chills, distraction, or even more violent physical symptoms that become increasingly difficult to conceal.<\/li><li>After performing a check to resist the substance or experience (such as a Fitness [Earth] check to suppress signs of your addiction during long absences of the substance (or experience) or a Meditation [Earth] check to resist pursuing the experience or substance), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 131
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "fire",
+        "key": "battle_trauma",
+        "name": "Battle Trauma",
+        "disadvantage_category_keys": [
+            "mental",
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Battle Trauma anxiety:<\/p><ul><li>At the start of a duel, skirmish, or mass battle, your hands shake, your body tenses up, or your mind might even lock down. You can act normally, but your unsettled state is obvious to everyone around you, and others may try to exploit it.<\/li><li>After performing a check related to battle (such as a Martial Arts [Melee] [Fire] check to strike down a foe or a Tactics [Fire] check to generate initiative), you receive 3 strife. (Your GM can choose not to inflict this strife after the you have taken a few turns and thematically overcome your trauma.) If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 131
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "bentens_curse",
+        "name": "Benten's Curse",
+        "disadvantage_category_keys": [
+            "interpersonal",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Benten\u2019s Curse adversity:<\/p><ul><li>Your romantic efforts are always stymied by circumstances, and your gestures to get the romantic attention of others are usually misinterpreted.<\/li><li>When you make a check to express your admiration to someone (such as an Aesthetics [Air] check to find the right poem to read to express your feelings or a Courtesy [Air] check to tell someone your feelings without exceeding propriety), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 116
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "bishamons_curse",
+        "name": "Bishamon's Curse",
+        "disadvantage_category_keys": [
+            "physical",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Bishamon\u2019s Curse adversity:<\/p><ul><li>You find it very difficult to lift heavy objects, and it takes you twice as long as others to regain your stamina after hard labor.<\/li><li>When you make a check that relies on recovering quickly (such as a Fitness [Water] check to recover from exhaustion or the Gravely Wounded condition or a Martial Arts [Unarmed] [Water] check to train for an extended period of time), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 117
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "bitter_betrothal",
+        "name": "Bitter Betrothal",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Bitter Betrothal adversity:<\/p><ul><li>Something significantly complicates your relationship with your betrothed or spouse. As a result, they often undermine your efforts, whether out of malice, negligence, or an incompatible set of goals.<\/li><li>When you make a check that requires the collaboration of your betrothed or spouse (such as a Courtesy [Water] check to make a polite request to their family for political backing or a Culture [Water] check to know the proper thing to do at a social function involving their relatives), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 117
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "blackmailed_by_characters_name",
+        "name": "Blackmailed by [Characters Name]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 117
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "blindness",
+        "name": "Blindness",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Blindness adversity:<\/p><ul><li>You are unable to see out of either eye. Your lack of sight does not mean you cannot perceive your surroundings (using your other senses), but you cannot observe things that can be perceived only by sight.<\/li><li>When you make a check for which sight is an asset that cannot easily be replaced by other senses (such as a Sentiment [Water] check to identify someone\u2019s hostile intentions from across a noisy room or a Martial Arts [Ranged] [Water] check to hit a moving target with an arrow), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 118
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "bluntness",
+        "name": "Bluntness",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Bluntness adversity:<\/p><ul><li>You have difficulty expressing things indirectly, and you overlook insinuations and implications in the statements of others unless they are pointed out to you directly.<\/li><li>When you make a check to create or interpret subtext (such as a Design [Air] check to select a wardrobe that conveys the proper subtle message to your intended recipient or a Sentiment [Air] check to read someone\u2019s unstated feelings), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 118
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "clumsiness",
+        "name": "Clumsiness",
+        "disadvantage_category_keys": [
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Clumsiness adversity:<\/p><ul><li>You are physically imprecise when dealing with tasks that require notable dexterity (or any physical task, really). At the GM\u2019s discretion, you periodically drop items, make a mess of precise crafting efforts, or slip and fall onto people.<\/li><li>When you make a check that requires precise motor skills (such as a Fitness [Fire] check to vault over an obstacle or a Design [Fire] check to create an intricate piece of jewelry), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 118
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "cognitive_lapses",
+        "name": "Cognitive Lapses",
+        "disadvantage_category_keys": [
+            "mental",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Cognitive Lapses adversity:<\/p><ul><li>At the GM\u2019s discretion, you sometimes lose your ability to focus or think consciously. Your body continues to act during these times according to your general instincts, and it does not undertake actions you would not consciously perform, but you do not form coherent memories of these times. After you suffer such a lapse that lasts for more than a few brief moments at the GM\u2019s choice, you gain 1 Void point.<\/li><li>When you make a check for which you must recall anything that happened during a period of cognitive lapse (such as a Meditation [Void] check to understand your past decisions or a Sentiment [Void] check to guess what you might have said to someone based on their reaction to you), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 118
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "fire",
+        "key": "cynicism",
+        "name": "Cynicism",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 131
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "daikokus_curse",
+        "name": "Daikoku's Curse",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Daikoku\u2019s Curse adversity:<\/p><ul><li>When you gamble or speculate on the value of goods, even if you receive short-term gains, events conspire such that you always end up as poor (if not poorer) as when you started.<\/li><li>When you make a check to gain or preserve wealth (such as a Commerce [Water] check to haggle for a good price on an item or a Skulduggery [Water] check to find a fence for stolen items), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 119
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "damaged_heart_or_organ",
+        "name": "Damaged Heart or Organ",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Damaged Heart or Organ adversity:<\/p><ul><li>Your heart or another vital organ is weak due to physical trauma or illness, and you can only engage in strenuous activity for half as long as other characters before needing to rest.<\/li><li>When you make a check to undertake strenuous activity over a long period of time (such as a Fitness [Earth] check to march for a long time or a Smithing [Earth] check to hammer plates back onto a damaged piece of armor), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 119
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "void",
+        "key": "dark_secret",
+        "name": "Dark Secret",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Dark Secret anxiety:<\/p><ul><li>You have a dark secret that, if exposed, could bring ruin upon your house and disgrace your ancestors and descendants alike. If the details of this secret become public, your glory value decreases dramatically, as if you had lost staked glory (by 10 to 20). Depending on the secret, your status value might also decrease considerably (by 5 to 10), as if you had lost staked status.<\/li><li>After performing a check to assert your will over yourself or others (such as a Command [Void] check to order troops to fight to the bitter end or a Meditation [Void] check to find inner peace), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 132
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "deafness",
+        "name": "Deafness",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Deafness adversity:<\/p><ul><li>You are unable to hear, although you can perceive your surroundings through other senses.<\/li><li>When you make a check for which auditory cues are very useful (such as a Sentiment [Air] check to discern if someone is being sincere or a Courtesy [Air] check to pick up rumors via eavesdropping on someone\u2019s faraway conversation), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 119
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "void",
+        "key": "delusions_of_grandeur",
+        "name": "Delusions of Grandeur",
+        "disadvantage_category_keys": [
+            "mental",
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Delusions of Grandeur anxiety:<\/p><ul><li>You believe yourself destined for greatness, and nothing will dissuade you from your fixation upon this goal. When you are presented with a chance to advance your glory, you must attempt to pursue it.<\/li><li>After performing a check that requires facing your humble place in an uncaring universe (such as a Labor [Void] check to eke out a living in the fields or a Meditation [Void] check to contemplate your place in the cosmos), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 132
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "discomfiting_countenance",
+        "name": "Discomfiting Countenance",
+        "disadvantage_category_keys": [
+            "interpersonal",
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Discomfiting Countenance adversity:<\/p><ul><li>Characters of lower status must generally be respectful of you to your face, but characters of higher status might try to use your looks as a way of attacking your character. Additionally, you are extremely memorable, and you find it difficult to act subtly without being remembered.<\/li><li>When you make a check to get someone to trust your word (such as a Courtesy [Air] check to make someone believe a lie or a Performance [Air] check to present a story as genuine) you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point. Disdain for a Bushid\u014d \u201cWe Brothers of the Boar are very loyal samurai, indeed! Loyal to money, loyal to our bellies, loyal to ourselves, and what higher virtue could there be, brothers, eh?\u201d The R\u014dnin Kujira Types: Flaw, Mental Choose One: Compassion (Water), Courage (Fire), Courtesy (Air), Duty and Loyalty (Earth), Honor (Void), Righteousness (Void), Sincerity (Void). A character may have multiple instances of this disadvantage for different tenets. Effects: The following apply to a character with the Disdain for a Bushid\u014d Tenet adversity:<\/li><li>You no longer believe in the chosen tenet of Bushid\u014d, though you still lose honor for disobeying it. When you act in accordance with this tenet of Bushid\u014d, others can sometimes sense your insincerity.<\/li><li>When you make a check to pay lip service to this tenet of Bushid\u014d or to uphold it (such as a Courtesy check to express its importance or a Meditation check to use a belief in this tenet to your advantage), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 120
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "disdain_for_a_bushido_tenet_compassion",
+        "name": "Disdain for a Bushido Tenet (Compassion)",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 108
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "disdain_for_a_bushido_tenet_courage",
+        "name": "Disdain for a Bushido Tenet (Courage)",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 108
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "disdain_for_a_bushido_tenet_courtesy",
+        "name": "Disdain for a Bushido Tenet (Courtesy)",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 108
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "disdain_for_a_bushido_tenet_duty_and_loyalty",
+        "name": "Disdain for a Bushido Tenet (Duty and Loyalty)",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 108
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "disdain_for_a_bushido_tenet_honor",
+        "name": "Disdain for a Bushido Tenet (Honor)",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 108
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "disdain_for_a_bushido_tenet_righteousness",
+        "name": "Disdain for a Bushido Tenet (Righteousness)",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 108
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "disdain_for_a_bushido_tenet_sincerity",
+        "name": "Disdain for a Bushido Tenet (Sincerity)",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 108
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "ebisus_curse",
+        "name": "Ebisu's Curse",
+        "disadvantage_category_keys": [
+            "physical",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Ebisu\u2019s Curse adversity:<\/p><ul><li>Characters of lower status automatically distrust you, viewing you as a distant overlord who cannot possibly be competent at practical labor or understand their daily struggles (whether or not either of these is a fair assessment).<\/li><li>When you make a check to interact with laborers or partake in their work (such as a Commerce [Earth] check to mass produce items or a Labor [Earth] check to dig a ditch), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 120
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "fear_of_death",
+        "name": "Fear of Death",
+        "disadvantage_category_keys": [
+            "mental",
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Fear of Death anxiety:<\/p><ul><li>You cannot voluntarily choose to die or sacrifice your life (including committing seppuku when honor demands it), and if there is a chance you could live, you must always pursue it.<\/li><li>After performing a check to risk your life or accept your mortality (such as a Meditation [Earth] check to find inner tranquility before battle or a Tactics [Earth] check to hold a position against long odds), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 132
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "air",
+        "key": "ferocity",
+        "name": "Ferocity",
+        "disadvantage_category_keys": [
+            "physical",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Ferocity anxiety:<\/p><ul><li>When you strike, you have trouble holding back your power, and you tend to lash out even when a subtler approach would be more appropriate. When you defeat a minion NPC, the minion is always killed, even if you would prefer to incapacitate them.<\/li><li>After performing a check to intentionally hold back or apply force subtly (such as a Games [Air] check to manipulate your opponent or a Martial Arts [Melee] [Air] check to strike a precise blow), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 132
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "fractured_spine",
+        "name": "Fractured Spine",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>Effect: The following apply to a character with the Fractured Spine adversity:<\/p><ul><li>You have suffered major trauma to the spine, and harsh impacts cause you to be shot through with agonizing pain. You can lift and carry only half the weight that someone of your strength normally could.<\/li><li>When you make a check to resist harm or exhaustion (such as a Fitness [Earth] check to shrug off further injury or a Labor [Earth] check to carry heavy objects as part of building a structure), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 120
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "fukurokujins_curse",
+        "name": "Fukurokujin's Curse",
+        "disadvantage_category_keys": [
+            "mental",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Fukurokujin\u2019s Curse adversity:<\/p><ul><li>It takes you twice as long to gain a grasp of an academic field of study as it does another character.<\/li><li>When you make a check to extrapolate how to do something in a field of study (such as a Medicine [Fire] check to guess how to treat an unfamiliar aliment based on its symptoms or a Survival [Fire] check to guess an unknown creature\u2019s qualities based on its physiology), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 121
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "gaijin_name_culture_or_appearance",
+        "name": "Gaijin name, culture or appearance",
+        "disadvantage_category_keys": [],
+        "effects": "<p>The following apply to a character with the Gaijin Name, Culture, or Appearance adversity:<\/p><ul><li>People of higher and equal status tend to assume that you are uneducated at best and a barbarian at worst, while people of lower status respond to you with fear.<\/li><li>When you make a check to inspire others who do not share your culture or background (such as a Command [Fire] check to rally troops or a Commerce [Fire] check to create a product that people desire), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 121
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "haunting",
+        "name": "Haunting",
+        "disadvantage_category_keys": [
+            "interpersonal",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Haunted adversity:<\/p><ul><li>The spirit has their own agenda (determined by the GM), which interferes with yours at inopportune times.<\/li><li>When you make a check to defy the will of the spirit haunting you (such as a Meditation [Void] check to find solace in meditation or a Skulduggery [Void] check to perform disreputable acts to survive), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 122
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "impatience",
+        "name": "Impatience",
+        "disadvantage_category_keys": [
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Impatience anxiety:<\/p><ul><li>You find it difficult to repress yourself, and when you are forced to wait, it causes you palpable discomfort. If given the choice between seizing an opportunity and waiting for a better moment, you strive to seize the opportunity despite risks that might be mitigated if you act later.<\/li><li>After performing a check to strategically weigh your options (such as a Government [Earth] check to think of a historical anecdote related to your situation or a Tactics [Earth] check to identify the right moment to strike), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 133
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "incurable_illness",
+        "name": "Incurable Illness",
+        "disadvantage_category_keys": [
+            "physical"
+        ],
+        "effects": "<p>The following apply to a character with the Incurable Illness adversity:<\/p><ul><li>Periodically, if you push yourself too hard, you are afflicted by especially violent fits that significantly restrict your activity for a brief period of time.<\/li><li>When you make a check to remain active for long periods of time (such as a Labor [Earth] check to plow a field or a Survival [Earth] check to build a shelter), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 122
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "intolerance",
+        "name": "Intolerance",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Intolerance anxiety:<\/p><ul><li>A particular hate festers within you for a group of people (or even supernatural beings), and it overwhelms your better judgment when you are faced with members or representatives of this group. Choose one group of people or supernatural beings to be your hated enemies. When you are in the presence of these beings (and even when they are mentioned), your enmity is evident to all who observe you.<\/li><li>After performing a check to interact with a member of the chosen group (such as a Commerce [Water] check to bargain with someone from a family that once wronged your own or a Composition [Water] check to translate from the language of a group of foreigners you dislike due to a battle you fought against their people), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 133
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "irrepressible_flirtation",
+        "name": "Irrepressible Flirtation",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Irrepressible Flirtation anxiety:<\/p><ul><li>You find it difficult to pass up the chance to flirt with people you find attractive, and when someone you find attractive flirts with you, you cannot help but return their advances with your own flirtation. Your interest is obvious to all onlookers.<\/li><li>After performing a check to interact with (or ignore) someone you are interested in without exceeding propriety (such as a Courtesy [Earth] check to make appropriate small talk or a Sentiment [Earth] check to know how to tread cautiously in a social scene), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 134
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "air",
+        "key": "jealousy",
+        "name": "Jealousy",
+        "disadvantage_category_keys": [
+            "physical",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Jealousy anxiety:<\/p><ul><li>You cannot voluntarily pass up an opportunity to one-up a rival or demonstrate your superiority over someone in the eyes of others.<\/li><li>After performing a check to compete with someone to demonstrate your excellence (such as a Performance [Air] check to convince an audience of something before a rival can or a Smithing [Air] check to refine a weapon to perfection before presenting it as a gift to your lord), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 134
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "jurojins_curse",
+        "name": "Jurojin's Curse",
+        "disadvantage_category_keys": [
+            "physical",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Jurojin\u2019s Curse adversity:<\/p><ul><li>Poison and disease seem to strike you more easily, and it takes you twice as long as normal to recover from disease and injury.<\/li><li>When you make a check to sustain yourself (such as a Fitness [Void] check to resist a critical injury or a Survival [Void] check to live in harmony with a natural environment), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 123
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "kisshotens_curse",
+        "name": "Kisshoten's Curse",
+        "disadvantage_category_keys": [
+            "physical",
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Kissh\u014dten\u2019s Curse adversity:<\/p><ul><li>Children instinctively dislike you and are obstinate in the face of your demands. Your own children (if you have any) are unlucky in matters of health, beauty, and happiness.<\/li><li>When performing a check for which you need to communicate with children (such as a Command [Water] check to order them around or a Performance [Water] check to entertain them), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 123
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "lost_arm_or_lost_hand",
+        "name": "Lost arm or Lost hand",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Lost Arm or Lost Hand adversity:<\/p><ul><li>You have only one usable hand or arm. You cannot wield weapons in a two-handed grip or hold anything in your missing hand. If you are missing only the hand, you can strap items to the arm for use.<\/li><li>When you make a check for which having two hands is very valuable (such as a Martial Arts [Unarmed] [Fire] check to grapple a foe into submission or a Survival [Fire] check to leap onto a galloping horse\u2019s back), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 123
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "lost_eye",
+        "name": "Lost Eye",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Lost Eye adversity:<\/p><ul><li>You have only one eye. Your field of vision is narrower, and your depth perception is somewhat diminished.<\/li><li>When you make a check for which your reduced ability to observe a wide field or discern the exact distance to faraway objects would cause difficulties (such as a Tactics [Water] check to spot incoming threats or a Martial Arts [Ranged] [Water] check to hit targets while moving), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 124
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "lost_fingers",
+        "name": "Lost Fingers",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Lost Fingers adversity:<\/p><ul><li>You have fewer functional digits on one of your hands than most people. Checks to craft new items take you twice as long as they would take a character with their full complement of fingers.<\/li><li>When you make a check for which you must maintain a precise grip with both hands at once (such as a Design [Fire] check to weave cloth or a Martial Arts [Fire] check to draw your blade quickly), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 124
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "lost_leg",
+        "name": "Lost Leg",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Lost Leg adversity:<\/p><ul><li>You have one fewer leg than most people. You use a crutch, cane, or other support to walk, and standing takes more effort than it does for people with two legs. Traveling by walking takes you twice as long as it does others without some form of compensatory tool.<\/li><li>When you make a check for which you must reposition yourself quickly or maintain your balance (such as a Fitness [Water] check to move across difficult ground quickly or a Seafaring [Water] check to operate a boat in difficult conditions such as a storm), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 124
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "lost_memories",
+        "name": "Lost Memories",
+        "disadvantage_category_keys": [
+            "mental",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Lost Memories adversity:<\/p><ul><li>There is a period of your life that you cannot remember at all. The less important this period is to your identity, the longer it should be (for example, a single day lost might be sufficient if the character committed a terrible act during that time and struggles to understand how or why, whereas a full decade of lost memories might be insufficient if they are not especially foundational to who the character is). The player and GM should work together to determine the amount and importance of memories lost. Skills and abilities acquired during the lost time are largely retained, even if the character does not remember the act of developing them.<\/li><li>When you make a check for which you must recall information you learned during the period of lost memories (such as a Culture [Void] check to intuit how to behave in a particular situation similar or related to one you encountered during that time or a Meditation [Void] check to understand your past decisions), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 124
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "maimed_arm",
+        "name": "Maimed Arm",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Maimed Arm adversity:<\/p><ul><li>Your right or left arm is injured (your choice at the time the disadvantage is assigned), making it much harder to perform activities that involve use of that arm. You can use the arm, but gripping anything tightly causes you pain, and you might need a sling to help the arm heal properly.<\/li><li>When you make a check for which you need to use two hands at once (such as a Design [Fire] check to sew a new kimono or a Martial Arts [Melee] [Fire] check to overwhelm a foe with a powerful overhead slice), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 125
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "maimed_visage",
+        "name": "Maimed Visage",
+        "disadvantage_category_keys": [
+            "physical",
+            "interpersonal",
+            "scar"
+        ],
+        "effects": "<p>The following apply to a character with the Maimed Visage adversity:<\/p><ul><li>You have been struck in the face, causing a very noticeable and difficult-to-disguise sign of your altercation. Your injury is disquieting to many, and speaking causes you some pain, hampering your social endeavors that hinge on subtle implication and manipulation.<\/li><li>When you make a check to subtly convince others of something or speak an implication (such as a Commerce [Air] check to sell an item at a higher price than usual or a Courtesy [Air] check to insult someone by implication), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 125
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "void",
+        "key": "materialism",
+        "name": "Materialism",
+        "disadvantage_category_keys": [
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Materialism anxiety:<\/p><ul><li>You are obsessed with physical possessions and objects, despite what the Tao of Shinsei says about such material earthly bonds. You cannot refuse gifts of rarity 3 or higher.<\/li><li>After performing a check to give up a physical object in your possession or other thing of value (such as a Government [Void] check to find a way to sacrifice a holding to gain a political advantage over a rival), you suffer 3 strife. If this is the first time this has occurred this scene, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 134
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "fire",
+        "key": "meekness",
+        "name": "Meekness",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Meekness anxiety:FLIRTING WITH PCS Topics of romance or sexuality can sometimes make people uncomfortable. If your character is an irrepressible flirt, you should still make sure your fellow players are comfortable before roleplaying any flirtation or romantic overtures between your character and theirs. (This also applies if you\u2019re the GM!)<\/p><ul><li>$ You are extremely shy, and you struggle to stand up for yourself. You cannot interrupt people of higher status, and you find it very hard to assert yourself over anyone, including people of lower status.<\/li><li>After performing a check to stand out or get what you need (such as a Command [Fire] check to inspire troops under your command or a Government [Fire] check to assess your rights on a matter), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 134
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "momoku",
+        "name": "Momoku",
+        "disadvantage_category_keys": [
+            "spiritual"
+        ],
+        "effects": "<p>The following apply to a character with the Momoku adversity:<\/p><ul><li>You do not detect supernatural presences even when they make themselves evident to everyone else, and you are blissfully unaware of the ripples in reality such entities and phenomena create. You can still discern effects they have on the physical world, but only when they become quite obvious.<\/li><li>When you make a check to understand or appeal to otherworldly powers (such as a Games [Void] check to put your faith in the power of the universe or a Theology [Void] check to call upon the cosmic energy around you), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 126
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "muteness",
+        "name": "Muteness",
+        "disadvantage_category_keys": [
+            "interpersonal",
+            "scar"
+        ],
+        "effects": "<p>Effect: The following apply to a character with the Muteness adversity:<\/p><ul><li>You are physically or psychologically unable to produce intelligible spoken words. You can still make yourself understood through signing, gestures, and meaningful looks.<\/li><li>When you make a check for which you must make your tone of voice understood by others (such as a Command [Air] check to convey nuanced information to others or a Performance [Air] check to impersonate someone convincingly), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 126
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "nerve_damage",
+        "name": "Nerve Damage",
+        "disadvantage_category_keys": [
+            "physical",
+            "scar"
+        ],
+        "effects": "<p>Effect: The following apply to a character with the Nerve Damage adversity:<\/p><ul><li>You have no feeling in certain parts of your body.<\/li><li>When you make a check for which physical sensitivity is helpful (such as an Aesthetics [Air] check to delicately paint glaze onto a ceramic piece or a Fitness [Air] check to maintain your posture exactly while moving), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 126
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "air",
+        "key": "painful_honesty",
+        "name": "Painful Honesty",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Painful Honesty anxiety:<\/p><ul><li>You are tormented by internal conflict when you lie or allow a lie to pass. You cannot make claims you know to be false, although you can say technically truthful things that imply untruths, if politeness or circumstances demand it.<\/li><li>After you make a check to mislead someone else (such as a Courtesy [Air] check to falsely besmirch someone\u2019s reputation or a Command [Air] check to manipulate an underling), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 135
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "paranoia",
+        "name": "Paranoia",
+        "disadvantage_category_keys": [
+            "physical",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Paranoia anxiety:<\/p><ul><li>In every shadow, you see assassins, and in every smile, you see a rival in pursuit of your undoing. This fear makes it very hard for you to rely upon others, and it might distract you from real threats. You cannot relax unless you have confirmed vital information (such as your current safety) for yourself.<\/li><li>After performing a check to identify danger in your environment (such as a Government [Water] check to know the political currents in a court or a Sentiment [Water] check to sense if someone\u2019s intentions toward you are hostile), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 135
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "perfectionism",
+        "name": "Perfectionism",
+        "disadvantage_category_keys": [
+            "physical",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Perfectionism anxiety:<\/p><ul><li>Anything short of perfection in your work is unacceptable to you, and you have been known to create works of beauty only to cast them aside over some perceived flaw. You cannot help but try to improve any work in which you identify a flaw, even if it means informing someone of higher status of an error they have made.<\/li><li>After performing a check in which you must interact with an imperfect or unfinished work (such as an Aesthetics [Water] check to improve an existing piece of art or a Composition [Water] check to translate a work without losing any of the nuance present in the original language), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 135
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "phobia",
+        "name": "Phobia",
+        "disadvantage_category_keys": [
+            "physical",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Phobia anxiety:<\/p><ul><li>Choose something mundane. You have a debilitating fear of this thing. You cannot speak its name. In its presence, you cannot hide your fear, and you attempt to flee if at all possible.<\/li><li>After performing a check to deal with your phobia (such as a Courtesy [Water] check to talk pleasantly about the subject or a Survival [Water] check to identify it as the thing you fear), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 136
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "scorn_of_one_group",
+        "name": "Scorn of [One Group]",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Scorn of [One Group] adversity:<\/p><ul><li>You have earned the ire of a particular group, which has seriously damaged your ability to work with its members or enlist their help. You have been barred from entering their facilities, and they refuse to meet or communicate with you directly. Confer with the GM to select a campaign-appropriate group when choosing this disadvantage.<\/li><li>When performing a check to interact with the chosen group that relies on your rapport with its members (such as a Courtesy [Water] check to persuade them to do something or a Performance [Water] check to impress a group of them), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 127
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "shadowlands_taint_air",
+        "name": "Shadowlands Taint Air",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 127
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "shadowlands_taint_earth",
+        "name": "Shadowlands Taint Earth",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 127
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "shadowlands_taint_fire",
+        "name": "Shadowlands Taint Fire",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 128
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "shadowlands_taint_void",
+        "name": "Shadowlands Taint Void",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 128
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "shadowlands_taint_water",
+        "name": "Shadowlands Taint Water",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 128
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "fire",
+        "key": "softheartedness",
+        "name": "Softheartedness",
+        "disadvantage_category_keys": [
+            "interpersonal",
+            "mental"
+        ],
+        "effects": "<p>The following apply to a character with the Softheartedness anxiety:<\/p><ul><li>If given the choice to kill someone or show mercy, you always spare their life, even if it is not in your interest to let them live.<\/li><li>After performing a check that addresses or involves killing others or letting them die (such as a Government [Fire] check to estimate the burden a war would place on the common people or a Martial Arts [Ranged] [Fire] check to shoot to kill), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 136
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "void",
+        "key": "superstition",
+        "name": "Superstition",
+        "disadvantage_category_keys": [],
+        "effects": "<p>The following apply to a character with the Superstition anxiety:<\/p><ul><li>When faced with signs of the supernatural, you become visibly agitated, and you attempt to leave the scene, appease the being or phenomenon in question, or acquire supernatural protection of some kind.<\/li><li>After performing a check to interact with or learn about a supernatural being or phenomenon (such as a Meditation [Void] check to perceive the presence of a supernatural being or a Theology [Void] check to know a supernatural being\u2019s designs or desires), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<\/li><\/ul>",
+        "page_number": 136
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "sworn_enemy",
+        "name": "Sworn Enemy",
+        "disadvantage_category_keys": [
+            "interpersonal"
+        ],
+        "effects": "<p>The following apply to a character with the Sworn Enemy adversity:<\/p><ul><li>You and the GM should select or create a character to be your sworn enemy. Your sworn enemy exists within the world and periodically meddles in your affairs, directly or indirectly, at the GM\u2019s discretion. If your sworn enemy perishes, you must either remove this disadvantage, acquire a new sworn enemy (perhaps someone who hates you because of your role in the demise of the previous one), or find a way for your deceased foe to continue playing a role in your life.<\/li><li>When you make a check to remain rational in the presence of this person you hate (such as a Courtesy [Earth] check to interact with this person without being provocative or a Meditation [Earth] check to stay stoic in the face of their insults), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 129
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "whispers_of_cruelty",
+        "name": "Whispers of Cruelty",
+        "disadvantage_category_keys": [
+            "interpersonal",
+            "infamy"
+        ],
+        "effects": "<p>The following apply to a character with the Whispers of Cruelty adversity:<\/p><ul><li>You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you will act in a ruthless and destructive manner, and they act accordingly.<\/li><li>When you make a check to attempt to calm others (such as a Courtesy [Earth] check to convince someone to cooperate with you or a Command [Earth] check to get someone to accept your authority calmly), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 129
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "whispers_of_doom",
+        "name": "Whispers of Doom",
+        "disadvantage_category_keys": [
+            "interpersonal",
+            "infamy"
+        ],
+        "effects": "<p>The following apply to a character with the Whispers of Doom adversity:<\/p><ul><li>You are well-known, but not for the right reasons. Characters who do not know you personally always assume that those around you will perish or meet bad ends, even if you survive to spread your ill fortune further.<\/li><li>When you make a check to dispel someone\u2019s false preconceptions (such as a Courtesy [Void] check to get someone to question their decision or a Command [Void] check to get someone to see the pointlessness of their position), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 129
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "whispers_of_failure",
+        "name": "Whispers of Failure",
+        "disadvantage_category_keys": [
+            "interpersonal",
+            "infamy"
+        ],
+        "effects": "<p>The following apply to a character with the Whispers of Failure adversity:<\/p><ul><li>You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you are incompetent, and they do not trust you with important tasks.<\/li><li>When you make a check to get others to follow your lead (such as a Command [Fire] check to lead a charge or a Performance [Fire] check to inspire others), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 130
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "whispers_of_poverty",
+        "name": "Whispers of Poverty",
+        "disadvantage_category_keys": [
+            "interpersonal",
+            "infamy"
+        ],
+        "effects": "<p>The following apply to a character with the Whispers of Poverty adversity:<\/p><ul><li>You are well-known, but not for the right reasons. Characters who do not know you personally always assume that you don\u2019t have financial solvency and won\u2019t be able to muster resources quickly.<\/li><li>When you make a check to acquire items quickly or make trade deals (such as a Command [Water] check to win over troops under your command with the promise of rewards or a Commerce [Water] check to secure a large supply of a commodity or service), you must choose and reroll two dice containing \\ns or \\es. After resolving the check, if you failed, you gain 1 Void point.<\/li><\/ul>",
+        "page_number": 130
+    },
+    {
+        "source_book_key": "core",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "whispers_of_treachery",
+        "name": "Whispers of Treachery",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 130
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "accustomed_to_luxury",
+        "name": "Accustomed to Luxury",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 246
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "adopted_peasant",
+        "name": "Adopted Peasant",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 245
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "allergy_choose_one",
+        "name": "Allergy [Choose One]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 245
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "claustrophobia",
+        "name": "Claustrophobia",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 247
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "cursed_lineage",
+        "name": "Cursed Lineage",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 245
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "despised_in_city",
+        "name": "Despised In [City]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 246
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "air",
+        "key": "false_identity",
+        "name": "False Identity",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 247
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "hunted_by_chikusho_do",
+        "name": "Hunted by Chikusho-do",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 246
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "loathing_for_peasants",
+        "name": "Loathing for Peasants",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 247
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "void",
+        "key": "loneliness",
+        "name": "Loneliness",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 248
+    },
+    {
+        "source_book_key": "emerald_empire",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "skepticism",
+        "name": "Skepticism",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 246
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "demon_wound",
+        "name": "Demon Wound",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 97
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "void",
+        "key": "fallen_ancestors",
+        "name": "Fallen Ancestors",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 98
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "lost_name",
+        "name": "Lost Name",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 97
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "air",
+        "key": "obtuse",
+        "name": "Obtuse",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 98
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "reformed_maho_tsukai",
+        "name": "Reformed Maho-Tsukai",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 98
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "shadowlands_taint_blasphemous_appetites",
+        "name": "Shadowlands Taint [Blasphemous Appetites]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 100
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "shadowlands_taint_distorted_limbs",
+        "name": "Shadowlands Taint [Distorted Limbs]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 99
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "shadowlands_taint_kansen_whispers",
+        "name": "Shadowlands Taint [Kansen Whispers]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 99
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "shadowlands_taint_one_with_the_darkness",
+        "name": "Shadowlands Taint [One With the Darkness]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 100
+    },
+    {
+        "source_book_key": "shadowlands",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "shadowlands_taint_unnatural_skin",
+        "name": "Shadowlands Taint [Unnatural Skin]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 100
+    },
+    {
+        "source_book_key": "courts_of_stone",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "isolation",
+        "name": "Isolation",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 103
+    },
+    {
+        "source_book_key": "courts_of_stone",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "lackluster",
+        "name": "Lackluster",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 101
+    },
+    {
+        "source_book_key": "courts_of_stone",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "overconfidence_in_charm",
+        "name": "Overconfidence in Charm",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 101
+    },
+    {
+        "source_book_key": "courts_of_stone",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "overconfidence_in_creativity",
+        "name": "Overconfidence in Creativity",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 101
+    },
+    {
+        "source_book_key": "courts_of_stone",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "overconfidence_in_spiritual_sensitivity",
+        "name": "Overconfidence in Spiritual Sensitivity",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 101
+    },
+    {
+        "source_book_key": "courts_of_stone",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "overconfidence_in_subtlety",
+        "name": "Overconfidence in Subtlety",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 101
+    },
+    {
+        "source_book_key": "courts_of_stone",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "overconfidence_in_toughness",
+        "name": "Overconfidence in Toughness",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 101
+    },
+    {
+        "source_book_key": "courts_of_stone",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "unsavory_past",
+        "name": "Unsavory Past",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 102
+    },
+    {
+        "source_book_key": "courts_of_stone",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "air",
+        "key": "web_of_lies",
+        "name": "Web of Lies",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 103
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "bullheaded",
+        "name": "Bullheaded",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 71
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "void",
+        "key": "coming_storm",
+        "name": "Coming Storm",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 73
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "debt_to_person_or_organization",
+        "name": "Debt to [Person or Organization]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 71
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "encompassing_duty",
+        "name": "Encompassing Duty",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 72
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "air",
+        "key": "eyes_of_many",
+        "name": "Eyes of Many",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 73
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "failure",
+        "name": "Failure",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 74
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "fear_of_stagnation",
+        "name": "Fear of Stagnation",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 74
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "horrible_scar",
+        "name": "Horrible Scar",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 72
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "many_mouths",
+        "name": "Many Mouths",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 72
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "pursued_by_individual_or_group",
+        "name": "Pursued by [Individual or Group]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 72
+    },
+    {
+        "source_book_key": "path_of_waves",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "stained_lineage",
+        "name": "Stained Lineage",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 73
+    },
+    {
+        "source_book_key": "the_mantis_clan",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "sailors_tongue",
+        "name": "Sailor's Tongue",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 7
+    },
+    {
+        "source_book_key": "celestial_realms",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "conspiracy",
+        "name": "Conspiracy",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 91
+    },
+    {
+        "source_book_key": "celestial_realms",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "elemental_deficiency_air",
+        "name": "Elemental Deficiency Air",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 93
+    },
+    {
+        "source_book_key": "celestial_realms",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "elemental_deficiency_earth",
+        "name": "Elemental Deficiency Earth",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 93
+    },
+    {
+        "source_book_key": "celestial_realms",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "fire",
+        "key": "elemental_deficiency_fire",
+        "name": "Elemental Deficiency Fire",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 94
+    },
+    {
+        "source_book_key": "celestial_realms",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "elemental_deficiency_water",
+        "name": "Elemental Deficiency Water",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 94
+    },
+    {
+        "source_book_key": "celestial_realms",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "omen_of_bad_luck",
+        "name": "Omen of Bad Luck",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 92
+    },
+    {
+        "source_book_key": "celestial_realms",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "air",
+        "key": "uncleanliness",
+        "name": "Uncleanliness",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 92
+    },
+    {
+        "source_book_key": "celestial_realms",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "void",
+        "key": "vanity",
+        "name": "Vanity",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 92
+    },
+    {
+        "source_book_key": "wheel_of_judgement",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "air",
+        "key": "lost_head",
+        "name": "Lost Head",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 3
+    },
+    {
+        "source_book_key": "fields_of_victory",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "belligerent",
+        "name": "Belligerent",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 85
+    },
+    {
+        "source_book_key": "fields_of_victory",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "water",
+        "key": "blood_feud",
+        "name": "Blood Feud",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 83
+    },
+    {
+        "source_book_key": "fields_of_victory",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "water",
+        "key": "braggart",
+        "name": "Braggart",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 85
+    },
+    {
+        "source_book_key": "writ_of_the_wilds",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "earth",
+        "key": "fear_of_common_creature",
+        "name": "Fear of [common creature]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 105
+    },
+    {
+        "source_book_key": "writ_of_the_wilds",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "fire",
+        "key": "fear_of_mediocrity",
+        "name": "Fear of Mediocrity",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 106
+    },
+    {
+        "source_book_key": "writ_of_the_wilds",
+        "disadvantage_type_key": "anxiety",
+        "ring_key": "air",
+        "key": "fear_of_poison",
+        "name": "Fear of Poison",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 106
+    },
+    {
+        "source_book_key": "writ_of_the_wilds",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "void",
+        "key": "insomniac",
+        "name": "Insomniac",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 104
+    },
+    {
+        "source_book_key": "writ_of_the_wilds",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "out_of_shape",
+        "name": "Out of Shape",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 105
+    },
+    {
+        "source_book_key": "writ_of_the_wilds",
+        "disadvantage_type_key": "adversity",
+        "ring_key": "earth",
+        "key": "stalked_by_creature",
+        "name": "Stalked by [creature]",
+        "disadvantage_category_keys": [],
+        "effects": "",
+        "page_number": 105
+    }
+]

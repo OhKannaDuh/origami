@@ -9,14 +9,14 @@ use App\Models\Core\SchoolType;
 use App\Models\Core\SourceBook;
 use App\Models\Core\TechniqueType;
 use App\Repositories\Character\FamilyRepositoryInterface;
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Support\Facades\App;
 use App\Repositories\Character\SchoolRepositoryInterface;
 use App\Repositories\Core\RingRepositoryInterface;
 use App\Repositories\Core\SchoolTypeRepositoryInterface;
 use App\Repositories\Core\SourceBookRepositoryInterface;
 use App\Repositories\Core\TechniqueSubtypeRepositoryInterface;
 use App\Repositories\Core\TechniqueTypeRepositoryInterface;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\App;
 
 abstract class InsertSchoolDataMigration extends Migration
 {
