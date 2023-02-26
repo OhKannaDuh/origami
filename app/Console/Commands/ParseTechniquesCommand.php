@@ -47,6 +47,7 @@ class ParseTechniquesCommand extends Command
             $activation = $this->getActivation($line);
             $effect = $this->getEffects($line);
             $opportunities = $this->getOpportunities($data['lines']);
+            $magnitudes = $this->getMagnitude($data['lines']);
 
             $technique = Technique::repository()->getByKey($data['key']);
             assert($technique instanceof Technique);
@@ -54,6 +55,7 @@ class ParseTechniquesCommand extends Command
             $description['activation'] = $activation;
             $description['effect'] = $effect;
             $description['opportunities'] = $opportunities;
+            $description['magnitudes'] = $magnitudes;
             $technique->description = $description;
             $technique->save();
 
@@ -61,7 +63,8 @@ class ParseTechniquesCommand extends Command
                 'key' => $data['key'],
                 'activation' => $activation,
                 'effect' => $effect,
-                'opportunities' => $opportunities
+                'opportunities' => $opportunities,
+                'magnitudes' => $magnitudes,
             ];
         }
 
@@ -103,7 +106,7 @@ class ParseTechniquesCommand extends Command
             return null;
         }
 
-        $effect = $line->after('Effects:')->before('New Opportunities')->trim();
+        $effect = $line->after('Effects:')->before('New Opportunities')->before('Magnitude')->trim();
 
         if ($effect->contains('$')) {
             $items = [];
@@ -112,8 +115,8 @@ class ParseTechniquesCommand extends Command
                 $item = StringHelper::of($result->group(0))->replace('$ ', '');
                 $items[] = [
                     'string' => $result->group(0),
-                    'title' => $item->before(':'),
-                    'description' => $item->after(':')->trim(),
+                    'title' => $item->before(':')->before(') ') . ')',
+                    'description' => $item->after(':')->after(')')->trim(),
                 ];
             }
 
@@ -145,6 +148,14 @@ class ParseTechniquesCommand extends Command
                 continue;
             }
 
+            if (Regex::match('/Magnitude/i', $line)->hasMatch()) {
+                if (!empty($opportunityLines)) {
+                    $opportunities[] = implode(' ', $opportunityLines);
+                    $opportunityLines = [];
+                }
+                break;
+            }
+
             if (!$found) {
                 continue;
             }
@@ -168,6 +179,49 @@ class ParseTechniquesCommand extends Command
         foreach ($opportunities as $opportunity) {
             $output[] = [
                 'cost' => StringHelper::of($opportunity)->before(':')->replace('}} {{', '}}{{')->toString(),
+                'effect' => StringHelper::of($opportunity)->after(':')->replace('- ', '')->replace('}} {{', '}}{{')->toString(),
+            ];
+        }
+
+        return $output;
+    }
+
+
+    private function getMagnitude(array $lines): array
+    {
+        $magnitudes = [];
+        $opportunityLines = [];
+
+        $found = false;
+        foreach ($lines as $line) {
+            if (Regex::match('/Magnitude$/i', $line)->hasMatch()) {
+                $found = true;
+                continue;
+            }
+
+            if (!$found) {
+                continue;
+            }
+
+            $result = Regex::match('/Magnitude (\d\+|\d-\d): /i', $line);
+            if ($result->hasMatch()) {
+                if (!empty($opportunityLines)) {
+                    $magnitudes[] = implode(' ', $opportunityLines);
+                    $opportunityLines = [];
+                }
+            }
+
+            $opportunityLines[] = $line;
+        }
+
+        if (!empty($opportunityLines)) {
+            $magnitudes[] = implode(' ', $opportunityLines);
+        }
+
+        $output = [];
+        foreach ($magnitudes as $opportunity) {
+            $output[] = [
+                'cost' => StringHelper::of($opportunity)->before(':')->after('Magnitude ')->replace('}} {{', '}}{{')->toString(),
                 'effect' => StringHelper::of($opportunity)->after(':')->replace('- ', '')->replace('}} {{', '}}{{')->toString(),
             ];
         }

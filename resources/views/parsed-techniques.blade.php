@@ -15,6 +15,14 @@
                 @endforeach
             </ul>
         @endif
+        @if ($technique['magnitudes'])
+            <p>Magnitude</p>
+            <ul>
+                @foreach ($technique['magnitudes'] as $magnitude)
+                    <li><strong>Magnitude {{ $magnitude['cost'] }}:</strong> {{ $magnitude['effect'] }}</li>
+                @endforeach
+            </ul>
+        @endif
         <hr />
     </div>
 @endforeach
