@@ -64,12 +64,34 @@ final class Campaign extends Model
             assert($character instanceof Character);
             foreach ($character->advantages as $advantage) {
                 assert($advantage instanceof Advantage);
-                echo $advantage->getKey() . ' - ' . $advantage->name . PHP_EOL;
+                $output = $advantage->getKey() . ' - ' . $advantage->name;
+
+                $types = [];
+                foreach ($advantage->advantageCategories as $category) {
+                    $types[] = $category->name;
+                }
+
+                $output .= ' ' . implode(', ', $types);
+
+                $output .= ' ' . ($advantage->effects !== '' ? 'true' : 'false') . PHP_EOL;
+
+                echo $output;
             }
 
             foreach ($character->disadvantages as $disadvantage) {
                 assert($disadvantage instanceof Disadvantage);
-                echo $disadvantage->getKey() . ' - ' . $disadvantage->name . PHP_EOL;
+                $output = $disadvantage->getKey() . ' - ' . $disadvantage->name;
+
+                $types = [];
+                foreach ($disadvantage->disadvantageCategories as $category) {
+                    $types[] = $category->name;
+                }
+
+                $output .= ' ' . implode(', ', $types);
+
+                $output .= ' ' . ($disadvantage->effects !== '' ? 'true' : 'false') . PHP_EOL;
+
+                echo $output;
             }
         }
     }
