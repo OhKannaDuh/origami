@@ -22,9 +22,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property string $key
  * @property string $name
  * @property string $effects
- * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
+ * @property int $page_number
  *
  * @property SourceBook $sourceBook
  * @property AdvantageType $advantageType

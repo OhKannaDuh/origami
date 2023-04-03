@@ -30,8 +30,17 @@ use function file_get_contents;
 use function json_decode;
 use function realpath;
 
-final class AddProprtyDocblockCommand extends Command
+final class AddPropertyDocblockCommand extends Command
 {
+    private const NULLABLE = [
+        'schools' => [
+            'ring_one_id',
+            'ring_two_id',
+            'ringOne',
+            'ringTwo',
+        ]
+    ];
+
     /** @var string */
     protected $name = 'docblock:generate';
 
@@ -60,10 +69,15 @@ final class AddProprtyDocblockCommand extends Command
                 ->mapWithKeys(fn (string $column): array => [$column => Schema::getColumnType($table, $column)]);
 
             /** @var Collection<string, string> $properties */
-            $properties = $columns->map(fn (string$type, string $column): array => [$column => $this->getProprtyType($type, $column, $model)]);
+            $properties = $columns->map(fn (string$type, string $column): array => [$column => $this->getPropertyType($type, $column, $model)]);
 
             $docblock = '/**' . PHP_EOL;
             foreach ($properties as $column => $type) {
+                $type = $type[$column];
+                if ($this->isNullable($table, $column)) {
+                    $type .= '|null';
+                }
+
                 $docblock .= ' * @property ' . $type . ' $' . $column . PHP_EOL;
             }
 
@@ -88,6 +102,10 @@ final class AddProprtyDocblockCommand extends Command
             if (!empty($relationships)) {
                 $docblock .= ' *' . PHP_EOL;
                 foreach ($relationships as $relationship => $type) {
+                    if ($this->isNullable($table, $relationship)) {
+                        $type .= '|null';
+                    }
+
                     $docblock .= ' * @property ' . $type . ' $' . $relationship . PHP_EOL;
                 }
             }
@@ -150,7 +168,7 @@ final class AddProprtyDocblockCommand extends Command
     }
 
 
-    private function getProprtyType(string $type, string $column, Model $model): string
+    private function getPropertyType(string $type, string $column, Model $model): string
     {
         $casts = $model->getCasts();
         if (array_key_exists($column, $casts)) {
@@ -194,5 +212,15 @@ final class AddProprtyDocblockCommand extends Command
             MorphOne::class,
             HasOneThrough::class,
         ]);
+    }
+
+
+    private function isNullable(string $table, string $column): bool
+    {
+        if (!array_key_exists($table, self::NULLABLE)) {
+            return false;
+        }
+
+        return in_array($column, self::NULLABLE[$table]);
     }
 }

@@ -18,9 +18,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string $name
  * @property int $rank
  * @property array $description
- * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
+ * @property int $page_number
  *
  * @property SourceBook $sourceBook
  * @property TechniqueSubtype $techniqueSubtype

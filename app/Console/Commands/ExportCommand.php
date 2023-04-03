@@ -45,19 +45,33 @@ class ExportCommand extends Command
         }
 
 
-        $this->store(new Export\AdvantageCategoryExport(), $path);
-        $this->store(new Export\AdvantageExport(), $path);
+        $this->store(new Export\SourceBookExport(), $path);
+        $this->store(new Export\RingExport(), $path);
+        $this->store(new Export\ItemTypeExport(), $path);
+        $this->store(new Export\ItemSubtypeExport(), $path);
+        $this->store(new Export\ItemExport(), $path);
+        $this->store(new Export\SkillGroupExport(), $path);
+        $this->store(new Export\SkillExport(), $path);
+        $this->store(new Export\TechniqueTypeExport(), $path);
+        $this->store(new Export\TechniqueSubtypeExport(), $path);
+        $this->store(new Export\TechniqueExport(), $path);
         $this->store(new Export\AdvantageTypeExport(), $path);
-        $this->store(new Export\CampaignExport(), $path);
-        $this->store(new Export\CharacterExport(), $path);
+        $this->store(new Export\DisadvantageTypeExport(), $path);
+        $this->store(new Export\AdvantageCategoryExport(), $path);
+        $this->store(new Export\DisadvantageCategoryExport(), $path);
+        $this->store(new Export\AdvantageExport(), $path);
+        $this->store(new Export\DisadvantageExport(), $path);
+        $this->store(new Export\ClanExport(), $path);
+        $this->store(new Export\FamilyExport(), $path);
+        $this->store(new Export\SchoolTypeExport(), $path);
+        $this->store(new Export\SchoolExport(), $path);
     }
 
 
     private function store(BaseExport $exporter, string $path): void
     {
-        $class = $exporter->getClass();
-        $class = StringHelper::of($class)->afterLast('\\')->toString();
-        $fullPath = $path . '/' . StringHelper::snake($class) . '.json';
+        $table = $exporter->getTable();
+        $fullPath = $path . '/' . $table . '.json';
         $data = $exporter->getData();
 
         file_put_contents($fullPath, json_encode($data, JSON_PRETTY_PRINT));

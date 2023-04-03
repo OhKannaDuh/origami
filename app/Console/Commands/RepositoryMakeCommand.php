@@ -150,7 +150,6 @@ final class RepositoryMakeCommand extends GeneratorCommand
      */
     public function getStubsFile(string $path): string
     {
-
         if ($this->files->exists(base_path($path))) {
             return $this->files->get(base_path($path));
         }

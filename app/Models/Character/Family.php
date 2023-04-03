@@ -24,9 +24,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property int $glory
  * @property int $starting_wealth
  * @property string $description
- * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
+ * @property int $page_number
  *
  * @property SourceBook $sourceBook
  * @property Clan $clan

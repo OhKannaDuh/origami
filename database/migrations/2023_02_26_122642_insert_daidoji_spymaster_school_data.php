@@ -9,6 +9,7 @@ use App\Repositories\Core\SourceBookRepositoryInterface;
 use App\Repositories\Core\TechniqueSubtypeRepositoryInterface;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Artisan;
 
 return new class extends Migration
 {
@@ -29,6 +30,8 @@ return new class extends Migration
 
     public function up(): void
     {
+        Artisan::call('db:seed');
+
         $school = $this->repository->bypassCache()->getByKey('daidoji_spymaster_school');
         assert($school instanceof School);
 

@@ -31,14 +31,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property int $school_ability_id
  * @property int $mastery_ability_id
  * @property int $family_id
- * @property int $page_number
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property int $honor
+ * @property int $page_number
  *
  * @property SourceBook $sourceBook
- * @property Ringnull $ringOne
- * @property Ringnull $ringTwo
+ * @property Ring|null $ringOne
+ * @property Ring|null $ringTwo
  * @property Family $family
  * @property Collection<TechniqueType> $availableTechniqueTypes
  * @property Collection<TechniqueSubtype> $availableTechniqueSubtypes
