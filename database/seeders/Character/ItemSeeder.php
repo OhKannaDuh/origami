@@ -21,8 +21,8 @@ final class ItemSeeder extends Seeder
         $data = $this->getData(Item::class);
 
         foreach ($data as $datum) {
-            $sourceBook = $sourceBooks->getByKey($datum['source_book_key']);
-            $subtype = $subtypes->getByKey($datum['item_subtype_key']);
+            $sourceBook = $sourceBooks->getByKey($datum['source_book']['key']);
+            $subtype = $subtypes->getByKey($datum['item_subtype']['key']);
 
             $create = Arr::only($datum, ['key', 'name', 'description', 'data', 'cost', 'rarity', 'page_number']);
             $create['source_book_id'] = $sourceBook->getKey();

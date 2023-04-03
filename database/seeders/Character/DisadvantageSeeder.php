@@ -23,11 +23,11 @@ final class DisadvantageSeeder extends Seeder
         $data = $this->getData(Disadvantage::class);
 
         foreach ($data as $datum) {
-            $sourceBook = $sourceBooks->getByKey($datum['source_book_key']);
-            $type = $types->getByKey($datum['disadvantage_type_key']);
-            $ring = $rings->getByKey($datum['ring_key']);
+            $sourceBook = $sourceBooks->getByKey($datum['source_book']['key']);
+            $type = $types->getByKey($datum['disadvantage_type']['key']);
+            $ring = $rings->getByKey($datum['ring']['key']);
 
-            $create = Arr::only($datum, ['key', 'name', 'page_number']);
+            $create = Arr::only($datum, ['key', 'name', 'effects', 'page_number']);
             $create['source_book_id'] = $sourceBook->getKey();
             $create['disadvantage_type_id'] = $type->getKey();
             $create['ring_id'] = $ring->getKey();
