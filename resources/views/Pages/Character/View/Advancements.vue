@@ -93,7 +93,7 @@
 
         <ring :character="character" @advance="advance" class="col-12" />
         <skills :character="character" :repository="skills" @advance="advance" class="col-12" />
-        <techniques :character="character" :repository="techniques" @advance="advance" class="col-12" />
+        <techniques v-if="drawer" :character="character" :repository="techniques" @advance="advance" :drawer="drawer" class="col-12" />
     </div>
 </template>
 
@@ -108,6 +108,7 @@ import { SkillRepository } from '@/ts/Repositories/SkillRepository';
 import { defineComponent, PropType, ref } from 'vue';
 import { TechniqueRepository } from '@/ts/Repositories/TechniqueRepository';
 import { AdvancementRow, SchoolCurriculumRank } from '@/ts/data';
+import Drawer from '../../Drawers/Drawer.vue';
 
 enum AdvancementType {
     Ring = 'ring',
@@ -125,6 +126,10 @@ export default defineComponent({
         },
         saveManager: {
             type: Object as PropType<SaveManager>,
+            required: true,
+        },
+        drawer: {
+            type: Object as PropType<typeof Drawer>,
             required: true,
         },
     },

@@ -19,7 +19,7 @@
                 </q-tab-panel>
                 <q-tab-panel name="actions">
                     <Suspense>
-                        <actions />
+                        <actions v-if="drawer" :drawer="drawer" />
                     </Suspense>
                 </q-tab-panel>
                 <q-tab-panel name="conflict">
@@ -29,7 +29,7 @@
                 </q-tab-panel>
                 <q-tab-panel name="advantages-and-disadvantages">
                     <Suspense>
-                        <advantages-and-disadvantages :character="character" :saveManager="saveManager" />
+                        <advantages-and-disadvantages v-if="drawer" :character="character" :saveManager="saveManager" :drawer="drawer" />
                     </Suspense>
                 </q-tab-panel>
                 <q-tab-panel name="inventory">
@@ -39,7 +39,7 @@
                 </q-tab-panel>
                 <q-tab-panel name="techniques">
                     <Suspense>
-                        <techniques :character="character" />
+                        <techniques v-if="drawer" :character="character" :drawer="drawer" />
                     </Suspense>
                 </q-tab-panel>
                 <q-tab-panel name="curriculum">
@@ -54,7 +54,7 @@
                 </q-tab-panel>
                 <q-tab-panel name="advancements">
                     <Suspense>
-                        <advancements :character="character" :saveManager="saveManager" />
+                        <advancements v-if="drawer" :character="character" :saveManager="saveManager" :drawer="drawer" />
                     </Suspense>
                 </q-tab-panel>
                 <q-tab-panel name="campaigns">
@@ -86,7 +86,7 @@
                     </q-tab-panel>
                     <q-tab-panel name="actions">
                         <Suspense>
-                            <actions />
+                            <actions v-if="drawer" :drawer="drawer" />
                         </Suspense>
                     </q-tab-panel>
                     <q-tab-panel name="conflict">
@@ -128,7 +128,7 @@
                 <q-tab-panels v-model="tab.desktop.right" class="col-12 q-pt-sm">
                     <q-tab-panel name="advantages-and-disadvantages">
                         <Suspense>
-                            <advantages-and-disadvantages :character="character" :saveManager="saveManager" />
+                            <advantages-and-disadvantages v-if="drawer" :character="character" :saveManager="saveManager" :drawer="drawer" />
                         </Suspense>
                     </q-tab-panel>
                     <q-tab-panel name="inventory">
@@ -138,12 +138,12 @@
                     </q-tab-panel>
                     <q-tab-panel name="techniques">
                         <Suspense>
-                            <techniques :character="character" />
+                            <techniques v-if="drawer" :character="character" :drawer="drawer" />
                         </Suspense>
                     </q-tab-panel>
                     <q-tab-panel name="advancements">
                         <Suspense>
-                            <advancements :character="character" :saveManager="saveManager" />
+                            <advancements v-if="drawer" :character="character" :saveManager="saveManager" :drawer="drawer" />
                         </Suspense>
                     </q-tab-panel>
                 </q-tab-panels>
@@ -176,6 +176,8 @@
                 <i class="save-value bg-accent shadow-4 text-size-xs" v-html="Object.entries(saveManager.queue).length" />
             </p>
         </q-page-sticky>
+
+        <drawer ref="drawer" />
     </layout>
 </template>
 
@@ -198,6 +200,7 @@ import { Campaign } from '@/ts/Campaign/Campaign';
 import { Character } from '@/ts/Character/View/Character';
 import { SaveManager } from '@/ts/Character/View/SaveManager';
 import { defineComponent, PropType, ref } from 'vue';
+import Drawer from '../Drawers/Drawer.vue';
 
 export default defineComponent({
     components: {
@@ -215,6 +218,7 @@ export default defineComponent({
         Party,
         Conflict,
         Actions,
+        Drawer,
     },
     props: {
         characterData: {
@@ -237,7 +241,7 @@ export default defineComponent({
             mobile: 'skills',
             desktop: {
                 left: 'skills',
-                right: 'techniques',
+                right: 'advancements',
             },
         });
 
@@ -344,7 +348,9 @@ export default defineComponent({
         const hideSocials = ref<boolean>(true);
         const saveManager = ref<SaveManager>(new SaveManager());
 
-        return { tab, character, mobileTabs, desktopTabsLeft, desktopTabsRight, campaign, hideSocials, saveManager };
+        const drawer = ref<typeof Drawer>();
+
+        return { tab, character, mobileTabs, desktopTabsLeft, desktopTabsRight, campaign, hideSocials, saveManager, drawer };
     },
     computed: {
         mobile(): boolean {

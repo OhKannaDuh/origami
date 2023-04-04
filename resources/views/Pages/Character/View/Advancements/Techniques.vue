@@ -1,29 +1,33 @@
 <template>
-    <q-card class="fill-height no-border-radius q-mb-xs">
-        <q-expansion-item expand-separator label="Techniques">
-            <q-card>
-                <q-expansion-item v-for="(subtypeGroups, key) in availableTechniques" :key="key" expand-separator :label="types[key]" class="q-ml-sm">
-                    <q-expansion-item
-                        v-for="(techniques, key) in subtypeGroups"
-                        :key="key"
-                        expand-separator
-                        :label="subtypes[key]"
-                        class="q-ml-sm"
-                        :header-class="{ 'text-secondary': techniqueSubtypeInCurriculum(key) }"
-                    >
-                        <q-list>
-                            <q-item v-for="(technique, index) in techniques" :key="index" :clickable="canRankUp()" @click="advance(technique.key)">
-                                <q-item-section class="text-left" :class="{ 'text-secondary': techniqueInCurriculum(technique.key) }">
-                                    {{ technique.name }}
-                                </q-item-section>
-                                <q-item-section avatar :class="{ 'text-negative': !canRankUp(3) }"> {{ 3 }} </q-item-section>
-                            </q-item>
-                        </q-list>
+    <div>
+        <q-card class="fill-height no-border-radius q-mb-xs">
+            <q-expansion-item expand-separator label="Techniques">
+                <q-card>
+                    <q-expansion-item v-for="(subtypeGroups, key) in availableTechniques" :key="key" expand-separator :label="types[key]" class="q-ml-sm">
+                        <q-expansion-item
+                            v-for="(techniques, key) in subtypeGroups"
+                            :key="key"
+                            expand-separator
+                            :label="subtypes[key]"
+                            class="q-ml-sm"
+                            :header-class="{ 'text-secondary': techniqueSubtypeInCurriculum(key) }"
+                        >
+                            <q-list>
+                                <q-item v-for="(technique, index) in techniques" :key="index" :clickable="true" @click="show(technique)">
+                                    <q-item-section class="text-left flex-grow" :class="{ 'text-secondary': techniqueInCurriculum(technique.key) }">
+                                        {{ technique.name }}
+                                    </q-item-section>
+                                    <q-item-section avatar :class="{ 'text-negative': !canRankUp() }">
+                                        <q-btn :disable="!canRankUp()" @click="advance(technique.key)"> Add ({{ 3 }}) </q-btn>
+                                    </q-item-section>
+                                </q-item>
+                            </q-list>
+                        </q-expansion-item>
                     </q-expansion-item>
-                </q-expansion-item>
-            </q-card>
-        </q-expansion-item>
-    </q-card>
+                </q-card>
+            </q-expansion-item>
+        </q-card>
+    </div>
 </template>
 
 <script lang="ts">
@@ -31,6 +35,7 @@ import { Character } from '@/ts/Character/View/Character';
 import { SchoolCurriculumRank } from '@/ts/data';
 import { TechniqueRepository } from '@/ts/Repositories/TechniqueRepository';
 import { defineComponent, PropType, ref } from 'vue';
+import Drawer from '../../../Drawers/Drawer.vue';
 
 enum AdvancementType {
     Ring = 'ring',
@@ -54,6 +59,10 @@ export default defineComponent({
         },
         repository: {
             type: Object as PropType<TechniqueRepository>,
+            required: true,
+        },
+        drawer: {
+            type: Object as PropType<typeof Drawer>,
             required: true,
         },
     },
@@ -119,6 +128,11 @@ export default defineComponent({
             }
 
             return this.character.school.curriculum[this.character.school_rank];
+        },
+        show(technique: App.Models.Character.Technique) {
+            this.drawer.setContent('technique', {
+                technique: technique,
+            });
         },
     },
     computed: {
