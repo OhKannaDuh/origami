@@ -23,6 +23,7 @@ final class Update implements UpdateInterface
         $character->update([
             'name' => $request->name(),
             'avatar' => $this->avatar($character, $request),
+            'allow_nonhuman_techniques' => $request->allowNonhumanTechniques(),
         ]);
 
         return $character;

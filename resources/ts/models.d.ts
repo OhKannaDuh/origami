@@ -95,6 +95,7 @@ declare namespace App.Models.Core {
         technique_type_id: number;
         key: string;
         name: string;
+        is_nonhuman: boolean;
         created_at: string | null;
         updated_at: string | null;
         technique_type?: App.Models.Core.TechniqueType | null;
@@ -279,6 +280,7 @@ declare namespace App.Models.Character {
         personality: string;
         heritage: string;
         stats: CharacterStats;
+        allow_nonhuman_techniques: boolean;
         created_at: string | null;
         updated_at: string | null;
         user?: App.Models.User | null;

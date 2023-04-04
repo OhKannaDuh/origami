@@ -14,6 +14,9 @@ final class UpdateRequest extends CharacterRequest
             'name' => [
                 'string',
             ],
+            'allowNonhumanTechniques' => [
+                'boolean',
+            ],
         ];
     }
 
@@ -24,5 +27,14 @@ final class UpdateRequest extends CharacterRequest
         assert(is_string($name));
 
         return $name;
+    }
+
+
+    public function allowNonhumanTechniques(): bool
+    {
+        $allowNonhumanTechniques = Arr::get($this->all(), 'allowNonhumanTechniques');
+        assert(is_bool($allowNonhumanTechniques));
+
+        return $allowNonhumanTechniques;
     }
 }

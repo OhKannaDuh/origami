@@ -10,9 +10,8 @@ return new class extends Migration
 
     public function up(): void
     {
-        Schema::create('{{ table }}', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('characters', function (Blueprint $table) {
+            $table->boolean('allow_nonhuman_techniques')->default(false)->after('stats');
         });
     }
 };

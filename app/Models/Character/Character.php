@@ -27,6 +27,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property array $personality
  * @property array $heritage
  * @property array $stats
+ * @property bool $allow_nonhuman_techniques
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
@@ -58,6 +59,7 @@ final class Character extends Model
         'personality',
         'heritage',
         'stats',
+        'allow_nonhuman_techniques',
     ];
 
     protected $casts = [
@@ -66,6 +68,7 @@ final class Character extends Model
         'personality' => 'json',
         'heritage' => 'json',
         'stats' => 'json',
+        'allow_nonhuman_techniques' => 'boolean',
     ];
 
 
