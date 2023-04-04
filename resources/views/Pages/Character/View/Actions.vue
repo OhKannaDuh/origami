@@ -12,50 +12,6 @@
             <q-table :rows="rows" :columns="columns" class="full-width" flat hide-bottom :pagination="{ rowsPerPage: 10 }" @row-click="show" />
         </q-card-section>
     </q-card>
-    <q-drawer v-model="drawer" elevated overlay side="right">
-        <q-scroll-area class="fit">
-            <q-list class="q-pa-sm">
-                <q-item clickable @click="close">
-                    <q-item-section avatar>
-                        <q-icon name="chevron_right" />
-                    </q-item-section>
-                    <q-item-section>Close</q-item-section>
-                </q-item>
-                <q-separator />
-                <q-card v-if="current" flat>
-                    <q-card-section class="q-pa-sm">
-                        <h6 class="no-margin" v-text="current.name" />
-                        <p class="no-margin text-subtitle2" v-text="current.conflictTypes.join(', ')" />
-                        <p class="no-margin text-subtitle2" v-text="current.actionTypes.join(', ')" />
-                    </q-card-section>
-                    <q-card-section class="q-pa-sm">
-                        <span><b>Activation: </b><span v-format="current.activation" /></span>
-                    </q-card-section>
-                    <q-card-section class="q-pa-sm">
-                        <b>Effect: </b>
-                        <template v-for="(effect, index) in current.effect" :key="index">
-                            <span v-if="isActionEffectText(effect)" v-format="effect.effect" />
-                            <q-list v-if="isActionEffectList(effect)">
-                                <q-item v-for="(text, index) in effect.effects" :key="index">
-                                    <q-item-section>
-                                        <span v-format="text" />
-                                    </q-item-section>
-                                </q-item>
-                            </q-list>
-                        </template>
-                    </q-card-section>
-                    <q-card-section v-if="current.opportunities" class="q-pa-sm">
-                        <h6 class="no-margin">New Opportunities:</h6>
-                        <q-list>
-                            <q-item v-for="(opportunity, index) in current.opportunities" :key="index">
-                                <span><b v-format="opportunity.cost" /><b>: </b><span v-format="opportunity.effect" /></span>
-                            </q-item>
-                        </q-list>
-                    </q-card-section>
-                </q-card>
-            </q-list>
-        </q-scroll-area>
-    </q-drawer>
 </template>
 
 <script lang="ts">
@@ -63,13 +19,18 @@ import { Action, ActionEffect } from '@/ts/data';
 import { ActionEffectType } from '@/ts/Data/ActionEffectType';
 import { ActionType } from '@/ts/Data/ActionType';
 import { ConflictType } from '@/ts/Data/ConflictType';
-import { defineComponent, ref } from 'vue';
+import { defineComponent, ref, PropType } from 'vue';
+import Drawer from '../../Drawers/Drawer.vue';
 
 export default defineComponent({
-    setup() {
-        let current = ref<Action | null>(null);
-        let drawer = ref<boolean>(false);
+    props: {
+        drawer: {
+            type: Object as PropType<typeof Drawer>,
+            required: true,
+        },
+    },
 
+    setup() {
         let actions = ref<Action[]>([
             {
                 name: 'Assist',
@@ -247,7 +208,7 @@ export default defineComponent({
         let actionTypeFilter = ref<ActionType | null>(null);
         let conflictTypeFilter = ref<ConflictType | null>(null);
 
-        return { current, drawer, actions, actionTypeFilter, conflictTypeFilter };
+        return { actions, actionTypeFilter, conflictTypeFilter };
     },
 
     computed: {
@@ -310,17 +271,10 @@ export default defineComponent({
             throw `No action with name ${name} found.`;
         },
         show(event: Event, row: { name: string }, index: number) {
-            this.current = this.getActionByName(row.name);
-            this.drawer = true;
-        },
-        close() {
-            this.drawer = false;
-        },
-        isActionEffectText(effect: ActionEffect): boolean {
-            return effect.type === ActionEffectType.TEXT;
-        },
-        isActionEffectList(effect: ActionEffect): boolean {
-            return effect.type === ActionEffectType.LIST;
+            console.log(this.getActionByName(row.name));
+            this.drawer.setContent('action', {
+                action: this.getActionByName(row.name),
+            });
         },
     },
 });
