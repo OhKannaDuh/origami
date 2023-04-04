@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property int $technique_type_id
  * @property string $key
  * @property string $name
+ * @property bool $is_nonhuman
  * @property Carbon $created_at
  * @property Carbon $updated_at
  *
@@ -25,8 +26,13 @@ final class TechniqueSubtype extends Model
 
     protected $fillable = [
         'technique_type_id',
-        'name',
         'key',
+        'name',
+        'is_nonhuman',
+    ];
+
+    protected $casts = [
+        'is_nonhuman' => 'boolean',
     ];
 
 

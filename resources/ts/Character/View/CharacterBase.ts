@@ -13,6 +13,7 @@ export class CharacterBase implements App.Models.Character.Character {
     public personality: string;
     public heritage: string;
     public stats: CharacterStats;
+    public allow_nonhuman_techniques: boolean;
     public created_at: string | null;
     public updated_at: string | null;
     public clan?: App.Models.Character.Clan | null;
@@ -42,6 +43,7 @@ export class CharacterBase implements App.Models.Character.Character {
         this.personality = data.personality;
         this.heritage = data.heritage;
         this.stats = data.stats;
+        this.allow_nonhuman_techniques = data.allow_nonhuman_techniques;
         this.created_at = data.created_at;
         this.updated_at = data.updated_at;
         this.clan = data.clan;

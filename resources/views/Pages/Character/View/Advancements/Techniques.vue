@@ -107,7 +107,6 @@ export default defineComponent({
 
             for (const rank of curriculum) {
                 if (rank.type === 'technique-subtype' && rank.technique_subtype_key === key) {
-                    console.log(':D');
                     return true;
                 }
             }
@@ -152,6 +151,10 @@ export default defineComponent({
             let group: TechniueGroups = {};
             for (const datum of data) {
                 if (!datum.technique_subtype || !datum.technique_subtype.technique_type) {
+                    continue;
+                }
+
+                if (!this.character.allow_nonhuman_techniques && datum.technique_subtype.is_nonhuman) {
                     continue;
                 }
 

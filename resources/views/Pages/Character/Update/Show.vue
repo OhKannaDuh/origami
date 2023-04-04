@@ -14,6 +14,9 @@
                             <q-file v-model="avatar" label="Character Image" dense accept=".jpg, image/*" filled square />
                         </div>
                     </q-card-section>
+                    <q-card-section>
+                        <q-checkbox v-model="allowNonhumanTechniques" label="Allow Non-human Techniques" />
+                    </q-card-section>
                     <q-card-actions>
                         <q-space />
                         <q-btn label="Update" color="accent" class="no-border-radius" flat @click="update" />
@@ -45,7 +48,9 @@ export default defineComponent({
 
         const image = ref<string>(props.character.avatar);
 
-        return { avatar, name, errors, image };
+        const allowNonhumanTechniques = ref<boolean>(props.character.allow_nonhuman_techniques);
+
+        return { avatar, name, errors, image, allowNonhumanTechniques };
     },
     methods: {
         update() {
@@ -56,6 +61,7 @@ export default defineComponent({
                 {
                     name: this.name,
                     avatar: this.avatar,
+                    allowNonhumanTechniques: this.allowNonhumanTechniques,
                 },
                 {
                     onError: (errors) => (this.errors = errors),

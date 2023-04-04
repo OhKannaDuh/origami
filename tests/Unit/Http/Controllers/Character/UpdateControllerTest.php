@@ -101,6 +101,7 @@ final class UpdateControllerTest extends TestCase
         $this->actingAs($user);
         $response = $this->update($character, [
             'name' => 'Test Name',
+            'allowNonhumanTechniques' => true,
         ]);
 
         $response->assertRedirect(route('character.view.show', [
@@ -109,6 +110,7 @@ final class UpdateControllerTest extends TestCase
 
         $character->refresh();
         self::assertSame('Test Name', $character->name);
+        self::assertTrue($character->allow_nonhuman_techniques);
     }
 
 
@@ -124,6 +126,7 @@ final class UpdateControllerTest extends TestCase
         $this->actingAs($user);
         $response = $this->update($character, [
             'name' => 'Test Name',
+            'allowNonhumanTechniques' => true,
             'avatar' => UploadedFile::fake()->image('avatar.jpg'),
         ]);
 
