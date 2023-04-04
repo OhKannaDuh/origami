@@ -110,6 +110,7 @@ final class UpdateControllerTest extends TestCase
 
         $character->refresh();
         self::assertSame('Test Name', $character->name);
+        self::assertTrue($character->allow_nonhuman_techniques);
     }
 
 
