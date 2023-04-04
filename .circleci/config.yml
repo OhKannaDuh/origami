@@ -16,9 +16,6 @@ jobs:
                   name: 'Install composer dependencies'
                   command: composer install -n --prefer-dist
             - run:
-                  name: 'Coding standard check (PHPCS)'
-                  command: vendor/bin/phpcs
-            - run:
                   name: 'Generate application key'
                   command: php artisan key:generate
             - run:
@@ -39,6 +36,18 @@ jobs:
             - run:
                   name: 'Static Analysis (PHPStan)'
                   command: vendor/bin/phpstan --memory-limit=2G
+      coding-standards:
+        docker:
+            - image: cimg/php:8.1-browsers
+
+        steps:
+            - checkout
+            - run:
+                  name: 'Install composer dependencies'
+                  command: composer install -n --prefer-dist
+            - run:
+                  name: 'Coding standard check (PHPCS)'
+                  command: vendor/bin/phpcs
 
 workflows:
     version: 2
@@ -46,3 +55,4 @@ workflows:
         jobs:
             - unit-tests
             - static-analysis
+            - coding-standards
