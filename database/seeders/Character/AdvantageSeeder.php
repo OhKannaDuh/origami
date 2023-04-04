@@ -23,11 +23,11 @@ final class AdvantageSeeder extends Seeder
         $data = $this->getData(Advantage::class);
 
         foreach ($data as $datum) {
-            $sourceBook = $sourceBooks->getByKey($datum['source_book_key']);
-            $type = $types->getByKey($datum['advantage_type_key']);
-            $ring = $rings->getByKey($datum['ring_key']);
+            $sourceBook = $sourceBooks->getByKey($datum['source_book']['key']);
+            $type = $types->getByKey($datum['advantage_type']['key']);
+            $ring = $rings->getByKey($datum['ring']['key']);
 
-            $create = Arr::only($datum, ['key', 'name', 'page_number']);
+            $create = Arr::only($datum, ['key', 'name', 'effects', 'page_number']);
             $create['source_book_id'] = $sourceBook->getKey();
             $create['advantage_type_id'] = $type->getKey();
             $create['ring_id'] = $ring->getKey();

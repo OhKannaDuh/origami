@@ -35,12 +35,6 @@ abstract class Export
     }
 
 
-    protected function getRelationships(): array
-    {
-        return [];
-    }
-
-
     public function getData(): array
     {
         $data = $this->repository->all();
@@ -53,10 +47,19 @@ abstract class Export
     }
 
 
-    public function getClass(): string
+    public function getTable(): string
     {
         $repositoryClass = $this->getRepositoryClass();
 
-        return StringHelper::of($repositoryClass)->afterLast('\\')->before('RepositoryInterface')->toString();
+        $repository = App::make($repositoryClass);
+        assert($repository instanceof RepositoryInterface);
+
+        return $repository->getModel()->getTable();
+    }
+
+
+    protected function getRelationships(): array
+    {
+        return [];
     }
 }

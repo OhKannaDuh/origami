@@ -42,7 +42,7 @@ abstract class BaseRepository implements RepositoryInterface
     }
 
 
-    protected function getModel(): Model
+    public function getModel(): Model
     {
         return $this->model;
     }

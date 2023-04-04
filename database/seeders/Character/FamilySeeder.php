@@ -25,12 +25,12 @@ final class FamilySeeder extends Seeder
         $data = $this->getData(Family::class);
 
         foreach ($data as $datum) {
-            $sourceBook = $sourceBooks->getByKey($datum['source_book_key']);
-            $clan = $clans->getByKey($datum['clan_key']);
-            $ringOne = $rings->getByKey($datum['ring_choice_one_key']);
-            $ringTwo = $rings->getByKey($datum['ring_choice_two_key']);
-            $skillOne = $skills->getByKey($datum['skill_one_key']);
-            $skillTwo = $skills->getByKey($datum['skill_two_key']);
+            $sourceBook = $sourceBooks->getByKey($datum['source_book']['key']);
+            $clan = $clans->getByKey($datum['clan']['key']);
+            $ringOne = $rings->getByKey($datum['ring_choice_one']['key']);
+            $ringTwo = $rings->getByKey($datum['ring_choice_two']['key']);
+            $skillOne = $skills->getByKey($datum['skill_one']['key']);
+            $skillTwo = $skills->getByKey($datum['skill_two']['key']);
 
             $create = Arr::only($datum, ['key', 'name', 'glory', 'starting_wealth', 'description', 'page_number']);
             $create['source_book_id'] = $sourceBook->getKey();

@@ -17,7 +17,7 @@ final class SkillSeeder extends Seeder
         $data = $this->getData(Skill::class);
 
         foreach ($data as $datum) {
-            $group = $groups->getByKey($datum['skill_group_key']);
+            $group = $groups->getByKey($datum['skill_group']['key']);
 
             $create = Arr::only($datum, ['key', 'name', 'description']);
             $create['skill_group_id'] = $group->getKey();

@@ -23,9 +23,9 @@ final class ClanSeeder extends Seeder
         $data = $this->getData(Clan::class);
 
         foreach ($data as $datum) {
-            $sourceBook = $sourceBooks->getByKey($datum['source_book_key']);
-            $ring = $rings->getByKey($datum['ring_key']);
-            $skill = $skills->getByKey($datum['skill_key']);
+            $sourceBook = $sourceBooks->getByKey($datum['source_book']['key']);
+            $ring = $rings->getByKey($datum['ring']['key']);
+            $skill = $skills->getByKey($datum['skill']['key']);
 
             $create = Arr::only($datum, ['key', 'name', 'status', 'is_major', 'description', 'page_number']);
             $create['source_book_id'] = $sourceBook->getKey();

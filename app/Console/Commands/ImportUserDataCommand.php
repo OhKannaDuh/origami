@@ -39,7 +39,7 @@ final class ImportUserDataCommand extends Command
 
         $this->output->writeln('Importing Users');
         $users->importMany($data['users']);
-return true;
+
         $this->output->writeln('Importing Characters');
         $characters->importMany($data['characters']);
 

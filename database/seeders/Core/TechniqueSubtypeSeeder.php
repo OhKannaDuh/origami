@@ -17,7 +17,7 @@ final class TechniqueSubtypeSeeder extends Seeder
         $data = $this->getData(TechniqueSubtype::class);
 
         foreach ($data as $datum) {
-            $type = $types->getByKey($datum['technique_type_key']);
+            $type = $types->getByKey($datum['technique_type']['key']);
 
             $create = Arr::only($datum, ['key', 'name']);
             $create['technique_type_id'] = $type->getKey();

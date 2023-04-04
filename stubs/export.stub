@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Console\Commands\Export;
+
+use {{ repository }};
+
+final class {{ class }} extends Export
+{
+
+
+    protected function getRepositoryClass(): string
+    {
+        return {{ repositoryName }}::class;
+    }
+
+
+    protected function getRelationships(): array
+    {
+        return [{{ relationships }}];
+    }
+}

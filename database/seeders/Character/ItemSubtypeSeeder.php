@@ -17,7 +17,7 @@ final class ItemSubtypeSeeder extends Seeder
         $data = $this->getData(ItemSubtype::class);
 
         foreach ($data as $datum) {
-            $type = $types->getByKey($datum['item_type_key']);
+            $type = $types->getByKey($datum['item_type']['key']);
 
             $create = Arr::only($datum, ['name', 'key']);
             $create['item_type_id'] = $type->getKey();

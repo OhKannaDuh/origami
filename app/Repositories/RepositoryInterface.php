@@ -16,6 +16,12 @@ interface RepositoryInterface
 
 
     /**
+     * @return Model
+     */
+    public function getModel(): Model;
+
+
+    /**
      * @param string|int $id
      *
      * @return Model

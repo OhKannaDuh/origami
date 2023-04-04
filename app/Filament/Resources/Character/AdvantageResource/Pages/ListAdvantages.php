@@ -10,6 +10,7 @@ class ListAdvantages extends ListRecords
 {
     protected static string $resource = AdvantageResource::class;
 
+
     protected function getActions(): array
     {
         return [

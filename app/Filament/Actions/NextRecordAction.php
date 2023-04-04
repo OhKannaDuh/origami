@@ -34,12 +34,14 @@ final class NextRecordAction extends Action
         $this->label('Next Record');
 
         $this->hidden(static function (Model $record): bool {
+            assert(property_exists($record, 'id'));
             $next = $record->query()->where('id', '>', $record->id)->min('id');
 
             return $next === null;
         });
 
         $this->url(function (Model $record): string {
+            assert(property_exists($record, 'id'));
             $next = $record->query()->where('id', '>', $record->id)->min('id');
 
             if (static::$resource) {

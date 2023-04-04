@@ -34,12 +34,14 @@ final class PreviousRecordAction extends Action
         $this->label('Previous Record');
 
         $this->hidden(static function (Model $record): bool {
+            assert(property_exists($record, 'id'));
             $next = $record->query()->where('id', '<', $record->id)->max('id');
 
             return $next === null;
         });
 
         $this->url(function (Model $record): string {
+            assert(property_exists($record, 'id'));
             $prev = $record->query()->where('id', '<', $record->id)->max('id');
 
             if (static::$resource) {
