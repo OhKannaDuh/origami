@@ -1,8 +1,6 @@
 version: 2
 jobs:
       unit-tests:
-        name: 'Unit tests && Infection tests'
-
         docker:
             - image: cimg/php:8.1-browsers
 
@@ -22,14 +20,12 @@ jobs:
                   command: php artisan key:generate
             - run:
                   name: 'Unit tests (PHPUnit)'
-                  command: vendor/bin/phpunit --configuration=phpunit.xml --coverage-xml=/tmp/coverage/coverage-xml --coverage-html=/tmp/coverage --log-junit=/tmp/coverage/junit.xml
+                  command: php artisan test --parallel --processes=$(nproc) --configuration=phpunit.xml --coverage-xml=/tmp/coverage/coverage-xml --coverage-html=/tmp/coverage --log-junit=/tmp/coverage/junit.xml --stop-on-failure
             - run:
                   name: 'Infection tests (Infection PHP)'
                   command: vendor/bin/infection --only-covered --min-covered-msi=100 -j$(nproc) --ignore-msi-with-no-mutations --test-framework-options="--configuration=phpunit.xml" --coverage=/tmp/coverage --skip-initial-tests --no-progress --git-diff-filter=AM
 
       static-analysis:
-        name: 'Static Analysis'
-
         docker:
             - image: cimg/php:8.1-browsers
 
@@ -43,8 +39,6 @@ jobs:
                   command: vendor/bin/phpstan --memory-limit=2G
 
       coding-standards:
-        name: 'Coding Standards'
-
         docker:
             - image: cimg/php:8.1-browsers
 
