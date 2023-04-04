@@ -1,6 +1,6 @@
 version: 2
 jobs:
-    unit-tests:
+      unit-tests:
         docker:
             - image: cimg/php:8.1-browsers
 
