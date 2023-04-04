@@ -44,7 +44,7 @@
                 </q-tab-panel>
                 <q-tab-panel name="curriculum">
                     <Suspense>
-                        <curriculum :character="character" />
+                        <curriculum v-if="drawer" :character="character" :drawer="drawer" />
                     </Suspense>
                 </q-tab-panel>
                 <q-tab-panel name="personality">
@@ -96,7 +96,7 @@
                     </q-tab-panel>
                     <q-tab-panel name="curriculum">
                         <Suspense>
-                            <curriculum :character="character" />
+                            <curriculum v-if="drawer" :character="character" :drawer="drawer" />
                         </Suspense>
                     </q-tab-panel>
                     <q-tab-panel name="personality">

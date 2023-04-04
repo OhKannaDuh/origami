@@ -11,6 +11,7 @@
             :pagination="{ rowsPerPage: 7 }"
             dense
             hide-bottom
+            @row-click="showTechnique"
         />
     </div>
 </template>
@@ -20,11 +21,16 @@ import { Character } from '@/ts/Character/View/Character';
 import { SkillRepository } from '@/ts/Repositories/SkillRepository';
 import { TechniqueRepository } from '@/ts/Repositories/TechniqueRepository';
 import { defineComponent, PropType, ref } from 'vue';
+import Drawer from '../../Drawers/Drawer.vue';
 
 export default defineComponent({
     props: {
         character: {
             type: Object as PropType<Character>,
+            required: true,
+        },
+        drawer: {
+            type: Object as PropType<typeof Drawer>,
             required: true,
         },
     },
@@ -85,6 +91,16 @@ export default defineComponent({
 
         upperCase(word: string): string {
             return word[0].toUpperCase() + word.substring(1);
+        },
+
+        showTechnique(event: Event, row: SchoolCurriculumRank) {
+            if (row.type !== 'technique') {
+                return;
+            }
+
+            this.drawer.setContent('technique', {
+                technique: this.techniques.fromKey(row.technique_key),
+            });
         },
     },
     computed: {
