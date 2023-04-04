@@ -1,6 +1,6 @@
 version: 2
 jobs:
-    test:
+    unit-tests:
         docker:
             - image: cimg/php:8.1-browsers
 
@@ -25,14 +25,24 @@ jobs:
                   name: 'Unit tests (PHPUnit)'
                   command: vendor/bin/phpunit --configuration=phpunit.xml --coverage-xml=/tmp/coverage/coverage-xml --coverage-html=/tmp/coverage --log-junit=/tmp/coverage/junit.xml
             - run:
-                  name: 'Static Analysis (PHPStan)'
-                  command: vendor/bin/phpstan --memory-limit=2G
-            - run:
                   name: 'Infection tests (Infection PHP)'
                   command: vendor/bin/infection --only-covered --min-covered-msi=100 -j$(nproc) --ignore-msi-with-no-mutations --test-framework-options="--configuration=phpunit.xml" --coverage=/tmp/coverage --skip-initial-tests --no-progress --git-diff-filter=AM
+      static-analysis:
+        docker:
+            - image: cimg/php:8.1-browsers
+
+        steps:
+            - checkout
+            - run:
+                  name: 'Install composer dependencies'
+                  command: composer install -n --prefer-dist
+            - run:
+                  name: 'Static Analysis (PHPStan)'
+                  command: vendor/bin/phpstan --memory-limit=2G
 
 workflows:
     version: 2
     workflow:
         jobs:
-            - test
+            - unit-tests
+            - static-analysis
