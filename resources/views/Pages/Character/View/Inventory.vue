@@ -1,5 +1,11 @@
 <template>
     <q-card>
+        <q-card-section class="row">
+            <q-space />
+            <div>Koku: {{ inventory.getTotalQuantity('koku') }} |&nbsp;</div>
+            <div>Bu: {{ inventory.getTotalQuantity('bu') }} |&nbsp;</div>
+            <div>Zeni: {{ inventory.getTotalQuantity('zeni') }}</div>
+        </q-card-section>
         <q-table
             v-for="container in containers"
             :key="container.id"
@@ -168,10 +174,12 @@
 <script lang="ts">
 import { Character } from '@/ts/Character/View/Character';
 import { InventoryItem } from '@/ts/Inventory/InventoryItem';
+import { Inventory } from '@/ts/Inventory/Inventory';
 import { ItemRepository } from '@/ts/Repositories/ItemRepository';
 import { SaveManager } from '@/ts/Character/View/SaveManager';
 import { defineComponent, PropType, ref } from 'vue';
 import { v4 as uuidv4 } from 'uuid';
+import { IContainer, IInventory, IInventoryItem } from '@/ts/data';
 
 export default defineComponent({
     props: {
@@ -185,30 +193,10 @@ export default defineComponent({
         },
     },
     async setup(props) {
-        const inventory = ref<IInventory>({
-            containers: [],
-        });
-
         const repository = new ItemRepository();
         await repository.init();
 
-        props.character.inventory.containers.forEach((container: IContainer) => {
-            let proxyContainer: IContainer = {
-                id: container.id,
-                name: container.name,
-                items: [],
-            };
-
-            container.items.forEach((item: IInventoryItem) => {
-                let proxyItem: InventoryItem = new InventoryItem(item.item_key, repository);
-                proxyItem.quantity = item.quantity;
-                proxyItem.custom_name = item.custom_name;
-
-                proxyContainer.items.push(proxyItem);
-            });
-
-            inventory.value.containers.push(proxyContainer);
-        });
+        const inventory = ref<Inventory>(Inventory.fromCharacterInventory(props.character.inventory, repository));
 
         const columns = ref<Object[]>([
             {

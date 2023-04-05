@@ -241,7 +241,7 @@ export default defineComponent({
             mobile: 'skills',
             desktop: {
                 left: 'skills',
-                right: 'advancements',
+                right: 'advantages-and-disadvantages',
             },
         });
 
